@@ -24,10 +24,10 @@ fs.readdir("./commands/", (err, files) => {
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
-  bot.user.setActivity(`with _ItsNuaZ. | !help`);
+  bot.user.setActivity(`with PritePasZ | !help`);
 });
 
-bot.on('guildMemberAdd', member => {
+/*bot.on('guildMemberAdd', member => {
   const channel = member.guild.channels.find(ch => ch.name === '👋welcome👋');
   if (!channel) return;
   let welcomeembed = new Discord.RichEmbed()
@@ -49,14 +49,14 @@ bot.on('guildMemberRemove', member => {
   .addField(`<:remMember:518733397783347200> Goodbye, **${member.user.tag}**`, `<a:wave:512259019386126337> We hope to see you again, ${member}`)
   .setColor(`#ff3320`)
   channel.send(goodbyeembed);
-});
+});*/
 
 bot.on("message", async message => {
 
   if (message.author.bot) return;
   if (message.channel.type === "dm") return;
 
-  let prefix = '!';
+  let prefix = '--';
   let messageArray = message.content.split(" ");
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
