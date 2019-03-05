@@ -69,11 +69,12 @@ bot.on("message", async message => {
     .setColor("#c92626")
     .setThumbnail(sicon)
     .addField("Server Name", message.guild.name)
-    .addField("Creted On", message.guild.createdAt)
+    .addField("Created On", message.guild.createdAt)
     .addField("You Joined", message.member.joinedAt)
-    .addField("Total Members:, message.guild.memberCount);
-       
-    return message.channel.send(serverembed)          
+    .addField("Total Members:, message.guild.memberCount); 
+              
+    return message.channel.send(severembed);
+  }
   
   let commandfile = bot.commands.get(cmd.slice(prefix.length));
   if(commandfile) commandfile.run(bot,message,args)
