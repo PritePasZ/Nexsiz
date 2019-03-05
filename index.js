@@ -61,8 +61,22 @@ bot.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
   
+  if(cmd === "${prefix}serverinfo"){
+    
+    let sicon = message.guild.displayAvatarURL;
+    let serverrembed = new Discord.RichEmbed()
+    .setDescription("Server Information")
+    .setColor("#c92626")
+    .setThumbnail(sicon)
+    .addField("Server Name", message.guild.name)
+    .addField("Creted On", message.guild.createdAt)
+    .addField("You Joined", message.member.joinedAt)
+    .addField("Total Members:, message.guild.memberCount);
+       
+    return message.channel.send(serverembed)          
+  
   let commandfile = bot.commands.get(cmd.slice(prefix.length));
-  if(commandfile) commandfile.run(bot,message,args);
+  if(commandfile) commandfile.run(bot,message,args)
  
 });
 
