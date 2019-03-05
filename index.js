@@ -61,6 +61,15 @@ bot.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
   
+  if(cmd === `${prefix}botinfo`){
+
+    let botembed = new Discord.RichEmbed()
+    .setDescription("Bot Informantion")
+    .setColor("#d11f1f")
+    .addField("Bot Name", bot.user.username);
+
+    return message.channel.send(botembed);
+  
   let commandfile = bot.commands.get(cmd.slice(prefix.length));
   if(commandfile) commandfile.run(bot,message,args);
  
