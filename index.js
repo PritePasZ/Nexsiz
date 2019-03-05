@@ -25,10 +25,6 @@ fs.readdir("./commands/", (err, files) => {
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
   bot.user.setActivity(`with PritePasZ | --help`);
-  wait(3)
-  bot.on("ready", async () => {
-  console.log(`${bot.user.username} is online!`);
-  bot.user.setActivity(`Want to help? | --help`);
 });
 
 /*bot.on('guildMemberAdd', member => {
