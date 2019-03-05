@@ -63,7 +63,7 @@ bot.on("message", async message => {
   
   if(cmd === `${prefix}serverinfo`){
     
-    let sicon = message.guild.displayAvatarURL;
+    let sicon = message.guild.iconURL;
     let serverrembed = new Discord.RichEmbed()
     .setDescription("Server Information")
     .setColor("#c92626")
