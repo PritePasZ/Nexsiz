@@ -38,8 +38,6 @@ bot.on("ready", async () => {
   .setColor(`#409cd9`)
   channel.send(welcomeembed);
 });
-
-
 bot.on('guildMemberRemove', member => {
   const channel = member.guild.channels.find(ch => ch.name === '👋welcome👋');
   if (!channel) return;
@@ -61,23 +59,8 @@ bot.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
   
-  if(cmd === `${prefix}serverinfo`){
-    
-    let sicon = message.guild.iconURL;
-    let serverrembed = new Discord.RichEmbed()
-    .setDescription("Server Information")
-    .setColor("#c92626")
-    .setThumbnail(sicon)
-    .addField("Server Name", message.guild.name)
-    .addField("Created On", message.guild.createdAt)
-    .addField("You Joined", message.member.joinedAt)
-    .addField("Total Members":, message.guild.memberCount);
-    
-    return message.channel.send(serverembed);
-  }
-  
   let commandfile = bot.commands.get(cmd.slice(prefix.length));
-  if(commandfile) commandfile.run(bot,message,args)
+  if(commandfile) commandfile.run(bot,message,args);
  
 });
 
