@@ -74,6 +74,9 @@ bot.on("message", async message => {
     .addField("Total Members":, message.guild.memberCount);
     
     return message.channel.send(serverembed);
+  }
+  
+});
   
   let commandfile = bot.commands.get(cmd.slice(prefix.length));
   if(commandfile) commandfile.run(bot,message,args)
