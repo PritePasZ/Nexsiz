@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args) => {
   .setTitle("Server Information")
   .setColor("0ED4DA")
   .setThumbnail(message.guild.iconURL)
-  .addField('Server Name', `${message.guild.name}`, true)
+  .addField(':white_check_mark: Server Name', `${message.guild.name}`, true)
   .addField('Server Owner', message.guild.owner.user.tag, true)
   .addField(":calendar: Server Create Date", message.guild.createdAt, true)
   .addField("Member Count", message.guild.memberCount, true)
