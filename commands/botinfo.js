@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
   .setThumbnail(message.guild.iconURL)
   .addField('Name', `${message.guild.name} (${message.guild.nameAcronym})`, true)
   .addField('Server Owner', message.guild.owner.user.tag, true)
-  .addField("Server Create Date", message.guild.createdAt, true)
+  .addField(":calendar: Server Create Date", message.guild.createdAt, true)
   .addField("Member Count", message.guild.memberCount, true)
 
   return message.channel.send(serverembed);
