@@ -12,7 +12,6 @@ module.exports.run = async (bot, message, args) => {
   .addField(":calendar: Server Create Date", message.guild.createdAt, true)
   .addField(":bar_chart: Toal Members", message.guild.memberCount, true)
   .addField("Member Count", message.guild.memberCount, true)
-  .addField("Bot Count", message.guild.user.bot.memberCount, true)
   .addField(":card_index: Server ID", message.guild.id, true)
   .addField(":earth_asia:Server Region",message.guild.region, true)
 
