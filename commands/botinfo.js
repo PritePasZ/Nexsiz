@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
 
     let boicon = bot.user.displayAvatarURL;
     let botembed = new Discord.RichEmbed()
-    .setAuthor(message.author.bot.username, message.author.displayAvatarURL)
+    .setAuthor(message.author.bot, message.author.displayAvatarURL)
     .setDescription("Bot Information")
     .setColor("#f4bf42")
     .setThumbnail(boicon)
