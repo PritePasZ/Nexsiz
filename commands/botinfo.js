@@ -9,6 +9,8 @@ module.exports.run = async (bot, message, args) => {
     .addField("Bot Name", bot.user.username)
     .addField("Bot Create Date", bot.user.createAt)
     .addField("Servers", bot.guilds.size)
+
+    message.channel.send(botembed)
 }
 
 module.exports.help = {
