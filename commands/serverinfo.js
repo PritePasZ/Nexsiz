@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args) => {
   .addField(":bar_chart: Toal Members", message.guild.memberCount, true
   .addField("Member Count", message.guild.memberCount, true)
   .addField(":card_index: Server ID", message.guild.id, true)
-  .addField(":earth_asia:Server Region",message.guild.region, true)
+  .addField(":earth_asia: Server Region",message.guild.region, true)
   .addField(":calendar: Server Create Date", message.guild.createdAt, true)
 
   return message.channel.send(serverembed);
