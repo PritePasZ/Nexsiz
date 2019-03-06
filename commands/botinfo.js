@@ -6,11 +6,10 @@ module.exports.run = async (bot, message, args) => {
     let boticon = bot.user.displayAvatarURL;
     let botembed = new Discord.RichEmbed()
     .setDescription("Bot Information")
-    .setColor("#f4bf42")
+    .setColor("0ED4DA")
     .setThumbnail(boticon)
-    .setAuthor(message.author.username, message.author.displayAvatarURL)
-    .addField("Bot Name", bot.user.username, true)
-    .addField("Bot Create Date", bot.user.createdAt, true)
+    .addField("Bot Name", bot.user.username)
+    .addField("Bot Create Date", bot.user.createdAt)
 
     message.channel.send(botembed)
 }
