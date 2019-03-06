@@ -8,8 +8,9 @@ module.exports.run = async (bot, message, args) => {
     .setDescription("Bot Information")
     .setColor("#f4bf42")
     .setThumbnail(boticon)
-    .addField("Bot Name", bot.user.username)
-    .addField("Bot Create Date", bot.user.createdAt)
+    .setAuthor(message.author.username, message.author.displayAvatarURL)
+    .addField("Bot Name", bot.user.username, true)
+    .addField("Bot Create Date", bot.user.createdAt, true)
 
     message.channel.send(botembed)
 }
