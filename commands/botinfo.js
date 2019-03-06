@@ -13,3 +13,8 @@ module.exports.run = async (bot, message, args) => {
     .addField("Bot Create Date", bot.user.createdAt)
     .addField("Server")
 }
+
+module.exports.help = {
+  name: "botinfo"
+  description: "Shows the information of bot"
+}
