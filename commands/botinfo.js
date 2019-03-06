@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const bot = new Discord.Client
 
 module.exports.run = async (bot, message, args) => {
-  
+
     let boicon = bot.user.displayAvatarURL;
     let botembed = new Discord.RichEmbed()
     .setAuthor(message.author.bot.username, message.author.displayAvatarURL)
@@ -12,6 +12,8 @@ module.exports.run = async (bot, message, args) => {
     .addField("Created By", bot.owner.user.tag)
     .addField("Bot Name", bot.user.username)
     .addField("Bot Create Date", bot.user.createdAt)
+
+    message.channel.send(botembed)
 }
 
 module.exports.help = {
