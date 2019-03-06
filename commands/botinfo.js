@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
   .setAuthor(message.author.username, message.author.displayAvatarURL)
   .setTitle("Server Information")
   .setColor("0ED4DA")
-  .setThumbnail(message.guild.iconURL)`
+  .setThumbnail(message.guild.iconURL)
   .addField(":white_check_mark: Server Name", message.guild.name, true)
   .addField("Server Owner", message.guild.owner.user.tag, true)
   .addField(":bar_chart: Toal Members", message.guild.memberCount, true)
