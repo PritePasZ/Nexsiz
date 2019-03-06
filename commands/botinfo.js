@@ -11,7 +11,6 @@ module.exports.run = async (bot, message, args) => {
     .addField("Created By", bot.owner.user.tag)
     .addField("Bot Name", bot.user.username)
     .addField("Bot Create Date", bot.user.createdAt)
-    .addField("Server")
 }
 
 module.exports.help = {
