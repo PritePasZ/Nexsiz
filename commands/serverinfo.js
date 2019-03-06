@@ -7,13 +7,13 @@ module.exports.run = async (bot, message, args) => {
   .setColor("0ED4DA")
   .setThumbnail(message.guild.iconURL)
   .setAuthor(message.author.username, message.author.displayAvatarURL)
-  .addField('Server Name', message.guild.name, true)
+  .addField(':white_check_mark: Server Name', message.guild.name, true)
   .addField('Server Owner', message.guild.owner.user.tag, true)
-  .addField("Server ID", message.guild.id, true)
-  .addField("Server Region", message.guild.region, true)
-  .addField("Total Member", message.guild.memberCount, true)
+  .addField(":information_source: Server ID", message.guild.id, true)
+  .addField(":region_asia: Server Region", message.guild.region, true)
+  .addField(":bar_chart: Total Member", message.guild.memberCount, true)
   .addField("Member Count", message.guild.memberCount, true)
-  .addField("Server Create Date", message.guild.createdAt, true)
+  .addField(":calendar: Server Create Date", message.guild.createdAt, true)
 
   return message.channel.send(serverembed);
 }
