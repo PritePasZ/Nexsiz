@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
   .addField(':white_check_mark: Server Name', message.guild.name, true)
   .addField('Server Owner', message.guild.owner.user.tag, true)
   .addField(":information_source: Server ID", message.guild.id, true)
-  .addField(":region_asia: Server Region", message.guild.region, true)
+  .addField(":earth_asia: Server Region", message.guild.region, true)
   .addField(":bar_chart: Total Member", message.guild.memberCount, true)
   .addField("Member Count", message.guild.memberCount, true)
   .addField(":calendar: Server Create Date", message.guild.createdAt, true)
