@@ -14,7 +14,6 @@ module.exports.run = async (bot, message, args) => {
   .addField("Total Member", message.guild.memberCount, true)
   .addField("Member Count", message.guild.memberCount, true)
   .addField("Server Create Date", message.guild.createdAt, true)
-  .setFooter("📆 You Joined", message.meber.joinedAt, true)
 
   return message.channel.send(serverembed);
 }
