@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 module.exports.run = async (bot, message, args) => {
 
   let serverembed = new Discord.RichEmbed()
-  .setAuthor(message.author.Server, message.author.displayAvatarURL)
+  .setAuthor(message.author.username, message.author.displayAvatarURL)
   .setTitle("Server Information")
   .setColor("0ED4DA")
   .setThumbnail(message.guild.iconURL)
