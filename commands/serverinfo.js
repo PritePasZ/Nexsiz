@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
   .addField("Total Member", message.guild.memberCount, true)
   .addField("Member Count", message.guild.memberCount, true)
   .addField("Server Create Date", message.guild.createdAt, true)
-  .setFooter(`📅 Server Created - ${day}.${month}.${year}`);
+  .setFooter("📅 Server Created -", ${day}.${month}.${year}, true);
 
   return message.channel.send(serverembed);
 }
