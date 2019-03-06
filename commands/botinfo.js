@@ -8,9 +8,11 @@ module.exports.run = async (bot, message, args) => {
   .setColor("0ED4DA")
   .setThumbnail(message.guild.iconURL)
   .addField(':white_check_mark: Server Name', `${message.guild.name}`, true)
-  .addField('Server Owner', message.guild.owner.user.tag, true)
-  .addField(":calendar: Server Create Date", message.guild.createdAt, true)
-  .addField("Member Count", message.guild.memberCount, true)
+  .addField('Server Owner', `${message.guild.owner.user.tag}`, true)
+  .addField(":calendar: Server Create Date", `${message.guild.createdAt}`, true)
+  .addField("Member Count", `${message.guild.memberCount}`, true)
+  .addField(":card_index: Server ID"), `${message.guild.id}`, true)
+  .addField(":earth_asia: Server Region"), `${message.guild.Region}`, true)
 
   return message.channel.send(serverembed);
 }
