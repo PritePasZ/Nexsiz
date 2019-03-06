@@ -3,13 +3,11 @@ const bot = new Discord.Client
 
 module.exports.run = async (bot, message, args) => {
 
-    let boicon = bot.user.displayAvatarURL;
+    let boticon = bot.user.displayAvatarURL;
     let botembed = new Discord.RichEmbed()
-    .setAuthor(message.author.username, message.author.displayAvatarURL)
     .setDescription("Bot Information")
     .setColor("#f4bf42")
-    .setThumbnail(boicon)
-    .addField("Created By", bot.owner.user.tag)
+    .setThumbnail(boticon)
     .addField("Bot Name", bot.user.username)
     .addField("Bot Create Date", bot.user.createdAt)
 
@@ -17,6 +15,6 @@ module.exports.run = async (bot, message, args) => {
 }
 
 module.exports.help = {
-  name: "botinfo"
-  description: "Shows the information of bot"
+    name: "botinfo",
+    description: "Shows the bot's info."
 }
