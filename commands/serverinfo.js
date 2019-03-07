@@ -13,7 +13,7 @@ module.exports.run = async (bot, message, args) => {
   .addField(`<:Owner:553078012283715636> \`Owner\``, `\`${message.guild.owner.user.tag}\``, true)
   .addField(`:earth_americas: \`Region\``, `\`${message.guild.region}\``, true)
   .addField(`:card_index: \`Server ID\``, `\`${message.guild.id}\``, true)
-  .addField(`:clip_board: \`Join Date\``, `\`${message.member.joinedAt}\``, true)
+  .addField(`:clipboard: \`Join Date\``, `\`${message.member.joinedAt}\``, true)
   .addField(`:calendar: \`Server Create Date\``, `\`${message.guild.createdAt}\``, true);
 
   message.channel.send(serverembed);
