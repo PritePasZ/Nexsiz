@@ -11,6 +11,7 @@ module.exports.run = async (bot, message, args) => {
     .setTimestamp()
     .setTitle(`Click here to join our discord server`)
     .setDescription("<:nodejs:553086690105753610> Made with Node.js and Discord.js")
+    .addField(`:robot: Bot Created Date`, bot.user.createdAt)
     .addField(`:clipboard: Created by`, `PritePasZ#3071`, true)
     .addField(`:information_source: Version`, `0.0.9`, true)
     .addField(`:tools: Debug`, `Currency version of bot is 0.0.9`);
