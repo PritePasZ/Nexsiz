@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
   .setThumbnail(message.guild.iconURL)
   .setAuthor(message.author.username, message.author.displayAvatarURL)
   .addField(':white_check_mark: Server Name', message.guild.name, true)
-  .addField(':prince: Server Owner', message.guild.owner.user.tag, true)
+  .addField('<:Owner:553078012283715636> Server Owner', message.guild.owner.user.tag, true)
   .addField(":information_source: Server ID", message.guild.id, true)
   .addField(":earth_asia: Server Region", message.guild.region, true)
   .addField(":bar_chart: Total Member", message.guild.memberCount, true)
