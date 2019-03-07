@@ -13,7 +13,7 @@ module.exports.run = async (bot, message, args) => {
     .setDescription("<:nodejs:553086690105753610> Made with Node.js and Discord.js")
     .addField(`:clipboard: Created by`, `PritePasZ`, true)
     .addField(`:information_source: Version`, `0.0.9`, true)
-    .addField(`:tools: Debug`, `Currency version now is 0.0.9`)
+    .addField(`:tools: Debug`, `Currency version now is 0.0.9`);
 
     message.channel.send(botembed);
 }
