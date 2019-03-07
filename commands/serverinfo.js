@@ -7,15 +7,13 @@ module.exports.run = async (bot, message, args) => {
   .setColor("0ED4DA")
   .setThumbnail(message.guild.iconURL)
   .setAuthor(message.author.username, message.author.displayAvatarURL)
-  .addField('`:white_check_mark: \`Server Name\``, `\`${message.guild.name}\``, true)
-  .addField(`<:Owner:553078012283715636> \`Owner\``, `\`${message.guild.owner.user.tag}\``, true
-  .addField(`:card_index: \`Server ID\``, `\`${message.guild.id}\``, true)
-  .addField(`:earth_asia: \`Region\``, `\`${message.guild.region}\``, true)
   .addField(`:bar_chart: \`Total Members\``, `\`${message.guild.memberCount}\``)
-  .addField(`<:bustinsilhouette:553086092837126145> \`Member Count\``, `\`${message.guild.memberCount\``, true)
-  .addField(`:robot: \`Bot Count\``, `\`${message.guild.members.filter(m => m.user.bot).size}``, true))}
-  .addField(`:clip_board:\`Join Date\``, `\`${message.member.joinedAt}\``, true)
-  .addField(`:calendar: \`Server Create Date\``, `\`${message.guild.createdAt}\``, true);
+  .addField(`<:bustinsilhouette:553086092837126145> \`Users\``, `\`${message.guild.memberCount - message.guild.members.filter(m => m.user.bot).size}\``, true)
+  .addField(`:robot: \`Bots\``, `\`${message.guild.members.filter(m => m.user.bot).size}\``, true)
+  .addField(`<:owner:511514761184280576> \`Owner\``, `\`${message.guild.owner.user.tag}\``, true)
+  .addField(`:earth_americas: \`Region\``, `\`${message.guild.region}\``, true)
+  .addField(`:card_index: \`Server ID\``, `\`${message.guild.id}\``, true)
+  .addField(`:calendar: \`Join Date\``, `\`${message.member.joinedAt}\``, true)
 
   message.channel.send(serverembed);
 }
