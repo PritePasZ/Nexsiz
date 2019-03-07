@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
   .addField(":clipboard: Joined Date", message.guild.joinedAt, true)
   .setFooter("📆 Server Created • ${day}.${month}.${year}");
 
-  return message.channel.send(serverembed);
+  message.channel.send(serverembed);
 }
 
 
