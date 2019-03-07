@@ -15,10 +15,9 @@ module.exports.run = async (bot, message, args) => {
   .addField(":bust_in_silhouette: Member Count", message.guild.memberCount, true)
   .addField(":robot: Bot Count", message.guild.members.filter(m => m.user.bot).size, true)
   .addField(":clipboard: Joined Date", message.guild.joinedAt, true)
-  .setFooter(":calendar: Server Create Date", ${message.guild.createdAt}, true);
-  
+  .setFooter(":calendar: Server Create Date", ${message.guild.createdAt});
 
-  return message.channel.send(serverembed);
+  message.channel.send(serverembed);
 }
 
 
