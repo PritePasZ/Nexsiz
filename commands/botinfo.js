@@ -14,7 +14,6 @@ module.exports.run = async (bot, message, args) => {
     .addField(`:clipboard: Created by`, `PritePasZ`, true)
     .addField(`:information_source: Version`, `0.0.9`, true)
     .addField(`:tools: Debug`, `Currency version now is 0.0.9`)
-    .setFooter(`Made by PritePasZ#3071` , `Made with Node.js and Discord.js`)
 
     message.channel.send(botembed);
 }
