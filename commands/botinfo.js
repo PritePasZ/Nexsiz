@@ -12,8 +12,8 @@ module.exports.run = async (bot, message, args) => {
     .setTitle(`Click here to join PritePasZ discord server`)
     .setDescription("<:nodejs:553086690105753610> Made with Node.js and Discord.js")
     .addField(`:clipboard: Created by`, `PritePasZ#3071`, true)
-    .addField(`:information_source: Version`, `0.1.1b`, true)
-    .addField(`:tools: Debug`, `Currency version of bot is 0.1.1b, New commands --clear and --say!`)
+    .addField(`:information_source: Version`, `${version}`, true)
+    .addField(`:tools: Debug`, `Bot has been updated ${version}, New commands --clear and --say!`)
     .addField(`:robot: Bot Created Date`, bot.user.createdAt);
 
     message.channel.send(botembed);
