@@ -19,7 +19,7 @@ module.exports.run = async (bot, message, args) => {
     .addField(":clipboard: Created By", "PritePasZ#3071", true)
     .addField(":information source: Version", "Dont have any version yet", true)
     .addField(":tools Debug", "creator are programming the bot,bot now dont have a version");
-
+//test typing here 
     message.channel.send(botembed);
 }
 
