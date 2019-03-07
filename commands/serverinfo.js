@@ -15,9 +15,9 @@ module.exports.run = async (bot, message, args) => {
   .addField(":bust_in_silhouette: Member Count", message.guild.memberCount, true)
   .addField(":robot: Bot Count", message.guild.members.filter(m => m.user.bot).size, true)
   .addField(":clipboard: Joined Date", message.guild.joinedAt, true)
-  .setFooter("📆 Server Created • ${day}.${month}.${year}");
+  .setFooter(`📆 Server Created • ${day}.${month}.${year}`);
 
-  message.channel.send(serverembed);
+  return message.channel.send(serverembed);
 }
 
 
