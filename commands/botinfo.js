@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
     let boticon = bot.user.displayAvatarURL;
     let botembed = new Discord.RichEmbed()
     .setDescription("Bot Information")
-    .setColor("0ED4DA")
+    .setColor("#f4d742")
     .setThumbnail(boticon)
     .addField("Bot Name", bot.user.username)
     .addField("Bot Create Date", bot.user.createdAt)
