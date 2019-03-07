@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
   .setAuthor(message.author.username, message.author.displayAvatarURL)
   .addField(':white_check_mark: Server Name', message.guild.name, true)
   .addField('<:Owner:553078012283715636> Server Owner', message.guild.owner.user.tag, true)
-  .addField(":information_source: Server ID", message.guild.id, true)
+  .addField(":card_index: Server ID", message.guild.id, true)
   .addField(":earth_asia: Server Region", message.guild.region, true)
   .addField(":bar_chart: Total Member", message.guild.memberCount, true)
   .addField("<:bustinsilhouette:553086092837126145> Member Count", message.guild.memberCount, true)
