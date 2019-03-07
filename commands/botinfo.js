@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args) => {
     .setColor(`#f4d442`)
     .setThumbnail(bicon)
     .setAuthor(bname, bicon)
-    .setURL(`https://discord.gg/NeAvnzq`)
+    .setURL(`https://discord.gg/P96Pr33`)
     .setTimestamp()
     .setTitle(`Click here to join our discord server`)
     .setDescription("<:nodejs:553086690105753610> Made with Node.js and Discord.js")
