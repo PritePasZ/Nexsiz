@@ -3,7 +3,7 @@ const Discord = require("discord.js")
 module.exports.help = {
 
 
-  if(!args[2]) return message.reply("Please ask a full question");
+  if(!args[2]) return message.reply(":exclamation: Please ask a full question");
   let replies = ["Yes.", "No.", "I dont know.", "Ask again later"];
 
   let result = Math.floor((Math.random() * replies.length));
