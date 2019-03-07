@@ -14,7 +14,8 @@ module.exports.run = async (bot, message, args) => {
   .addField(":bar_chart: Total Member", message.guild.memberCount, true)
   .addField(":bust_in_silhouette: Member Count", message.guild.memberCount, true)
   .addField(":robot: Bot Count", message.guild.members.filter(m => m.user.bot).size, true)
-  .addField(":clipboard: Joined Date", message.guild.joinedAt, true);
+  .addField(":clipboard: Joined Date", message.guild.joinedAt, true)
+  .addField(":calendar: Server Create Date", message.guild.createdAt, true)
 
   message.channel.send(serverembed);
 }
