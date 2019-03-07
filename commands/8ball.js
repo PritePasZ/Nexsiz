@@ -1,6 +1,6 @@
-const Discord = require("discord.js")
+const Discord = require("discord.js");
 
-module.exports.help = {
+module.exports.run = async (bot, messagem args) => {
 
 
   if(!args[2]) return message.reply(":exclamation: Please ask a full question");
@@ -16,7 +16,6 @@ module.exports.help = {
   .addField("Anwer", replies[result]);
 
   message.channel.send(ballembed)  ;
-
 
 }
 
