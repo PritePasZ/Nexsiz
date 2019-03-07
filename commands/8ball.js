@@ -15,7 +15,9 @@ module.exports.run = async (bot, messagem args) => {
   .addField("Question", question)
   .addField("Anwer", replies[result]);
 
-  message.channel.send(ballembed)  ;
+  message.channel.send(ballembed);
+
+
 
 }
 
