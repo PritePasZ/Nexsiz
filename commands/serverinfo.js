@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args) => {
   .addField(`:card_index: \`Server ID\``, `\`${message.guild.id}\``, true)
   .addField(`:earth_asia: \`Region\``, `\`${message.guild.region}\``, true)
   .addField(`:bar_chart: \`Total Members\``, `\`${message.guild.memberCount}\``)
-  .addField(`<:bustinsilhouette:553086092837126145>insilhouette:553086092837126145> \`Member Count\``, `\`${message.guild.memberCount\``, true)
+  .addField(`<:bustinsilhouette:553086092837126145> \`Member Count\``, `\`${message.guild.memberCount\``, true)
   .addField(`:robot: \`Bot Count\``, `\`${message.guild.members.filter(m => m.user.bot).size}``, true))}
   .addField(`:clip_board:\`Join Date\``, `\`${message.member.joinedAt}\``, true)
   .addField(`:calendar: \`Server Create Date\``, `\`${message.guild.createdAt}\``, true);
