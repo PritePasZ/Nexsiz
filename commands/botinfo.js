@@ -1,19 +1,23 @@
 const Discord = require("discord.js");
-const bot = new Discord.Client
 
 module.exports.run = async (bot, message, args) => {
-
-    let boticon = bot.user.displayAvatarURL;
+    let bicon = bot.user.displayAvatarURL;
+    let bname = bot.user.username;
     let botembed = new Discord.RichEmbed()
-    .setDescription("Bot Information")
-    .setColor("#f4d742")
-    .setThumbnail(boticon)
-    .addField("Bot Name", bot.user.username)
-    .addField("Bot Create Date", bot.user.createdAt)
+    .setColor(`#f4d442`)
+    .setThumbnail(bicon)
+    .setAuthor(bname, bicon)
+    .setURL(`https://discord.gg/NeAvnzq`)
+    .setTimestamp()
+    .setTitle(`Click here to join our discord server`)
+    .setDescription("<:nodejs:553086690105753610> Made with Node.js and Discord.js")
+    .addField(`:clipboard: Created by`, `PritePasZ#3071`, true)
+    .addField(`:information_source: Version`, `0.0.9`, true)
+    .addField(`:tools: Debug`, `Currency version of bot is 0.0.9`);
 
-    message.channel.send(botembed)
+    message.channel.send(botembed);
 }
 
 module.exports.help = {
-    name: "botinfo",
-    description: "Shows the bot's info."
+  name: "botinfo"
+}
