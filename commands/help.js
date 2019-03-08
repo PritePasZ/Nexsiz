@@ -14,7 +14,7 @@ let helpembed = new Discord.RichEmbed()
     .setAuthor(`Commands & Guides`, bot.user.avatarURL)
     .addField(`:desktop: General Commands`, `--help - Show a list of commands & guides to your DM.\n--ping or --pong - Show the current bot ping/ms.\n--serverinfo - Shows the information of the guild.\n--botinfo - Shows the information of the bot.\n--say - message that bot will said\n--clear - clear the message in the chat`)
     .addField(`:tools: Moderation Commands`, `--clear [amount] - Clear the given amount of messages.\n--say [text] - <@552076002101297153> will chat with your given text.`)
-    .addField(`<:music:553457291089805312> Music Commands`, `Music Commands is coming soon\nwaiting for PritePasZ will and the commands`)
+    .addField(`<:headphone:553459778714730527> Music Commands`, `Music Commands is coming soon\nwaiting for PritePasZ will and the commands`)
     .setTimestamp()
     message.author.send(helpembed);
 
