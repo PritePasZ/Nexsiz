@@ -10,10 +10,10 @@ module.exports.run = async (bot, message, args) => {
     .setURL(`https://discord.gg/P96Pr33`)
     .setTimestamp()
     .setTitle(`Click here to join PritePasZ discord server`)
-    .setDescription("<:nodejs:553086690105753610> Made with Node.js and Discord.js")
+    .setDescription("<:node.js:553214612586233858> Made with Node.js and Discord.js")
     .addField(`:clipboard: Created by`, `PritePasZ#3071`, true)
     .addField(`:information_source: Version`, `0.1.1b`, true)
-    .addField(`:tools: Debug`, `New update to version 0.1.1b, alot of stuff have been changed and improved. :D`)
+    .addField(`:tools: Debug`, `Updated to version 0.1.1b, new commands --say and --clear (Moderator Commands)`)
     .addField(`:robot: Bot Created Date`, bot.user.createdAt);
 
     message.channel.send(botembed);
