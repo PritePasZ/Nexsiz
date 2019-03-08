@@ -16,6 +16,7 @@ module.exports.run = async (bot, message, args) => {
     .addField(`:information_source: Version`, `0.1.1b`, true)
     .addField(`:tools: Debug`, `Updated to version 0.1.1b, new commands --say and --clear (Moderator Commands)`)
     .addField(`:robot: Bot Created Date`, bot.user.createdAt)
+    .setFooter(`Test Message`)
     .setTimestamp();
 
     message.channel.send(botembed);
