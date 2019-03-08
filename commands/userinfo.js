@@ -26,3 +26,9 @@ module.exports.run = async (bot, message, args) => {
   .addField(":calendar: Joined Guild Date", member.joinedAt, true)
   .addField(":calendar: Account Created Date", user.createdAt, true)
   .setFooter(`Shows the information of user, ${message.author.username}#${message.author.discriminator}`)
+  message.channel.send({embed});
+}
+
+module.exports.help = {
+  name: "userinfo"
+}
