@@ -10,11 +10,10 @@ let dm = new Discord.RichEmbed()
     message.channel.send(dm);
 
 let helpembed = new Discord.RichEmbed()
-    .setColor(`#409cd9`)
+    .setColor(`#4286f4`)
     .setAuthor(`Commands & Guides`, bot.user.avatarURL)
     .addField(`:desktop: General Commands`, `--help - Show a list of commands & guides to your DM.\n--ping or --pong - Show the current bot ping/ms.\n--serverinfo - Shows the information of the guild.\n--botinfo - Shows the information of the bot.\n--say - message that bot will said\n--clear - clear the message in the chat`)
-    .setColor(`#ef3b3b`)
-    .addField(`:tools: Moderation Commands`, `--clear [amount] - Clear the given amount of messages.\n--say [text] - Force <@552076002101297153> to chat with your given text.`)
+    .addField(`:tools: Moderation Commands`, `--clear [amount] - Clear the given amount of messages.\n--say [text] - <@552076002101297153> will chat with your given text.`)
     .setTimestamp()
     message.author.send(helpembed);
 
