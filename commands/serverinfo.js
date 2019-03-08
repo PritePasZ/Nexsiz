@@ -14,7 +14,8 @@ module.exports.run = async (bot, message, args) => {
   .addField(":earth_asia: Region", message.guild.region, true)
   .addField(":card_index: Server ID", message.guild.id, true)
   .addField(":clipboard: Join Date", message.member.joinedAt, true)
-  .addField(":calendar: Server Create Date", message.guild.createdAt, true);
+  .addField(":calendar: Server Create Date", message.guild.createdAt, true)
+  .setFooter("Showing information about server");
 
   message.channel.send(serverembed);
 }
