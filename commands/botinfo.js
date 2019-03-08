@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
     .setURL(`https://discord.gg/P96Pr33`)
     .setTimestamp()
     .setTitle(`Click here to join PritePasZ discord server`)
-    .setDescription("<:node.js:553214612586233858> Made with Node.js and Discord.js")
+    .setDescription("<:nodejs:553212483415048221> Made with Node.js and Discord.js")
     .addField(`:clipboard: Created by`, `PritePasZ#3071`, true)
     .addField(`:information_source: Version`, `0.1.1b`, true)
     .addField(`:tools: Debug`, `Updated to version 0.1.1b, new commands --say and --clear (Moderator Commands)`)
