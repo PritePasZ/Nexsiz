@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
   .addField(":card_index: Server ID", message.guild.id, true)
   .addField(":clipboard: Join Date", message.member.joinedAt, true)
   .addField(":calendar: Server Create Date", message.guild.createdAt, true)
-  .setFooter(":information_source: Showing information about server");
+  .setFooter("ℹ️ Showing information about server");
 
   message.channel.send(serverembed);
 }
