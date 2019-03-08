@@ -22,8 +22,8 @@ module.exports.run = async (bot, message, args) => {
 		.addField(`<:online:553477759863619604> User Status`, `${user.presence.status}`, true)
     .addField(`:robot: Bot Account`, `${user.bot}`, true)
 		.addField(`:joystick: User Activity`, `${user.presence.game ? user.presence.game.name : 'None'}`, true)
-    .addField(`:calendar: Joined Guild Date`, `${member.joinedAt}`, true)
-    .addField(`:calendar: Account Creation Date`, `${user.createdAt}`, true)
+    .addField(`:calendar: Joined Date`, `${member.joinedAt}`, true)
+    .addField(`:calendar: Account Created Date`, `${user.createdAt}`, true)
     .addField(`:pushpin: Roles`, member.roles.map(roles => `<@&${roles.id}>`).join(', '), true)
     .setFooter(`Shows the information of ${message.author.username}#${message.author.discriminator}`)
      message.channel.send({embed});
