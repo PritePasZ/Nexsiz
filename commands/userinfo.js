@@ -21,7 +21,7 @@ module.exports.run = async (bot, message, args) => {
 		.addField(`:clipboard: Nickname`, `${member.nickname !== null ? `${member.nickname}` : 'None'}`, true)
 		.addField(`<:online:553477759863619604> User Status`, `${user.presence.status}`, true)
     .addField(`:robot: Bot Account`, `${user.bot}`, true)
-		.addField(`:video_game: User Activity`, `${user.presence.game ? user.presence.game.name : 'None'}`, true)
+		.addField(`:joystick: User Activity`, `${user.presence.game ? user.presence.game.name : 'None'}`, true)
     .addField(`:calendar: Joined Guild Date`, `${member.joinedAt}`, true)
     .addField(`:calendar: Account Creation Date`, `${user.createdAt}`, true)
     .addField(`:pushpin: Roles`, member.roles.map(roles => `<@&${roles.id}>`).join(', '), true)
