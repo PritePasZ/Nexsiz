@@ -10,11 +10,13 @@ module.exports.run = async (bot, message, args) => {
     .setURL(`https://discord.gg/P96Pr33`)
     .setTimestamp()
     .setTitle(`Click here to join PritePasZ discord server`)
-    .setDescription("<:nodejs:553086690105753610> Made with Node.js and Discord.js")
+    .setDescription("Made with <:nodejs:553212483415048221> Node.js and <:discordjs:553213251488317440> Discord.js\nHosted bot for free by <:heroku:553414334156374016> Heroku") 
     .addField(`:clipboard: Created by`, `PritePasZ#3071`, true)
     .addField(`:information_source: Version`, `0.1.1b`, true)
-    .addField(`:tools: Debug`, `Currency version of bot is 0.1.1b, New commands --clear and --say!`)
-    .addField(`:robot: Bot Created Date`, bot.user.createdAt);
+    .addField(`:tools: Debug`, `Updated to version 0.1.1b, new commands --say and --clear (Moderator Commands)`)
+    .addField(`:robot: Bot Created Date`, bot.user.createdAt)
+    .setFooter("Made by PritePasZ","https://cdn.discordapp.com/avatars/346579836292300800/706b218e06d8370a0b4bae85d108e6cb.png")
+    .setTimestamp();
 
     message.channel.send(botembed);
 }
