@@ -11,5 +11,8 @@ module.exports.run = async (bot, message, args) => {
       .setColor('#275BF0')
       .setFooter(`Shows the user avatar of ${message.author.username}#${message.author.discriminator}`)
         message.channel.send(embed)
-      }
-  });}
+}
+
+module.exports.help = {
+  name: "avatar"
+}
