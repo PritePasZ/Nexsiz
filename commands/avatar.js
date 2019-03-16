@@ -1,6 +1,7 @@
 const Discord require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
+  
   client.on('message', message => {
       if (message.content === '!avatar') {
         // Remove the "var" line; it isn't necessary.
