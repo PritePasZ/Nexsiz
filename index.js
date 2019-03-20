@@ -35,7 +35,7 @@ bot.on('guildMemberAdd', member => {
   .setAuthor(member.user.username, member.user.displayAvatarURL)
   .setThumbnail(member.user.displayAvatarURL)
   .setTimestamp()
-  .addField(`<:addMember:518733392402186240> Welcome to the server, **${member.user.tag}**`, `<a:cooldoge:511180988601073665> Thanks for joining with us, ${member}`)
+  .addField(`<:plus:557903316496154645> Welcome to the server, **${member.user.tag}**`, `<a:cooldoge:511180988601073665> Thanks for joining with us, ${member}`)
   .setColor(`#409cd9`)
   channel.send(welcomeembed);
 });
@@ -45,7 +45,7 @@ bot.on('guildMemberRemove', member => {
   let goodbyeembed = new Discord.RichEmbed()
   .setAuthor(member.user.username, member.user.displayAvatarURL)
   .setTimestamp()
-  .addField(`<:remMember:518733397783347200> Goodbye, **${member.user.tag}**`, `<a:wave:512259019386126337> We hope to see you again, ${member}`)
+  .addField(`<:subtract:557905417406119956> Goodbye, **${member.user.tag}**`, `<a:wave:512259019386126337> We hope to see you again, ${member}`)
   .setColor(`#ff3320`)
   channel.send(goodbyeembed);
 });
