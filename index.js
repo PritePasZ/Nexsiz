@@ -35,7 +35,7 @@ bot.on('guildMemberAdd', member => {
   .setAuthor(member.user.username, member.user.displayAvatarURL)
   .setThumbnail(member.user.displayAvatarURL)
   .setTimestamp()
-  .addField(`<:plus:557903316496154645> Welcome to the server, **${member.user.tag}**`, `<a:cooldoge:511180988601073665> Thanks for joining with us, ${member}`)
+  .addField(`<:plus:557903316496154645> Welcome to the server, **${member.user.tag}**`, `<:plus_1:557908827840970773> Thanks for joining with us, ${member}`)
   .setColor(`#409cd9`)
   channel.send(welcomeembed);
 });
