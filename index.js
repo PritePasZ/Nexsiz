@@ -28,8 +28,8 @@ bot.on("ready", async () => {
   bot.user.setActivity(`with PritePasZ | *help`);
 });
 
-/*bot.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.find(ch => ch.name === '👋welcome👋');
+bot.on('guildMemberAdd', member => {
+  const channel = member.guild.channels.find(ch => ch.name === '🖐คนเข้า-คนออก👋');
   if (!channel) return;
   let welcomeembed = new Discord.RichEmbed()
   .setAuthor(member.user.username, member.user.displayAvatarURL)
@@ -40,7 +40,7 @@ bot.on("ready", async () => {
   channel.send(welcomeembed);
 });
 bot.on('guildMemberRemove', member => {
-  const channel = member.guild.channels.find(ch => ch.name === '👋welcome👋');
+  const channel = member.guild.channels.find(ch => ch.name === '🖐คนเข้า-คนออก👋');
   if (!channel) return;
   let goodbyeembed = new Discord.RichEmbed()
   .setAuthor(member.user.username, member.user.displayAvatarURL)
@@ -48,7 +48,7 @@ bot.on('guildMemberRemove', member => {
   .addField(`<:remMember:518733397783347200> Goodbye, **${member.user.tag}**`, `<a:wave:512259019386126337> We hope to see you again, ${member}`)
   .setColor(`#ff3320`)
   channel.send(goodbyeembed);
-});*/
+});
 
 bot.on("message", async message => {
 
