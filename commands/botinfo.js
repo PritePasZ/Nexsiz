@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
     .addField(`:information_source: Version`, `0.1.2b`, true)
     .addField(`:tools: Debug`, `Updated to version 0.1.2b, new commands --say and --clear (Moderator Commands)`)
     .addField(`:robot: Bot Created Date`, bot.user.createdAt)
-    .setFooter("Made by PritePasZ","https://cdn.discordapp.com/avatars/346579836292300800/706b218e06d8370a0b4bae85d108e6cb.png")
+    .setFooter("Made by PritePasZ",("https://cdn.discordapp.com/avatars/346579836292300800/b02ca29aee1ec133c84377bd4235e957.png")
     .setTimestamp();
 
     message.channel.send(botembed);
