@@ -4,7 +4,8 @@ module.exports.run = async (bot, message, args) => {
 
   let rUser = message.guild.member(message.mention.users.first() || message.guild.members.get(args[0]));
   if(!rUser) return mesage.channel.send("Couldn't find user.");
-  let reason = args.join(" ").slice(22)
+  let reason = args.join(" ").slice(22);
+  
   let reportEmbed = new Discord.RichEmbed()
   .setDescription("Reports")
   .setColor("#15f153")
