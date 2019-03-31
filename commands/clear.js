@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
   .setAuthour(message member.displayName, message.author.displayAvatarUR
   .setColor("f4aa42")
   .setTimeStamp()
-  .setFooter("Message ${args[0]} has been cleared")
+  .setFooter("Message has been cleared")
   .setDescription(`:wastebasket: Clear ${args[0]} messages.`)
   message.channel.send(clearbotcommandsystem).then(msg => {msg.delete(2000)});
 });
