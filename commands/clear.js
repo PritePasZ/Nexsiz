@@ -7,11 +7,10 @@ module.exports.run = async (bot, message, args) => {
   message.channel.bulkDelete(args[0]).then(() => {
     
   let clearbotcommandsystem = new Discord.RichEmbed()
-  .setAuthour(message member.displayName, message.author.displayAvatarUR
+  .setAuthour(message member.displayName, message.author.displayAvatarURL)
   .setColor("f4aa42")
-  .setTimeStamp()
-  .setFooter("Message has been cleared")
   .setDescription(`:wastebasket: Clear ${args[0]} messages.`)
+  .setTimeStamp()
   message.channel.send(clearbotcommandsystem).then(msg => {msg.delete(2000)});
 });
 
