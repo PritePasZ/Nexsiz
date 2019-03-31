@@ -1,18 +1,19 @@
+
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
-  if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("No.");
-  if(!args[0]) return message.channel.send("no");
+  if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply(":x: You dont have Manage Messages Permission!");
+  if(!args[0]) return message.channel.send(":x: Type the amount of value to clear the messages!");
   message.channel.bulkDelete(args[0]).then(() => {
-    
-  let clearbotcommandsystem = new Discord.RichEmbed()
-  .setAuthour(message member.displayName, message.author.displayAvatarURL)
-  .setColor("f4aa42")
-  .setDescription(`:wastebasket: Clear ${args[0]} messages.`)
-  .setTimeStamp()
-  message.channel.send(clearbotcommandsystem).then(msg => {msg.delete(2000)});
-});
+
+    let clearbotcommandsystem = new Discord.RichEmbed()
+    .setAuthor(message.member.displayName, message.author.displayAvatarURL)
+    .setColor("#f49242")
+    .setDescription(`:wastebasket: Cleared ${args[0]} messages.`)
+    .setTimestamp()
+    message.channel.send(clearbotcommandsystem).then(msg => {msg.delete(2000)});
+  });
 
 }
 
