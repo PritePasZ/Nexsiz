@@ -7,8 +7,8 @@ module.exports.run = async (bot, message, args) => {
     .setDescription(`:signal_strength: Bot Ping`, `${Math.round(bot.ping)}`ms)
     .setDescription(`:computer: API Latency`, `${client.ping}`ms)
     .setFooter("Pong!")
-    .setTimeStamp();
-    message.channel.send(pingembed)
+    .setTimeStamp()
+    message.channel.send(pingembed);
 
 }
 module.exports.help = {
