@@ -2,12 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
-    let pingembed = new Discord.RichEmbed()
-    .setColor("#f4ee42")
-    .setDescription(`:signal_strength: Bot Ping`, `${Math.round(bot.ping)}`ms)\n(`:computer: API Latency`, `${client.ping}`ms)
-    .setFooter("Pong!")
-    .setTimeStamp()
-    message.channel.send(pingembed);
+message.channel.send(`:ping_pong: Pong! \`${bot.pings[0]}ms\``);
 
 }
 module.exports.help = {
