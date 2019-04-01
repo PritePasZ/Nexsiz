@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
 
     let clearbotcommandsystem = new Discord.RichEmbed()
     .setColor("#f49242")
-    .setDescription(`**:wastebasket: Cleared** ${args[0]} **messages.**`)
+    .setDescription(`**:wastebasket: Cleared** **${args[0]}** **messages.**`)
     .setFooter("📋 Messages has been cleared.")
     .setTimestamp()
     message.channel.send(clearbotcommandsystem).then(msg => {msg.delete(5000)});
