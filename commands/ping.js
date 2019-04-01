@@ -3,7 +3,8 @@ const Discord = require("discord.js");
 module.exports.run = async (bot, message, args) => {
 
   let embed = new Discord.RichEmbed()
-  .setDescription(`:signal_strength: Bot Ping : \`${Math.round(bot.ping)}ms\``);
+  .setDescription(`:signal_strength: Bot Ping : \`${Math.round(bot.ping)}ms\``)
+   message.channel.send({embed});
 
 }
 module.exports.help = {
