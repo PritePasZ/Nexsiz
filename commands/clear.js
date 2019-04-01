@@ -8,7 +8,6 @@ module.exports.run = async (bot, message, args) => {
   message.channel.bulkDelete(args[0]).then(() => {
 
     let clearbotcommandsystem = new Discord.RichEmbed()
-    .setAuthor(message.member.displayName, message.author.displayAvatarURL)
     .setColor("#f49242")
     .setDescription(`:wastebasket: Cleared ${args[0]} messages.`)
     .setFooter("📋 Messages has been cleared.")
