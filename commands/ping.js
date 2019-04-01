@@ -6,7 +6,6 @@ module.exports.run = async (bot, message, args) => {
   .setAuthor(message.author.username, message.author.displayAvatarURL)
   .setColor("#42f448")
   .setDescription(`:signal_strength: Bot Ping : \`${Math.round(bot.ping)}ms\``)
-  .setTimeStamp()
    message.channel.send({embed});
 
 }
