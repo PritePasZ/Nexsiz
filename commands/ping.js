@@ -4,8 +4,7 @@ module.exports.run = async (bot, message, args) => {
 
     let pingembed = new Discord.RichEmbed()
     .setColor("#f4ee42")
-    .setDescription(`:signal_strength: Bot Ping`, `${Math.round(bot.ping)}`ms)
-    .setDescription(`:computer: API Latency`, `${client.ping}`ms)
+    .setDescription(`:signal_strength: Bot Ping`, `${Math.round(bot.ping)}`ms)\n(`:computer: API Latency`, `${client.ping}`ms)
     .setFooter("Pong!")
     .setTimeStamp()
     message.channel.send(pingembed);
