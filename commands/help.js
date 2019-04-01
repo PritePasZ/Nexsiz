@@ -13,6 +13,7 @@ let helpembed = new Discord.RichEmbed()
     .setColor(`#4286f4`)
     .setAuthor(`Commands & Guides`, bot.user.avatarURL)
     .addField(`:desktop: General Commands`, `**n!help** - Show a list of commands & guides to your DM.\n**n!ping** - Show the current bot ping/ms.\n**n!serverinfo** - Shows the information of the guild.\n**n!botinfo** - Shows the information of the bot.\n**n!userinfo** Shows the information of your`)
+    message.channel.send(helpembed);
     .addField(`:tools: Moderation Commands`, `**n!clear** [amount] - Clear the given amount of messages.\n**n!say** [text] - <@552076002101297153> will chat with your given text.`)
     .addField(`<:headphone:553459778714730527> Music Commands`, `Music Commands is coming soon\nwaiting for PritePasZ will add the commands`)
     .setTimestamp()
