@@ -7,7 +7,6 @@ module.exports.run = async (bot, message, args) => {
   .setColor("#42f448")
   .setDescription(`:signal_strength: Bot Ping : \`${Math.round(bot.ping)}ms\``)
   .setFooter("🏓 Pong!")
-  .setTimeStamp()
    message.channel.send({embed});
 
 }
