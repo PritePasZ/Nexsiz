@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
   .setAuthor(message.member.displayName, message.author.displayAvatarURL)
   .setColor("#42f448")
   .setDescription(`:signal_strength: Bot Ping : \`${Math.round(bot.ping)}ms\``)
-  .setFooter(":ping_pong: Pong!" `${message.author.displayAvatarURL}`)
+  .setFooter("🏓 Pong!" `${message.author.displayAvatarURL}`)
    message.channel.send({embed});
 
 }
