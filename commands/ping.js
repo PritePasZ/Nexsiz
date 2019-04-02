@@ -5,7 +5,7 @@ module.exports.run = async (client, message, args) => {
   let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username, message.author.displayAvatarURL)
   .setColor("#42f448")
-  .setDescription(`:computer: **API Latency** - ${Math.round(client.ping)ms`)
+  .setDescription(`:computer: **API Latency** - ${client.ping}ms`)
   .setFooter("Made by PritePasZ#3071 - Version 0.1.3b")
    message.channel.send({embed});
 
