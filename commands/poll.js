@@ -6,9 +6,9 @@ module.exports.run = async (bot, message, args) => {
   if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("**:x: You dont have Administrator Permission!**").then(msg => {msg.delete(5000)})
   if (!args[0]) return message.channel.send(":x: Please type some question.");
   var question = args.join(" ");
-  let pollEmbed = new Discord.RichEmbed()
+  let pollEmbed = new Discord.RichEmbed()\
+  .setAuthor(message.author.username, message.author.displayAvatarURL)
   .setColor("#f44141")
-  .setFooter("React by click the emoji!")
   .setDescription(args.join(' '))
   .setTitle("Vote the message!");
   message.channel.send(pollEmbed).then(function (message) {
