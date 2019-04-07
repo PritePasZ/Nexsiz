@@ -9,8 +9,9 @@ module.exports.run = async (bot, message, args) => {
   let pollEmbed = new Discord.RichEmbed()
   .setAuthor(message.author.username, message.author.displayAvatarURL)
   .setColor("#f44141")
+  .setTitle("Vote the message!")
   .setDescription(args.join(' '))
-  .setFooter("React by click the emoji")
+  .setFooter("React by click the emoji - PritePasZ#3071")
   message.channel.send(pollEmbed).then(function (message) {
     message.react("✅")
     message.react("❌")
