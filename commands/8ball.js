@@ -11,8 +11,8 @@ module.exports.run = async (bot, message, args) => {
   let ballembed = new Discord.RichEmbed()
   .setAuthor(message.member.displayName, message.author.displayAvatarURL)
   .setColor('#50f442')
-  .addField("Question", question)
-  .addField("Answer", replies[result])
+  .addField("Question :information_source:", question)
+  .addField("Answer :white_check_mark:", replies[result])
   .setTimestamp()
 
   message.channel.send(ballembed);
