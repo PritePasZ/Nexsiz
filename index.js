@@ -23,7 +23,7 @@ fs.readdir("./commands/", (err, files) => {
 
 
 bot.on("ready", async () => {
-  console.log(`${bot.user.username} is online!`);
+  console.log(`${bot.user.username} is loaded and online on ${bot.guild.size} server!`);
   bot.user.setActivity(`with PritePasZ | n!help`);
 });
 
