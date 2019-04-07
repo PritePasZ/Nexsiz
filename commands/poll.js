@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
   .setAuthor(message.author.username, message.author.displayAvatarURL)
   .setColor("#f44141")
   .setDescription(args.join(' '))
-  .setTitle("Vote the message!");
+  .setFooter("React by click the emoji")
   message.channel.send(pollEmbed).then(function (message) {
     message.react("✅")
     message.react("❌")
