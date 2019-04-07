@@ -26,10 +26,6 @@ bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
   bot.user.setActivity(`with PritePasZ | n!help`);
 });
-} else {
-    bot.user.setActivity(config.activity.game, {
-      type: 'WATCHING'
-    }); //PLAYING, LISTENING, WATCHING
 
 bot.on('guildMemberAdd', member => {
   const channel = member.guild.channels.find(ch => ch.name === '👋คนเข้า-ออก👋');
