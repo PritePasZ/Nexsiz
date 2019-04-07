@@ -8,6 +8,7 @@ module.exports.run = async (bot, message, args) => {
   var question = args.join(" ");
   let pollEmbed = new Discord.RichEmbed()
   .setColor("#f44141")
+  .setFooter("React by click the emoji!")
   .setDescription(args.join(' '))
   .setTitle("Vote the message!");
   message.channel.send(pollEmbed).then(function (message) {
