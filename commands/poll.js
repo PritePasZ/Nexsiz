@@ -11,7 +11,7 @@ module.exports.run = async (bot, message, args) => {
   .setColor("#f44141")
   .setTitle("Vote the message!")
   .setDescription(args.join(' '))
-  .setFooter("React by click the emoji - PritePasZ#3071")
+  .setFooter("React by click the emoji - Made by PritePasZ#3071")
   message.channel.send(pollEmbed).then(function (message) {
     message.react("✅")
     message.react("❌")
