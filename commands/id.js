@@ -4,7 +4,6 @@ module.exports.run =async (bot, message, args) => {
 
 const member = message.mentions.members.first() || message.guild.members.get(args[0]) || message.member;
 let idembed = new Discord.RichEmbed()
-  .setAnthor(.setAuthor(message.author.username, message.author.displayAvatarURL)
   .setDescription(`:card_index: User ID : \`${member.user.id}\`.`);
   .setFooter("Searched by " + message.author.tag);
 
