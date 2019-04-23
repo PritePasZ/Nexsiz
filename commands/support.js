@@ -9,7 +9,6 @@ module.exports.run = async (bot, message, args) => {
     .setTitle(":information_source: Support Info")
     .addField(":white_check_mark: **To see the bot commands use**", "!help")
     .addField("<:plus:557903316496154645> **Invite Nexsiz use**", "n!invite")
-    .setTimestamp()
 
     message.channel.send(supportembed)
 
