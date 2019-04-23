@@ -6,7 +6,7 @@ const member = message.mentions.members.first() || message.guild.members.get(arg
   let idembed = new Discord.RichEmbed()
   .setColor(f44242)
   .setAuthor(message.author.username, message.author.displayAvatarURL)
-  .setDescription(`:card_index: User ID : \`${member.user.id}\`.`);
+  .setDescription(`:card_index: User ID : \`${member.user.id}\``);
 
 }
 
