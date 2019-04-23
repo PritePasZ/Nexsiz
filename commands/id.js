@@ -6,8 +6,6 @@ const member = message.mentions.members.first() || message.guild.members.get(arg
 
 message.channel.send(`User ID: \`${member.user.id}\``);
 
-message.delete();
-
 }
 
 module.exports.help = {
