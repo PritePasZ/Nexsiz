@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
 
         .setImage(mentionedUser.displayAvatarURL)
         .setColor("#f4d442")
-        .setTitle("<:bustinsilhouette:553086092837126145> Here the Avatar")
+        .setTitle("<:bustinsilhouette:553086092837126145> Here is the Avatar")
         .setFooter("Searched by " + message.author.tag)
         .setTimestamp()
         .setDescription("[Avatar URL link]("+mentionedUser.displayAvatarURL+")");
