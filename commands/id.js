@@ -6,8 +6,7 @@ const member = message.mentions.members.first() || message.guild.members.get(arg
 let idembed = new Discord.RichEmbed()
   .setAnthor(.setAuthor(message.author.username, message.author.displayAvatarURL)
   .setDescription(`:card_index: User ID : \`${member.user.id}\`.`);
-  .setTimeStamp();
-
+  .setFooter("Searched by " + message.author.tag);
 
 }
 
