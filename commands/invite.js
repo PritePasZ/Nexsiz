@@ -5,7 +5,6 @@ module.exports.run = async (bot, message, args) => {
   let bname = bot.user.username;
   let inviteembed = new Discord.RichEmbed()
   .setColor("#4286f4")
-  .setThumbnail(bicon)
   .setAuthor(bname, bicon)
   .setURL("https://discordapp.com/api/oauth2/authorize?client_id=552076002101297153&permissions=8&scope=bot")
   .setDescription("**Want to invite Nexsiz, Just click at up there!**")
