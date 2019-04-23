@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args) => {
   .setColor("#4286f4")
   .setAuthor(bname, bicon)
   .setURL("https://discordapp.com/api/oauth2/authorize?client_id=552076002101297153&permissions=8&scope=bot")
-  .setDescription(":plus: **Want to invite Nexsiz?, Just click at up there!**")
+  .setDescription("<:plus:557903316496154645> **Want to invite Nexsiz?, Just click at up there!**")
   .setTitle(":arrow_right: Click here to invite Nexsiz in to your server!")
   .setFooter("Made by PritePasZ","https://cdn.discordapp.com/avatars/346579836292300800/b02ca29aee1ec133c84377bd4235e957.png")
   .setTimestamp();
