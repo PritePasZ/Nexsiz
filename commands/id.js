@@ -12,3 +12,4 @@ message.delete();
 
 module.exports.help = {
     name: "id"
+}
