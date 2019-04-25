@@ -10,4 +10,3 @@ exports.run = function (bot, msg, args) {
 module.exports.help = {
   name: "reverse"
 }
-© 2019 GitHub, Inc.
