@@ -18,11 +18,12 @@ module.exports.run = async (bot, message, args) => {
 
       if (transArg.length >= 2) {
 
-        return message.channel.send(`:x: Too long ${message.author}; you can only enter **1** character.`);
+        return message.channel.send(`:x: Too long ${message.author}, you can only enter **1** character.`);
 
       }
 
       const embed = new Discord.RichEmbed()
+      .setColor("#42f448")
       .setDescription(transArg.charCodeAt(0));
 
       return message.channel.send(embed);
