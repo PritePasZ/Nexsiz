@@ -5,7 +5,7 @@ exports.run = (bot, message, args) => {
     if (args.length < 1) return message.channel.send("Please provide some text to Mock")
 
     let mockEmbed = new Discord.RichEmbed()
-    .setColor(f4f442")
+    .setColor("f4f442")
     .setDescription(args.map(randomizeCase))
     .setImage("https://cdn.discordapp.com/attachments/424889733043191810/425242569325150208/mock.jpg");
 
