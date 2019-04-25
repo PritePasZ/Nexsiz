@@ -8,8 +8,6 @@ let megustafac = new Discord.RichEmbed()
 
 message.channel.send(megustafac)
 
-message.delete();
-
 }
 module.exports.help = {
   name: "megusta"
