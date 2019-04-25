@@ -1,5 +1,5 @@
 exports.run = function (bot, msg, args) {
-    if (args.length < 1) {
+    if(!args[0]) return message.channel.send("**:x: Type the amount of value to reverse the messages!**").then(msg => {msg.delete(5000)});
         throw 'You must input text to be reversed!';
     }
     msg.reply(args.join(' ').split('').reverse().join(''));
