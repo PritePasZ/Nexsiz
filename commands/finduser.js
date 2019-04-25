@@ -9,9 +9,9 @@ module.exports.run = async (bot, message, args) => {
     let finduserembed = new Discord.RichEmbed()
     .setAuthor(message.author.username, message.author.displayAvatarURL)
     .setColor("#f44242")
-    .setDescription(matches.map(u => u.tag));
+    .addField("Founded User", matches.map(u => u.tag)), true);
 
-
+    message.channel.send(finduserembed);
 
 
      }
