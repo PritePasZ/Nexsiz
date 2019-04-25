@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
 
   if (args[0] === undefined) {
 
-    return message.channel.send(':x: I need a character to get its unicode from!');
+    return message.channel.send(":x: **I need a character to get its unicode from!**");
 
   } else {
 
@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args) => {
 
     if (transArg === undefined) {
 
-      return message.channel.send('Type **1** character to get the unicode from!');
+      return message.channel.send("Type **1** character to get the unicode from!");
 
     } else {
 
