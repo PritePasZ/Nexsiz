@@ -1,4 +1,4 @@
-exports.run = function (bot, msg, args) {
+exports.run = function (bot, message, args) {
     if (args.length < 1) {
         throw ("You must input text to be reversed!").then(msg => {msg.delete(5000)});
     }
