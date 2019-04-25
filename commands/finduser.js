@@ -7,16 +7,15 @@ module.exports.run = async (bot, message, args) => {
     let matches = users.filter(u => u.tag.toLowerCase().includes(searchTerm.toLowerCase()));
     
     let finduserembed = new Discord.RichEmbed()
-    .setAuthor(message.author.username, message.author.displayAvatarURL)
-    .setColor("#f44242")
-    .setTitle("Founded User")
-    .setDescription( matches.map(u => u.tag));
+      .setColor("#f44242")
+      .setTitle("Founded User")
+      .setDescription( matches.map(u => u.tag));
 
     message.channel.send(finduserembed);
 
 
-     }
+}
     
-        module.exports.help = {
-            name: "finduser"
-        }
+module.exports.help = {
+ name: "finduser"
+}
