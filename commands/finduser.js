@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
     let finduserembed = new Discord.RichEmbed()
       .setColor("#f44242")
       .setTitle("Founded User")
-      .setDescription( matches.map(u => u.tag));
+      .setDescription(matches.map(u => u.tag));
 
     message.channel.send(finduserembed);
 
