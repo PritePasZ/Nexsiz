@@ -27,7 +27,7 @@ module.exports.run = async (bot, message, args) => {
     .addField(":incoming_envelope: Message: ", sayMessage)
     .setFooter("Thanks you for contacting with the Nexsiz support!")
 
-    message.channel.send(embed).then(msg => {msg.delete(10000)});
+    message.channel.send(embed);
 
 
       }
