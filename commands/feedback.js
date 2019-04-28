@@ -1,14 +1,6 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-  if(args[0] == "help"){
-    let helpembed = new Discord.RichEmbed()
-    .setColor("#f44242")
-    .addField("Feedback Command", "**Usage: n!feedback <reason>**")
-
-    message.channel.send(helpembed);
-    return;
-  }
 
     let Invite = await message.guild.channels.find((c) => c.type === 'text').createInvite()
     let Sender = message.author;
