@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
    let contact = new Discord.RichEmbed()
    .setColor("#41c4f4")
    .setThumbnail(Sender.displayAvatarURL)
-   .setDescription(`:inbox_tray: Contact message from [${message.guild.name}](${Invite.url})`)
+   .setDescription(`:inbox_tray: Feedback message from [${message.guild.name}](${Invite.url})`)
    .setTitle("Message from contact command!")
    .addField("<:bustinsilhouette:553086092837126145> User", Sender, true)
    .addField(":card_index: User ID: ", Sender.id, true)
