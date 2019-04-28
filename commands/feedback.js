@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
   if(args[0] == "help"){
     let helpembxd = new Discord.RichEmbed()
     .setColor("#f44242")
-    .addField("Feedback Command", "**Usage: n!eedback <reason>**")
+    .addField("Feedback Command", "**Usage: n!feedback <reason>**")
 
     message.channel.send(helpembxd);
     return;
