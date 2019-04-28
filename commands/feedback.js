@@ -2,11 +2,11 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
   if(args[0] == "help"){
-    let helpembxd = new Discord.RichEmbed()
+    let helpembed = new Discord.RichEmbed()
     .setColor("#f44242")
     .addField("Feedback Command", "**Usage: n!feedback <reason>**")
 
-    message.channel.send(helpembxd);
+    message.channel.send(helpembed);
     return;
   }
 
