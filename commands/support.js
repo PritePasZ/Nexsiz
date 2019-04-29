@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args) => {
     .setAuthor(message.author.username, message.author.displayAvatarURL)
     .setThumbnail(bicon)
     .setTitle(":information_source: Support Info")
-    .addField(":white_check_mark: **To see the bot commands use**", "!help")
+    .addField(":robot: **To see the bot commands use**", "n!help")
     .addField("<:plus:557903316496154645> **Invite Nexsiz use**", "n!invite")
 
     message.channel.send(supportembed)
