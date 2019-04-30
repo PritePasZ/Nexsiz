@@ -23,6 +23,7 @@ module.exports.run = async (bot, message, args) => {
     bot.users.get(id).send(contact);
 
     let chanemb = new Discord.RichEmbed()
+    .setAuthor(Owner.username, Owner.avatarURL)
     .setColor("#00ff00")
     .setDescription(`Message sent to <@${id}>`);
 
