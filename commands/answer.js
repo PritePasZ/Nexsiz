@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
    .setThumbnail(Owner.displayAvatarURL)
    .setTitle(":computer: Response  from your contact!")
    .addField(":incoming_envelope: Response :", sayMessage)
-   .addField(":pencil: Support Server (Thailand) - [PritePasZ | Discord Server™](https://discord.gg/P96Pr33)")
+   .setFooter(":pencil: Support Server (Thailand) - [PritePasZ | Discord Server™](https://discord.gg/P96Pr33)")
    .setTimestamp()
 
     bot.users.get(id).send(contact);
