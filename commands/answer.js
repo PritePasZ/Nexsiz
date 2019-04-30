@@ -26,6 +26,7 @@ module.exports.run = async (bot, message, args) => {
     .setAuthor(Owner.username, Owner.avatarURL)
     .setColor("#f45342")
     .setDescription(`Message sent to <@${id}>`)
+    .setTimestamp()
 
     message.channel.send(chanemb).then(msg => {msg.delete(5000)});
 
