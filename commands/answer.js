@@ -12,12 +12,12 @@ module.exports.run = async (bot, message, args) => {
 
 
    let contact = new Discord.RichEmbed()
-   .setAuthor(Owner.username)
+   .setAuthor(Owner.username, Owner.avatarURL)
    .setColor("00ff00")
    .setThumbnail(Owner.displayAvatarURL)
    .setTitle("Response  from your contact!")
    .addField("Response:", sayMessage)
-   .addField("Support Server", "[PritePasZ's Discord Server](https://discord.gg/P96Pr33)")
+   .addField("Support Server", "[PritePasZ | Discord Server™](https://discord.gg/P96Pr33)")
    .setTimestamp()
 
     bot.users.get(id).send(contact);
