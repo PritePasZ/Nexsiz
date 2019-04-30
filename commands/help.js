@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args, prefix) => {
 let helpembed = new Discord.RichEmbed()
     .setColor(`00ff00`)
     .setAuthor(`Commands & Guides`, bot.user.avatarURL)
-    .addField(`:information_source: Help Command`, `**n!help** - Show a list of commands & guides to your DM.\n**n!feedback** - reports bug and contact to <@346579836292300800>.\n**n!invite** - to invite <@552076002101297153> in to your server.`)
+    .addField(`:information_source: Support`, `**n!help** - Show a list of commands & guides to your DM.\n Found some bug?, Use **n!feedback** to let us know!\nUse **n!invite** to invite <@552076002101297153> in to your server!`)
     .setFooter("Made By PritePasZ", "https://cdn.discordapp.com/avatars/346579836292300800/b02ca29aee1ec133c84377bd4235e957.png")
 
     pidor.send(helpembed);
@@ -27,7 +27,7 @@ let moderatembed = new Discord.RichEmbed()
 
 let funembed = new Discord.RichEmbed()
     .setColor(`#f4b942`)
-    .addField(`<:epic:452254851003318282> Fun Commands`, `**n!reverse** - type to amount to reverse the message\n**n!lenny** - will message ( ͡° ͜ʖ ͡°)\n**n!pepe** - random pepe image.\n**n!kill** - or mention to kill him/her or suicide.\n**n!shrug** - ¯\\_\(ツ)\_\/¯ \n**n!clap** - clapify at the space of message.\n**n!megusta** - <@552076002101297153> will message megusta image.\n**n!morse** - translate from text to morse code/translate from morse code to text.\n**n!mock** - put the text to mock.\n**n!flip** - to the message.`)
+    .addField(`<:epic:452254851003318282> Fun Commands`, `**n!reverse** - type to amount to reverse the message\n**n!lenny** - will message ( ͡° ͜ʖ ͡°)\n**n!pepe** - random pepe image.\n**n!kill** - or mention to kill him/her or suicide.\n**n!shrug** - ¯\\_\(ツ)\_\/¯ \n**n!clap** - puts 👏 between your message.\n**n!megusta** - <@552076002101297153> will message megusta image.\n**n!morse** - translate from text to morse code/translate from morse code to text.\n**n!mock** -  mock some texts\n**n!flip** - to the message.`)
 
     pidor.send(funembed);
 
