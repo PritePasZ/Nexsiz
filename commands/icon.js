@@ -7,7 +7,7 @@ if(!message.guild.iconURL) return msg.edit(":x: **No icon found!**");
 
 let iconembed = new Discord.RichEmbed()
 .setColor("#000000")
-.setFooter(":pencil: Searched by " + message.author.tag)
+.setFooter("Searched by " + message.author.tag)
 .setImage(message.guild.iconURL)
 .setTitle(":information_source: Icon")
 .setDescription("[Icon URL link]("+message.guild.iconURL+")")
