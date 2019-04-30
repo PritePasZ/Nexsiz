@@ -4,17 +4,11 @@ module.exports.run = async (bot, message, args, prefix) => {
 
   const pidor = message.guild.members.get(args[0]) || message.member;
 
-let dm = new Discord.RichEmbed()
-    .setColor(`#409cd9`)
-    .setAuthor(message.author.username, message.author.displayAvatarURL)
-    .setDescription(`:mailbox_with_mail: I have private messaged you a list of commands!`)
-    .setTimestamp()
-    message.channel.send(dm);
 
 let helpembed = new Discord.RichEmbed()
     .setColor(`00ff00`)
     .setAuthor(`Commands & Guides`, bot.user.avatarURL)
-    .addField(`:information_source: Test`, `**n!help`)
+    .addField(`:information_source: Help Command`, `**n!help**`)
 
     pidor.send(helpembed);
 
@@ -42,13 +36,13 @@ let musicembed = new Discord.RichEmbed()
     .setFooter("Made By PritePasZ", "https://cdn.discordapp.com/avatars/346579836292300800/b02ca29aee1ec133c84377bd4235e957.png")
     .setTimestamp()
 
-let chanEmbed = new Discord.RichEmbed()
-    .setTitle("Help")
-    .setColor("#0ff00")
-    .setFooter(`Help command used by: ${pidor.user.username}`)
-    .setDescription(`${pidor} Check your DMs`);
+let dm = new Discord.RichEmbed()
+    .setColor(`#409cd9`)
+    .setAuthor(message.author.username, message.author.displayAvatarURL)
+    .setDescription(`:mailbox_with_mail: I have private messaged you a list of commands!`)
+    .setTimestamp()
 
-    message.channel.send(chanEmbed)
+    message.channel.send(dm)
 
 }
 module.exports.help = {
