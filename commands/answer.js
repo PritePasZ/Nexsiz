@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
    .setThumbnail(Owner.displayAvatarURL)
    .setTitle(":information_source: Response  from your contact!")
    .addField(":inbox_tray: Response :", sayMessage)
-   .setFooter("Support Server", "[PritePasZ | Discord Server™](https://discord.gg/P96Pr33)")
+   .addField("Support Server", "[PritePasZ | Discord Server™](https://discord.gg/P96Pr33)")
    .setTimestamp()
 
     bot.users.get(id).send(contact);
