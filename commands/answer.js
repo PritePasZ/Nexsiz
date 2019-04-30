@@ -25,7 +25,7 @@ module.exports.run = async (bot, message, args) => {
     let chanemb = new Discord.RichEmbed()
     .setAuthor(Owner.username, Owner.avatarURL)
     .setColor("#f45342")
-    .setDescription(`Message sent to <@${id}>`).then(msg => {msg.delete(5000)});
+    .setDescription(`Message sent to <@${id}>`)
 
     message.channel.send(chanemb)
 
