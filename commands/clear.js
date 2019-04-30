@@ -2,9 +2,10 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
-  
+
   if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("**:x: You dont have Manage Messages Permission!**").then(msg => {msg.delete(5000)});
   if(!args[0]) return message.channel.send("**:x: Type the amount of value to clear the messages!**").then(msg => {msg.delete(5000)});
+  if ( !args || args.length > 100 ) return.message.channel.send("**:x: You can't clear more than 100 messages!**")
   message.channel.bulkDelete(args[0]).then(() => {
 
 
