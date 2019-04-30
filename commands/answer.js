@@ -29,6 +29,8 @@ module.exports.run = async (bot, message, args) => {
 
     message.channel.send(chanemb).then(msg => {msg.delete(5000)});
 
+        message.delete();
+
 
       }
       module.exports.help = {
