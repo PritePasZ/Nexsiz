@@ -9,6 +9,7 @@ let helpembed = new Discord.RichEmbed()
     .setColor(`00ff00`)
     .setAuthor(`Commands & Guides`, bot.user.avatarURL)
     .addField(`:information_source: Help Command`, `**n!help** - Show a list of commands & guides to your DM.\n**n!feedback** - reports bug and contact to <@346579836292300800>.\n**n!invite** - to invite <@552076002101297153> in to your server.`)
+    .setFooter("Made By PritePasZ", "https://cdn.discordapp.com/avatars/346579836292300800/b02ca29aee1ec133c84377bd4235e957.png")
 
     pidor.send(helpembed);
 
@@ -33,7 +34,6 @@ let funembed = new Discord.RichEmbed()
 let musicembed = new Discord.RichEmbed()
     .setColor(`#41c1f4`)
     .addField(`<:headphone:553459778714730527> Music Commands`, `Music Commands is coming soon\nwaiting for PritePasZ will add the commands`)
-    .setFooter("Made By PritePasZ", "https://cdn.discordapp.com/avatars/346579836292300800/b02ca29aee1ec133c84377bd4235e957.png")
     .setTimestamp()
 
     pidor.send(musicembed);
