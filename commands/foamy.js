@@ -20,7 +20,7 @@ module.exports.run = async (bot, message, args) => {
             },
             {
               name: "Twitter",
-              value: "[Twitter](https://twitter.com/prite_z)"
+              value: "[Twitter](https://twitter.com/prite_z)",
               inline: true
             },
             {
