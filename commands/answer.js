@@ -15,9 +15,9 @@ module.exports.run = async (bot, message, args) => {
    .setAuthor(Owner.username, Owner.avatarURL)
    .setColor("00ff00")
    .setThumbnail(Owner.displayAvatarURL)
-   .setTitle(":information_source: Response  from your contact!")
+   .setTitle(":pencil: Response  from your contact!")
    .addField(":inbox_tray: Response :", sayMessage)
-   .addField("Support Server", "[PritePasZ | Discord Server™](https://discord.gg/P96Pr33)")
+   .addField(":pencil: Support Server", "[PritePasZ | Discord Server™](https://discord.gg/P96Pr33)")
    .setTimestamp()
 
     bot.users.get(id).send(contact);
@@ -25,7 +25,7 @@ module.exports.run = async (bot, message, args) => {
     let chanemb = new Discord.RichEmbed()
     .setAuthor(Owner.username, Owner.avatarURL)
     .setColor("#f45342")
-    .setDescription(`Message sent to <@${id}>`)
+    .setDescription(`:pencil: Message sent to <@${id}>`)
     .setTimestamp()
 
     message.channel.send(chanemb).then(msg => {msg.delete(5000)});
