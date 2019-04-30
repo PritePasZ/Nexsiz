@@ -8,13 +8,13 @@ module.exports.run = async (bot, message, args, prefix) => {
 let helpembed = new Discord.RichEmbed()
     .setColor(`00ff00`)
     .setAuthor(`Commands & Guides`, bot.user.avatarURL)
-    .addField(`:information_source: Help Command`, `**n!help**`)
+    .addField(`:information_source: Help Command`, `**n!help** - Show a list of commands & guides to your DM.\n**n!feedback** - reports bug and contact to <@346579836292300800>.\n**n!invite** - to invite <@552076002101297153> in to your server.`)
 
     pidor.send(helpembed);
 
 let generalembed = new Discord.RichEmbed()
     .setColor(`#4286f4`)
-    .addField(`:desktop: General Commands`, `**n!help** - Show a list of commands & guides to your DM.\n**n!feedback** - reports bug and contact to <@346579836292300800>.\n**n!invite** - to invite <@552076002101297153> in to your server.\n**n!icon** - gives you the server icon\n**n!id** - show ID of user\n**n!8ball** - random the answer from the question. \n**n!avatar** - show the avatar user.\n**n!ping** - Show the current user ping/ms.\n**n!support - using for help**\n**n!serverinfo** - Shows the information of the guild.\n**n!botinfo** - Shows the information of the bot.\n**n!userinfo** Shows the information of your.\n**n!unicode** - change capital to number`)
+    .addField(`:desktop: General Commands`, `**n!icon** - gives you the server icon\n**n!id** - show ID of user\n**n!8ball** - random the answer from the question. \n**n!avatar** - show the avatar user.\n**n!ping** - Show the current user ping/ms.\n**n!support - using for help**\n**n!serverinfo** - Shows the information of the guild.\n**n!botinfo** - Shows the information of the bot.\n**n!userinfo** Shows the information of your.\n**n!unicode** - change capital to number`)
 
     pidor.send(generalembed);
 
