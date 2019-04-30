@@ -36,6 +36,8 @@ let musicembed = new Discord.RichEmbed()
     .setFooter("Made By PritePasZ", "https://cdn.discordapp.com/avatars/346579836292300800/b02ca29aee1ec133c84377bd4235e957.png")
     .setTimestamp()
 
+    pidor.send(musicembed);
+
 let dm = new Discord.RichEmbed()
     .setColor(`#409cd9`)
     .setAuthor(message.author.username, message.author.displayAvatarURL)
