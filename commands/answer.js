@@ -15,8 +15,8 @@ module.exports.run = async (bot, message, args) => {
    .setAuthor(Owner.username, Owner.avatarURL)
    .setColor("00ff00")
    .setThumbnail(Owner.displayAvatarURL)
-   .setTitle("Response  from your contact!")
-   .addField("Response:", sayMessage)
+   .setTitle(":inbox_tray: Response  from your contact!")
+   .addField(":inbox_tray: Response:", sayMessage)
    .addField("Support Server", "[PritePasZ | Discord Server™](https://discord.gg/P96Pr33)")
    .setTimestamp()
 
