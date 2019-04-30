@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
    .setThumbnail(Owner.displayAvatarURL)
    .setTitle("Response  from your contact!")
    .addField("Response:", sayMessage)
-   .addField("Support Server", "[Odar Army](https://discord.gg/zvvasbc)")
+   .addField("Support Server", "[PritePasZ's Discord Server](https://discord.gg/P96Pr33)")
    .setTimestamp()
 
     bot.users.get(id).send(contact);
