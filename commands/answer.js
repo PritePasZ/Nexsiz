@@ -27,10 +27,8 @@ module.exports.run = async (bot, message, args) => {
     .setColor("#00ff00")
     .setDescription(`Message sent to <@${id}>`);
 
-    message.channel.send(chanemb).then(msg => {msg.delete(5000)});
+    message.channel.send(chanemb)
 
-
-        message.delete();
 
       }
       module.exports.help = {
