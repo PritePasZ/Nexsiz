@@ -10,6 +10,7 @@ let guildembed = new Discord.RichEmbed()
     .setAuthor(message.member.displayName, message.author.displayAvatarURL)
     .setColor("#00c646")
     .addField("Guilds List", `\`\`\`${guildArray.join("\n")}\`\`\``, true)
+    .setTimeStamp()
 
 
     message.channel.send(guildembed)
