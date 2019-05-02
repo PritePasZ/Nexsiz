@@ -21,14 +21,5 @@ By Heroku
 
 * Found bug? Use `n!feedback` to let us know!
 
-# Additional Notes : 
-Want to host your bot for 24/7 hours by Heroku
 
-Be sure to replace the following tokens with yours, **For user who host a bot by youself**
 
-[1] Replace process.env.token with your bot token. (index.js)
-
-At the buttom of index.js type
-```javascript
-bot.login(process.env.token);
-```
