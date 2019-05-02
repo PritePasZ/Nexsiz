@@ -21,3 +21,8 @@ By Heroku
 
 * Found bug? Use `n!feedback` to let us know!
 
+# Additional Notes : 
+
+Be sure to replace the following tokens with yours! For user who host a bot by youself
+
+[1] Replace process.env.token with your bot token. (index.js)
