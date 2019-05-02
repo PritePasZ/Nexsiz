@@ -1,4 +1,5 @@
-# PritePasZa
+# Nexsiz
 
-i learn how to script Discord.js and node.js
-from youtube "TheSourceCode"
+For educational purposes.
+
+Credits : to TheSourceCode for their useful guides & tutorial on how javascript the bot
