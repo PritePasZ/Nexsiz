@@ -40,7 +40,7 @@ let funembed = new Discord.RichEmbed()
 
 let ownerembed = new Discord.RichEmbed()
     .setColor("#ff6a00")
-    .addField(`<:Owner:553078012283715636> Owner Commands`, `**n!answer** - answer from user are contact feedback\n**n!eval** - using for checking script`)
+    .addField(`<:Owner:553078012283715636> Owner Commands`, `**n!answer** - answer from user are contact feedback\n**n!eval** - evaluates javascript code`)
 
     pidor.send(ownerembed)
 
