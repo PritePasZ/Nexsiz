@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-    let version = `0.1.7a`;
+    let version = `0.1.8a`;
     let bicon = bot.user.displayAvatarURL;
     let bname = bot.user.username;
     let botembed = new Discord.RichEmbed()
