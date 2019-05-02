@@ -23,6 +23,11 @@ By Heroku
 
 # Additional Notes : 
 
-Be sure to replace the following tokens with yours! For user who host a bot by youself
+Be sure to replace the following tokens with yours! **__For user who host a bot by youself__**
 
 [1] Replace process.env.token with your bot token. (index.js)
+
+At the buttom of index.js type
+```javascript
+bot.login(process.env.token);
+```
