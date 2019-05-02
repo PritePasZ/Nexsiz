@@ -16,5 +16,6 @@ Nexsiz is Discord Bot with alot of Fun commands and General Commands
 
 * Found bug? Use `n!feedback` to let us know!
 
-## Bot Currently Version
-0.1.7b
+## Bot Version
+
+* 0.1.7b
