@@ -15,3 +15,6 @@ Nexsiz is Discord Bot with alot of Fun commands and General Commands
 * If you have any questions feel free to join the Discord Server [PritePasZ | Discord Server (Thailand)](https://discord.gg/P96Pr33)
 
 * Found bug? Use `n!feedback` to let us know!
+
+## Bot Currently Version
+0.1.7b
