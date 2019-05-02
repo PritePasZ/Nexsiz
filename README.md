@@ -9,6 +9,8 @@ Credits : to TheSourceCode for their useful guides & tutorial on how javascript 
 
 Nexsiz is Discord Bot with alot of Fun commands and General Commands
 
+Host bost by Heroku
+
 # Support
 * `n!help` - To view all of he commands
 
