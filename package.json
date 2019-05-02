@@ -13,6 +13,7 @@
      "superagent": "^4.1.0",
      "mathjs": "^5.8.0",
      "weather-js": "^2.0.0",
+     "request": "^2.88.0",
      "google-translate-api": "^2.3.0"
    }
  }
