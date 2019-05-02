@@ -23,7 +23,7 @@ By Heroku
 
 # Additional Notes : 
 
-Be sure to replace the following tokens with yours! **__For user who host a bot by youself__**
+Be sure to replace the following tokens with yours, **__For user who host a bot by youself__**
 
 [1] Replace process.env.token with your bot token. (index.js)
 
