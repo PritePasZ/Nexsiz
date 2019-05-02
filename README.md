@@ -1,4 +1,5 @@
-# Nexsiz
+# Nexsiz | Discord Bot
+**Made By PritePasZ#3071**
 
 For educational purposes.
 
