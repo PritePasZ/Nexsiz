@@ -5,7 +5,7 @@
 
 For educational purposes.
 
-Credits : To TheSourceCode for their useful guides & tutorial on how javascript the bot
+Credits : To TheSourceCode for their useful guides & tutorial on how to javascript the bot
 
 # What is Nexsiz
 
