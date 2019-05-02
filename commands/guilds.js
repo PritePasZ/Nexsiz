@@ -9,10 +9,10 @@ module.exports.run = (bot, message, args) => {
 let guildembed = new Discord.RichEmbed()
     .setColor("#00c646")
     .setAuthor(`${user.username}`, user.avatarURL)
-    .addField("Guilds List", `\`\`\`${guildArray.join("\n")}\`\`\``, true)
+    .addField("Top 10 Guilds List", `\`\`\`${guildArray.join("\n")}\`\`\``, true)
 
     message.channel.send(guildembed)
-    
+
 }
 
 module.exports.help = {
