@@ -1,17 +1,23 @@
-const Discord = require("discord.js")
-const Client = new Discord.Client
+const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
+    if (message.author.id !== '346579836292300800') return;
+    try {
+        let codein = args.join(" ");
+        let code = eval(codein);
 
-  if(message.author.id !== "346579836292300800") return;
+        let embed = new Discord.RichEmbed()
+        .setAuthor(message.member.displayName, message.author.displayAvatarURL)
+        .setColor(`ff3320`)
+        .addField(":inbox_tray: Input:", `\`\`\`js\n${codein}\`\`\``)
+        .addField(":outbox_tray: Output:", `\`\`\`js\n${code}\n\`\`\``)
+        .setTimestamp()
+        message.channel.send(embed)
+    } catch(e) {
+        message.channel.send(`\`\`\`js\n${e}\n\`\`\``);
+    }
+}
 
-    const command = message.content.split(' ').slice(1).join(' ');
-    message.channel.send(
-`\`\`\`js
-${eval(command)}
-\`\`\``);
-
-  }
-    module.exports.help = {
-        name: "eval"
-      }
+module.exports.help = {
+  name: "eval"
+}
