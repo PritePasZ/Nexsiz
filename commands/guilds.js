@@ -9,7 +9,7 @@ module.exports.run = (bot, message, args) => {
 let guildembed = new Discord.RichEmbed()
     .setAuthor(message.author.username, message.author.displayAvatarURL)
     .setColor("#00c646")
-    .addField("Top 10 Guilds List", `\`\`\`${guildArray.join("\n")}\`\`\``, true)
+    .addField("Guilds List", `\`\`\`${guildArray.join("\n")}\`\`\``, true)
     .setTimeStamp()
 
     message.channel.send(guildembed);
