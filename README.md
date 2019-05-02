@@ -1,9 +1,11 @@
 # Nexsiz
 **Made By PritePasZ#3071**
 
+* **Version 0.1.7b**
+
 For educational purposes.
 
-Credits : to TheSourceCode for their useful guides & tutorial on how javascript the bot
+Credits : To TheSourceCode for their useful guides & tutorial on how javascript the bot
 
 # What is Nexsiz
 
@@ -19,6 +21,3 @@ By Heroku
 
 * Found bug? Use `n!feedback` to let us know!
 
-## Bot Version
-
-* 0.1.7b
