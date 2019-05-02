@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
             .setColor("#ff3320")
             .setTitle("Please choose language to translate to :")
             .setDescription("'afrikaans','albanian','amharic','arabic','armenian','azerbaijani',\n'bangla','basque','belarusian','bengali','bosnian','bulgarian','burmese',\n'catalan','cebuano','chichewa','chinese simplified','chinese traditional','corsican','croatian','czech',\n'danish','dutch',\n'english','esperanto','estonian',\n'filipino','finnish','french','frisian',\n'galician','georgian','german','greek','gujarati',\n'haitian creole','hausa','hawaiian','hebrew','hindi','hmong','hungarian',\n'icelandic','igbo','indonesian','irish','italian',\n'japanese','javanese',\n'kannada','kazakh','khmer','korean','kurdish (kurmanji)','kyrgyz',\n'lao','latin','latvian','lithuanian','luxembourgish',\n'macedonian','malagasy','malay','malayalam','maltese','maori','marathi','mongolian','myanmar (burmese)',\n'nepali','norwegian','nyanja',\n'pashto','persian','polish','portugese','punjabi','\nromanian','russian',\n'samoan','scottish gaelic','serbian','sesotho','shona','sindhi','sinhala','slovak','slovenian','somali','spanish','sundanese','swahili','swedish',\n'tajik','tamil','telugu','thai','turkish',\n'ukrainian','urdu','uzbek',\n'vietnamese','welsh','xhosa','yiddish','yoruba','zulu'")
-            .addField("Usage", `!translate <language> | <text>`)
+            .addField("Usage", `n!translate <language> | <text>`)
 
             message.channel.send(emb)
 
@@ -27,7 +27,7 @@ module.exports.run = async (bot, message, args) => {
             .setColor("#00ff00")
             .setTitle("What do you want to translate?")
             .setDescription("'afrikaans','albanian','amharic','arabic','armenian','azerbaijani',\n'bangla','basque','belarusian','bengali','bosnian','bulgarian','burmese',\n'catalan','cebuano','chichewa','chinese simplified','chinese traditional','corsican','croatian','czech',\n'danish','dutch',\n'english','esperanto','estonian',\n'filipino','finnish','french','frisian',\n'galician','georgian','german','greek','gujarati',\n'haitian creole','hausa','hawaiian','hebrew','hindi','hmong','hungarian',\n'icelandic','igbo','indonesian','irish','italian',\n'japanese','javanese',\n'kannada','kazakh','khmer','korean','kurdish (kurmanji)','kyrgyz',\n'lao','latin','latvian','lithuanian','luxembourgish',\n'macedonian','malagasy','malay','malayalam','maltese','maori','marathi','mongolian','myanmar (burmese)',\n'nepali','norwegian','nyanja',\n'pashto','persian','polish','portugese','punjabi','\nromanian','russian',\n'samoan','scottish gaelic','serbian','sesotho','shona','sindhi','sinhala','slovak','slovenian','somali','spanish','sundanese','swahili','swedish',\n'tajik','tamil','telugu','thai','turkish',\n'ukrainian','urdu','uzbek',\n'vietnamese','welsh','xhosa','yiddish','yoruba','zulu'")
-            .addField("Usage", `!translate <language> | <text>`)
+            .addField("Usage", `n!translate <language> | <text>`)
 
             message.channel.send(emb)
 
@@ -43,7 +43,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor("#ff3320")
                 .setTitle("Language not found!")
                 .setDescription("'afrikaans','albanian','amharic','arabic','armenian','azerbaijani',\n'bangla','basque','belarusian','bengali','bosnian','bulgarian','burmese',\n'catalan','cebuano','chichewa','chinese simplified','chinese traditional','corsican','croatian','czech',\n'danish','dutch',\n'english','esperanto','estonian',\n'filipino','finnish','french','frisian',\n'galician','georgian','german','greek','gujarati',\n'haitian creole','hausa','hawaiian','hebrew','hindi','hmong','hungarian',\n'icelandic','igbo','indonesian','irish','italian',\n'japanese','javanese',\n'kannada','kazakh','khmer','korean','kurdish (kurmanji)','kyrgyz',\n'lao','latin','latvian','lithuanian','luxembourgish',\n'macedonian','malagasy','malay','malayalam','maltese','maori','marathi','mongolian','myanmar (burmese)',\n'nepali','norwegian','nyanja',\n'pashto','persian','polish','portugese','punjabi','\nromanian','russian',\n'samoan','scottish gaelic','serbian','sesotho','shona','sindhi','sinhala','slovak','slovenian','somali','spanish','sundanese','swahili','swedish',\n'tajik','tamil','telugu','thai','turkish',\n'ukrainian','urdu','uzbek',\n'vietnamese','welsh','xhosa','yiddish','yoruba','zulu'")
-                .addField("Usage", `!translate <language> | <text>`)
+                .addField("Usage", `n!translate <language> | <text>`)
 
             }
 
