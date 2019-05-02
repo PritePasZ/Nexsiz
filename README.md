@@ -1,11 +1,11 @@
-# Nexsiz | Discord Bot
+# Nexsiz
 **Made By PritePasZ#3071**
 
 For educational purposes.
 
 Credits : to TheSourceCode for their useful guides & tutorial on how javascript the bot
 
-# What is Nexsiz Bot?
+# What is Nexsiz
 
 Nexsiz is Discord Bot with alot of Fun commands and General Commands
 
