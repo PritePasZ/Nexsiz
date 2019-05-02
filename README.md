@@ -16,7 +16,7 @@ By Heroku
 
 ### Invite Nexsiz
 
-[Click Here To Invite Nexsiz](https://discordapp.com/api/oauth2/authorize?client_id=552076002101297153&permissions=8&scope=bot)
+[Click here to invite Nexsiz in to your server!](https://discordapp.com/api/oauth2/authorize?client_id=552076002101297153&permissions=8&scope=bot)
 
 ---
 
