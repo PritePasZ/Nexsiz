@@ -3,6 +3,8 @@ const fs = require("fs");
 const client = new Discord.Client();
 const bot = new Discord.Client({disableEveryone: true});
 bot.commands = new Discord.Collection();
+let cooldown = new Set();
+let cdseconds = 5;
 
 fs.readdir("./commands/", (err, files) => {
 
@@ -50,6 +52,20 @@ bot.on('guildMemberRemove', member => {
   channel.send(goodbyeembed);
 });
 
+if(!message.content.startsWith(prefix)) return;
+  if(cooldown.has(message.author.id)){
+    message.delete();
+    let cooldownbotsystem = new Discord.RichEmbed()
+    .setAuthor(message.member.displayName, message.author.displayAvatarURL)
+    .setDescription(":thermometer: Bot cooldown!")
+    .setColor("#f44242")
+    .addField("<:stopwatch: You have to wait for 5 seconds! <:wuuut:537606818231222329>", message.author,true)
+    return message.channel.send(cooldownbotsystem).then(msg => {msg.delete(6850)});
+  }
+  if(!message.member.hasPermission("MANAGE_MESSAGES")){
+    cooldown.add(message.author.id);
+  }
+
 bot.on("message", async message => {
 
   if (message.author.bot) return;
@@ -63,6 +79,10 @@ bot.on("message", async message => {
 
   let commandfile = bot.commands.get(cmd.slice(prefix.length));
   if(commandfile) commandfile.run(bot,message,args);
+
+  setTimeout(() => {
+      cooldown.delete(message.author.id)
+    }, cdseconds * 1000)
 
 });
 
