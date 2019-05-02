@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-    if (message.author.id !== '346579836292300800') return;
+    if (message.author.id !== '346579836292300800') return message.reply(":x: **Only the bot Owner can use this command!**")
     try {
         let codein = args.join(" ");
         let code = eval(codein);
