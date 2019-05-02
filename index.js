@@ -52,7 +52,7 @@ bot.on('guildMemberRemove', member => {
   channel.send(goodbyeembed);
 });
 
-if(!message.content.startsWith(prefix)) return;
+if (!message.content.startsWith(prefix)) return;
   if(cooldown.has(message.author.id)){
     message.delete();
     let cooldownbotsystem = new Discord.RichEmbed()
