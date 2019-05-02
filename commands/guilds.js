@@ -6,8 +6,13 @@ module.exports.run = (bot, message, args) => {
     })
 
     // And send it
-    message.channel.send(`\`\`\`${guildArray.join("\n")}\`\`\``)
+let guildembed = new Discord.RichEmbed()
+    .setColor("#00c646")
+    .setAuthor(`${user.username}`, user.avatarURL)
+    .addField("Guilds List", `\`\`\`${guildArray.join("\n")}\`\`\``, true)
 
+    message.channel.send(guildembed)
+    
 }
 
 module.exports.help = {
