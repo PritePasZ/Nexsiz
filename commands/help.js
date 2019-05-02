@@ -27,7 +27,7 @@ let moderatembed = new Discord.RichEmbed()
 
 let funembed = new Discord.RichEmbed()
     .setColor(`#f4b942`)
-    .addField(`<:epic:452254851003318282> Fun Commands`, `**n!reverse** - type to amount to reverse the message\n**n!lenny** - will message ( ͡° ͜ʖ ͡°)\n**n!pepe** - random pepe image.\n**n!kill** - or mention to kill him/her or suicide.\n**n!shrug** - ¯\\_\(ツ)\_\/¯ \n**n!clap** - puts 👏 between your message.\n**n!megusta** - <@552076002101297153> will message megusta image.\n**n!morse** - translate from text to morse code/translate from morse code to text.\n**n!mock** -  mock some texts\n**n!flip** - to the message.\n**n!owner** - make someone to be owner (troll command)`)
+    .addField(`<:epic:452254851003318282> Fun Commands`, `\n**n!dog** - give the random image of dog.\n**n!cat** - give the random image of cat\n**n!reverse** - type to amount to reverse the message\n**n!lenny** - will message ( ͡° ͜ʖ ͡°)\n**n!pepe** - random pepe image.\n**n!kill** - or mention to kill him/her or suicide.\n**n!shrug** - ¯\\_\(ツ)\_\/¯ \n**n!clap** - puts 👏 between your message.\n**n!megusta** - <@552076002101297153> will message megusta image.\n**n!morse** - translate from text to morse code/translate from morse code to text.\n**n!mock** -  mock some texts.\n**n!flip** - to the message.\n**n!owner** - make someone to be owner. (troll command)`)
 
     pidor.send(funembed);
 
@@ -40,7 +40,7 @@ let funembed = new Discord.RichEmbed()
 
 let ownerembed = new Discord.RichEmbed()
     .setColor("#ff6a00")
-    .addField(`<:Owner:553078012283715636> Owner Commands`, `**n!answer** - answer from user are contact feedback\n**n!eval** - evaluates javascript code`)
+    .addField(`<:Owner:553078012283715636> Owner Commands`, `**n!answer** - answer from user are contact feedback.\n**n!eval** - evaluates javascript code.`)
 
     pidor.send(ownerembed)
 
