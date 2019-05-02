@@ -31,12 +31,18 @@ let funembed = new Discord.RichEmbed()
 
     pidor.send(funembed);
 
-let musicembed = new Discord.RichEmbed()
+/* let musicembed = new Discord.RichEmbed()
     .setColor(`#41c1f4`)
     .addField(`<:headphone:553459778714730527> Music Commands`, `Music Commands is coming soon\nwaiting for PritePasZ will add the commands`)
     .setTimestamp()
 
-    pidor.send(musicembed);
+  pidor.send(musicembed);*/
+
+let ownerembed = new Discord.RichEmbed()
+    .setColor("#ff6a00")
+    .addField(`<:Owner:553078012283715636> Owner Commands`, `**n!answer** - answer from user are contact feedback\n**n!eval** - using for checking script`)
+
+    pidor.send(ownerembed)
 
 let dm = new Discord.RichEmbed()
     .setColor(`#409cd9`)
