@@ -7,6 +7,8 @@ For educational purposes.
 
 Credits : To TheSourceCode for their useful guides & tutorial on how to javascript the bot
 
+---
+
 # What is Nexsiz
 
 Nexsiz is Discord Bot with alot of Fun commands and General Commands
@@ -29,5 +31,8 @@ By Heroku
 
 * Found bug? Use `n!feedback` to let us know!
 
+---
 
+Self-Hosting
 
+Self-hosting your own copy of this bot is not supported; the source code is provided here so users and other bot developers can see how the bot functions. No help will be provided for editing, compiling, or building any code in this repository, and any changes must be documented as per the license.
