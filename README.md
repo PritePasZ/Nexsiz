@@ -1,4 +1,5 @@
 [![HitCount](http://hits.dwyl.com/PritePasZ/Nexsiz.svg)](http://hits.dwyl.com/PritePasZ/Nexsiz)
+[![Build Status](https://travis-ci.com/PritePasZ/Nexsiz.svg?branch=master)](https://travis-ci.com/PritePasZ/Nexsiz)
 
 # Nexsiz
 **Made By PritePasZ#3071**
