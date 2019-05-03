@@ -9,12 +9,12 @@ module.exports.run = async (bot, message, args) => {
   let pollEmbed = new Discord.RichEmbed()
   .setAuthor(message.author.username, message.author.displayAvatarURL)
   .setColor("#f44141")
-  .setTitle("Vote the message!")
+  .setTitle("<a:party10000:525854556815360001> Vote the message! <a:hyperpin:537598127407104020>")
   .setDescription(args.join(' '))
   .setFooter("React by click the emoji - Made by PritePasZ#3071")
   message.channel.send(pollEmbed).then(function (message) {
-    message.react("✅")
-    message.react("❌")
+    message.react("<:tickYes:315009125694177281>")
+    message.react("<:tickNo:315009174163685377>")
   });
 }
 
