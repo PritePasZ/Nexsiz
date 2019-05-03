@@ -26,7 +26,7 @@ By Heroku
 
 ### Using the Official Nexsiz Bot
 
-[Click here to invite Nexsiz in to your server!](https://discordapp.com/api/oauth2/authorize?client_id=552076002101297153&permissions=8&scope=bot)
+[Click here to invite Nexsiz in to your server!](https://discordapp.com/oauth2/authorize?client_id=552076002101297153&scope=bot&permissions=2146954495)
 
 ---
 
