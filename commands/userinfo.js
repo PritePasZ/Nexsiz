@@ -19,7 +19,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("<:bustinsilhouette:553086092837126145> Username", `${user.username}#${user.discriminator}`,true)
     .addField(`:card_index: User ID`, `${user.id}`, true)
 		.addField(`:clipboard: Nickname`, `${member.nickname !== null ? `${member.nickname}` : 'None'}`, true)
-		.addField(`<:online:553477759863619604> User Status`, `${user.presence.status}`, true)
+		.addField(`<a:plexiOnline:478870259944783873> User Status`, `${user.presence.status}`, true)
     .addField(`:robot: Bot Account`, `${user.bot}`, true)
 		.addField(`:joystick: User Activity`, `${user.presence.game ? user.presence.game.name : 'None'}`, true)
     .addField(`:calendar: Joined Date`, `${member.joinedAt}`, true)
