@@ -1,5 +1,6 @@
 # Nexsiz
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fcaf217341214003bd2e09986c40f0a1)](https://app.codacy.com/app/PritePasZ/Nexsiz?utm_source=github.com&utm_medium=referral&utm_content=PritePasZ/Nexsiz&utm_campaign=Badge_Grade_Dashboard)
 [![HitCount](http://hits.dwyl.com/PritePasZ/Nexsiz.svg)](http://hits.dwyl.com/PritePasZ/Nexsiz)
 
 **Made By PritePasZ#3071**
