@@ -24,6 +24,10 @@ Nexsiz is Discord Bot with alot of Fun commands and General Commands
 Host bot for 24/7
 By Heroku
 
+We're still adding the commands, stuff and more features
+
+And trying to fixed some bug
+
 ### Using the Official Nexsiz Bot
 
 [Click here to invite Nexsiz in to your server!](https://discordapp.com/oauth2/authorize?client_id=552076002101297153&scope=bot&permissions=2146954495)
@@ -31,7 +35,7 @@ By Heroku
 ---
 
 # Support
-* `n!help` - To view all of he commands
+* `n!help` - To view all of the commands (bot will message in to your direct message)
 
 * If you have any questions feel free to **join the Discord Server**
 
