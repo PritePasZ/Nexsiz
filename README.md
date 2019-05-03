@@ -1,3 +1,5 @@
+[![HitCount](http://hits.dwyl.com/PritePasZ/Nexsiz.svg)](http://hits.dwyl.com/PritePasZ/Nexsiz)
+
 # Nexsiz
 **Made By PritePasZ#3071**
 
@@ -25,7 +27,7 @@ By Heroku
 # Support
 * `n!help` - To view all of he commands
 
-* If you have any questions feel free to **join the Discord Server** 
+* If you have any questions feel free to **join the Discord Server**
 
 * Would like to suggest features, join my bot development server here:  [PritePasZ | Discord Server (Thailand)](https://discord.gg/P96Pr33)
 
