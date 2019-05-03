@@ -6,7 +6,7 @@ let msg = await message.channel.send("<a:loading:573815730504597505> Generating 
 if(!message.guild.iconURL) return msg.edit(":x: **The server not have an icon!**");
 
 let iconembed = new Discord.RichEmbed()
-.setColor("#000000")
+.setColor("f4d442")
 .setFooter("Searched by " + message.author.tag)
 .setImage(message.guild.iconURL)
 .setTitle(":information_source: Icon")
