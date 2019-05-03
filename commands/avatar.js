@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-    let msg = await message.channel.send("<a:loading:573815730504597505> Generating avatar...")
+    let msg = await message.channel.send("<a:loading:573815730504597505> Generating avatar...");
 
     let mentionedUser = message.mentions.users.first() || message.author;
 
