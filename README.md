@@ -7,7 +7,7 @@
 
 
 ![Owner](https://cdn.discordapp.com/avatars/346579836292300800/b02ca29aee1ec133c84377bd4235e957.png?size=16)
-**Made By PritePasZ#3071**
+**Made By PritePasZ**
 
 * **Version 0.1.7b**
 
