@@ -13,8 +13,8 @@ module.exports.run = async (bot, message, args) => {
   .setDescription(args.join(' '))
   .setFooter("React by click the emoji - Made by PritePasZ#3071")
   message.channel.send(pollEmbed).then(function (message) {
-    message.react("<:tickYes:315009125694177281>")
-    message.react("<:tickNo:315009174163685377>")
+    message.react("✅")
+    message.react("❌")
   });
 }
 
