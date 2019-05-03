@@ -5,7 +5,7 @@
 [![Discord](https://discordapp.com/api/guilds/427352186255835146/widget.png)](http://discord.gg/P96Pr33)
 
 
-![Owner](https://cdn.discordapp.com/avatars/346579836292300800/b02ca29aee1ec133c84377bd4235e957.png?size=32)
+![Owner](https://cdn.discordapp.com/avatars/346579836292300800/b02ca29aee1ec133c84377bd4235e957.png?size=16)
 **Made By PritePasZ#3071**
 
 * **Version 0.1.7b**
