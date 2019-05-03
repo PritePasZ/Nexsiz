@@ -4,6 +4,8 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ab99310e161c488cb1c624d7f025f354)](https://www.codacy.com/app/PritePasZ/Nexsiz?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=PritePasZ/Nexsiz&amp;utm_campaign=Badge_Grade)
 [![Discord](https://discordapp.com/api/guilds/427352186255835146/widget.png)
 
+
+[![Owner](https://cdn.discordapp.com/avatars/346579836292300800/b02ca29aee1ec133c84377bd4235e957.png?size=32)
 **Made By PritePasZ#3071**
 
 * **Version 0.1.7b**
