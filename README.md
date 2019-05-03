@@ -1,9 +1,9 @@
 # Nexsiz
 
-[![HitCount](http://hits.dwyl.com/PritePasZ/Nexsiz.svg)](http://hits.dwyl.com/PritePasZ/Nexsiz)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ab99310e161c488cb1c624d7f025f354)](https://www.codacy.com/app/PritePasZ/Nexsiz?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=PritePasZ/Nexsiz&amp;utm_campaign=Badge_Grade)
 [![Discord](https://discordapp.com/api/guilds/427352186255835146/widget.png)](http://discord.gg/P96Pr33)
 [![Discord Bot](https://img.shields.io/badge/DiscordBot-Yes-green.svg)](https://discordapp.com/api/oauth2/authorize?client_id=552076002101297153&permissions=8&scope=bot)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ab99310e161c488cb1c624d7f025f354)](https://www.codacy.com/app/PritePasZ/Nexsiz?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=PritePasZ/Nexsiz&amp;utm_campaign=Badge_Grade)
+[![HitCount](http://hits.dwyl.com/PritePasZ/Nexsiz.svg)](http://hits.dwyl.com/PritePasZ/Nexsiz)
 
 
 ![Owner](https://cdn.discordapp.com/avatars/346579836292300800/b02ca29aee1ec133c84377bd4235e957.png?size=16)
