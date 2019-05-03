@@ -1,3 +1,5 @@
+[![HitCount](http://hits.dwyl.com/PritePasZ/Nexsiz.svg)](http://hits.dwyl.com/PritePasZ/Nexsiz)
+
 # Nexsiz
 **Made By PritePasZ#3071**
 
