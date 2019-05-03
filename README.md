@@ -2,6 +2,7 @@
 
 [![HitCount](http://hits.dwyl.com/PritePasZ/Nexsiz.svg)](http://hits.dwyl.com/PritePasZ/Nexsiz)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ab99310e161c488cb1c624d7f025f354)](https://www.codacy.com/app/PritePasZ/Nexsiz?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=PritePasZ/Nexsiz&amp;utm_campaign=Badge_Grade)
+[![Discord](https://discordapp.com/api/guilds/427352186255835146/widget.png)
 
 **Made By PritePasZ#3071**
 
