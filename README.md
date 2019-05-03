@@ -23,7 +23,7 @@ By Heroku
 # Support
 * `n!help` - To view all of he commands
 
-* If you have any questions feel free to *join the Discord Server* [PritePasZ | Discord Server (Thailand)](https://discord.gg/P96Pr33)
+* If you have any questions feel free to *join the Discord Server* [PritePasZ | Discord Server](https://discord.gg/P96Pr33)
 
 * Found bug? Use `n!feedback` to let us know!
 
