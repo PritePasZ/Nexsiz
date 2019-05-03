@@ -20,7 +20,7 @@ By Heroku
 
 ---
 
-# Support ,Bug, Suggest, Features
+# Support
 * `n!help` - To view all of he commands
 
 * If you have any questions feel free to **join the Discord Server** 
