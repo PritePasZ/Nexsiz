@@ -14,7 +14,7 @@ let iconembed = new Discord.RichEmbed()
 
 message.channel.send(iconembed)
 
-    msg.delete();
+
  }
 
     module.exports.help = {
