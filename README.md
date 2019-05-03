@@ -18,7 +18,7 @@ By Heroku
 
 [Click here to invite Nexsiz in to your server!](https://discordapp.com/api/oauth2/authorize?client_id=552076002101297153&permissions=8&scope=bot)
 
-# Notices
+# Notice
 
 We're still adding the features and commands
 
