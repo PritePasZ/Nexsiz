@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-let msg = await message.channel.send("Generating icon...");
+let msg = await message.channel.send("<a:loading:573815730504597505> Generating icon...");
 
 if(!message.guild.iconURL) return msg.edit(":x: **The server not have an icon!**");
 
