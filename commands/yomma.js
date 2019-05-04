@@ -1,19 +1,13 @@
 const yoMamma = require('yo-mamma').default;
 
-module.exports.run = (bot, message, args) => {
+module.exports.run = async (bot, message, args) => {
 
-  let insult = yoMamma();
+    let insult = yoMamma();
 
-  let yomammaEmbed = new Discord.RichEmbed()
-    .setColor("#3498db")
-    .setTitle("Here's Yo-mama Joke!")
-    .addField("Yo-mama Joke", `${insult}`, true)
-
-    message.channel.send(yomammaEmbed)
-
+    message.channel.send(insult)
 
 }
 
 module.exports.help = {
-  name: "yomama"
+    name: "yomama"
 }
