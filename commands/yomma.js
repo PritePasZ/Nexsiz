@@ -4,11 +4,7 @@ module.exports.run = async (bot, message, args) => {
 
     let insult = yoMamma();
 
-let joke = new Discord.RichEmbed()
-    .setColor("#3498db")
-    .setDescription(insult)
-
-    message.channel.send(joke);
+    message.channel.send(insult);
 
 }
 
