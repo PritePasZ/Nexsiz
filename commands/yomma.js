@@ -7,7 +7,7 @@ module.exports.run = (bot, message, args) => {
   let yomammaEmbed = new Discord.RichEmbed()
     .setColor("#3498db")
     .setTitle("Here's Yo-mama Joke!")
-    .addField("Yo-mama Joke", `${insult}`)
+    .addField("Yo-mama Joke", `${insult}`, true)
 
     message.channel.send(yomammaEmbed)
 
@@ -15,5 +15,5 @@ module.exports.run = (bot, message, args) => {
 }
 
 module.exports.help = {
-  name: "yomamma"
+  name: "yomama"
 }
