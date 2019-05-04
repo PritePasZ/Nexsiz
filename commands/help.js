@@ -27,7 +27,7 @@ let moderatembed = new Discord.RichEmbed()
 
 let funembed = new Discord.RichEmbed()
     .setColor(`#f4b942`)
-    .addField(`<:epic:452254851003318282> Fun Commands`, `\n**n!dog** - Give the random image of dog.\n**n!reverse [text]** - Type to amount to reverse the message.\n**n!lenny** - Will message ( ͡° ͜ʖ ͡°)\n**n!pepe** - Random pepe image.\n**n!kill [user]** - Or mention to kill him/her or suicide.\n**n!shrug** - ¯\\_\(ツ)\_\/¯ \n**n!clap [text]** - Puts 👏 between👏your👏message.\n**n!megusta** - <@552076002101297153> Will message megusta image.\n**n!morse [text]** - Translate from text to morse code/translate from morse code to text.\n**n!mock [text]** -  Mock some texts.\n**n!flip [text]** - Turn message in to flip text.\n**n!owner [user]** - Make someone to become an owner. (Troll Command)`)
+    .addField(`<:epic:452254851003318282> Fun Commands`, `\n**n!dog** - Give the random image of dog.\n**n!reverse [text]** - Type to amount to reverse the message.\n**n!lenny** - Will message ( ͡° ͜ʖ ͡°)\n**n!pepe** - Random pepe image.\n**n!kill [user]** - Or mention to kill him/her or suicide.\n**n!shrug** - ¯\\_\(ツ)\_\/¯ \n**n!clap [text]** - Puts 👏 between👏your👏message.\n**n!megusta** - <@552076002101297153> Will message megusta image.\n**n!morse [text]** - Translate from text to morse code/translate from morse code to text.\n**n!mock [text]** -  Mock some texts.\n**n!flip [text]** - Turn message in to flip text.\n**n!owner [user]** - Make someone to become an owner. (Troll Command)\n**n!yomama** - Give a yo-mama joke.`)
 
     pidor.send(funembed);
 
