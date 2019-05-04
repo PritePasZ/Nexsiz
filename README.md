@@ -41,7 +41,7 @@ By Heroku
 
 * If you have any questions feel free to **join the Discord Server**
 
-* Would like to suggest features, join my bot development server here:  [PritePasZ | Discord Server (Thailand)](https://discord.gg/P96Pr33)
+* Would like to suggest features, join my bot development server here:  [Support Server (Beta)](https://discord.gg/TPTDyPd)
 
 * Found bug? Use `n!feedback` to let us know!
 
