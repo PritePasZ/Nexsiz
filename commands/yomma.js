@@ -8,6 +8,8 @@ let joke = new Discord.RichEmbed()
     .setColor("#3498db")
     .setDescription(insult)
 
+    message.channel.send(joke);
+
 }
 
 module.exports.help = {
