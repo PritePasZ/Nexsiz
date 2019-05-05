@@ -39,7 +39,7 @@ By Heroku
 # Support
 * `n!help` - To view all of the commands (bot will message in to your direct message)
 
-* If you have any questions feel free to **join the Discord Server**
+* If you have any questions feel free to **Join The Discord Server**
 
 * Would like to suggest features, join my bot development server here:  [Support Server & Coding (Beta)](https://discord.gg/TPTDyPd)
 
