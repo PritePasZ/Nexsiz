@@ -1,6 +1,6 @@
 # Nexsiz
 
-[![Discord](https://discordapp.com/api/guilds/574143863782899742/widget.png)](https://discord.gg/mjypjna)
+[![Discord](https://discordapp.com/api/guilds/574143863782899742/widget.png?)](https://discord.gg/mjypjna)
 [![Discord Bot](https://img.shields.io/badge/DiscordBot-Yes-green.svg)](https://discordapp.com/api/oauth2/authorize?client_id=552076002101297153&permissions=8&scope=bot)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ab99310e161c488cb1c624d7f025f354)](https://www.codacy.com/app/PritePasZ/Nexsiz?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=PritePasZ/Nexsiz&amp;utm_campaign=Badge_Grade)
 [![HitCount](http://hits.dwyl.com/PritePasZ/Nexsiz.svg)](http://hits.dwyl.com/PritePasZ/Nexsiz)
