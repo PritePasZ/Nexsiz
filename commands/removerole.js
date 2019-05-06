@@ -32,7 +32,7 @@ const Discord = require("discord.js");
         message.channel.send(removerolembed)
 }
 
- module.exports.config = {
+ module.exports.help = {
     name: "removerole"
 
 }
