@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
  module.exports.run = async (bot, message, args) => {
 
-     if(!message.member.hasPermission(["MANAGE_ROLES", "ADMINISTRATOR"])) return message.channel.send("You dont have permission to perform this command!")
+     if(!message.member.hasPermission(["MANAGE_ROLES", "ADMINISTRATOR"])) return message.channel.send(":x: **You dont have permission to perform this command!**")
 
      let rMember = message.mentions.members.first() || message.guild.members.find(m => m.user.tag === args[0]) || message.guild.members.get(args[0])
     if(!rMember) return message.channel.send(":x: **Please provide a user to add a role too.**")
