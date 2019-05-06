@@ -14,19 +14,12 @@ const Discord = require("discord.js");
 
      if(rMember.roles.has(role.id)) {
         return message.channel.send(`${rMember.displayName}, **already has the role!**`)
-    } else {
-        await rMember.addRole(role.id).catch(e => console.log(e.message))
-        message.channel.send(`**The role, ${role.name}, has been added to ${rMember.displayName}.**`)
-    }
 
      let addrolembed = new Discord.RichEmbed()
     .setColor("#00c646")
     .setAuthor(`${message.guild.name} Modlogs`, message.guild.iconURL)
     .addField(":tools: Moderation :", "Addrole")
-    .addField(":mute: Mute :", rMember.user.username)
-    .addField(":tools: Moderator :", message.author.username)
-    .addField(":pencil: Reason :", reason)
-    .addField(":calendar_spiral: Date :", message.createdAt.toLocaleString())
+    .addDescription(`**The role, ${role.name}, has been removed from ${rMember.displayName}.**`)
 
         message.channel.send(addrolembed)
 }
