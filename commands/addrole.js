@@ -11,7 +11,7 @@ const Discord = require("discord.js");
     let reason = args.slice(2).join(" ")
     if(!reason) return message.channel.send("**Please provide a reason**")
 
-     if(!message.guild.me.hasPermission(["MANAGE_ROLES", "ADMINISTRATOR"])) return message.channel.send("I don't have permission to perform this command.")
+     if(!message.guild.me.hasPermission(["MANAGE_ROLES", "ADMINISTRATOR"])) return message.channel.send(":x: **I don't have permission to perform this command.**")
 
      if(rMember.roles.has(role.id)) {
         return message.channel.send(`${rMember.displayName}, **already has the role!**`)
@@ -20,8 +20,8 @@ const Discord = require("discord.js");
         message.channel.send(`**The role, ${role.name}, has been added to ${rMember.displayName}.**`)
     }
 
-     let embed = new Discord.RichEmbed()
-    .setColor(colours.redlight)
+     let addrolembed = new Discord.RichEmbed()
+    .setColor("#00c646")
     .setAuthor(`${message.guild.name} Modlogs`, message.guild.iconURL)
     .addField(":tools: Moderation :", "Addrole")
     .addField(":mute: Mute :", rMember.user.username)
@@ -29,8 +29,7 @@ const Discord = require("discord.js");
     .addField(":pencil: Reason :", reason)
     .addField(":calendar_spiral: Date :", message.createdAt.toLocaleString())
 
-         let sChannel = message.guild.channels.find(c => c.name === "tut-modlogs")
-        sChannel.send(embed)
+        message.channel.send(addrolembed)
 }
 
  module.exports.help = {
