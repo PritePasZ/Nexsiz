@@ -14,19 +14,12 @@ const Discord = require("discord.js");
 
      if(!rMember.roles.has(role.id)) {
         return message.channel.send(`${rMember.displayName}, **doesnt have the role!**`)
-    } else {
-        await rMember.removeRole(role.id).catch(e => console.log(e.message))
-        message.channel.send(`**The role, ${role.name}, has been removed from ${rMember.displayName}.**`)
-    }
 
      let removerolembed = new Discord.RichEmbed()
     .setColor("#ff3320")
     .setAuthor(`${message.guild.name} Modlogs`, message.guild.iconURL)
     .addField("Moderation :", "Addrole")
-    .addField("Mute :", rMember.user.username)
-    .addField("Moderator :", message.author.username)
-    .addField("Reason :", reason)
-    .addField("Date :", message.createdAt.toLocaleString())
+    .addDescription(`**The role, ${role.name}, has been removed from ${rMember.displayName}.**`)
 
         message.channel.send(removerolembed)
 }
