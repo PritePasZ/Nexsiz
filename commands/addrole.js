@@ -21,7 +21,7 @@ const Discord = require("discord.js");
     .addField(":tools: Moderation :", "Addrole")
     .addDescription(`**The role, ${role.name}, has been removed from ${rMember.displayName}.**`)
 
-        message.channel.send(addrolembed)
+        message.channel.send(addrolembed);
 }
 
  module.exports.help = {
