@@ -26,7 +26,8 @@ module.exports.run = async (bot, message, args) => {
     const Discord = require('discord.js');
     const embed = new Discord.RichEmbed()
         .setAuthor(message.member.displayName, message.author.displayAvatarURL)
-        .setColor('#00c646')
+        .setColor("#00c646")
+        .setThumbnail("https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/1024/Calculator_5122x.png")
         .setTimestamp()
         .setDescription(`:straight_ruler: __**Math Calculation**__`)
         .addField(`:bar_chart: **Question**`, question, true)
