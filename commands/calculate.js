@@ -28,8 +28,8 @@ module.exports.run = async (bot, message, args) => {
         .setAuthor(message.member.displayName, message.author.displayAvatarURL)
         .setColor('#00c646')
         .setTimestamp()
-        .setDescription(`__**Math Calculation**__`)
-        .addField(`:information_source: **Question**`, question, true)
+        .setDescription(`:straight_ruler: __**Math Calculation**__`)
+        .addField(`:bar_chart: **Question**`, question, true)
         .addField(`:white_check_mark: **Answer**`, answer)
 
     message.channel.send(embed);
