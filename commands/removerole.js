@@ -9,7 +9,6 @@ const Discord = require("discord.js");
     let role = message.guild.roles.find(r => r.name == args[1]) || message.guild.roles.find(r => r.id == args[1]) || message.mentions.roles.first()
     if(!role) return message.channel.send(":x: **Please provide a role to remove from said user.**")
     let reason = args.slice(2).join(" ")
-    if(!reason) return message.channel.send("**Please provide a reason**")
 
      if(!message.guild.me.hasPermission(["MANAGE_ROLES", "ADMINISTRATOR"])) return message.channel.send(":x: **I don't have permission to perform this command.**")
 
