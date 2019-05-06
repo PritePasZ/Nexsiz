@@ -5,7 +5,8 @@ module.exports.run = async (bot, message, args) => {
   if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("**:x: You dont have Manage Messages Permission!**").then(msg => {msg.delete(5000)});
   let cleared = args.slice(1).join(' ');
   if(!args[0]) return message.channel.send("**:x: Type the amount of value to clear the messages!**").then(msg => {msg.delete(5000)});
-  if (cleared.length < 1) return message.reply('You cant clear less than 1 message');
+  if (cleared.length < 1) return message.reply(':x: **You cant clear less than 1 message!**');
+  if (cleared.length > 100) return message.reply(':x: **You cant clear more than 100 message!**')
   message.channel.bulkDelete(args[0]).then(() => {
 
 
