@@ -19,7 +19,7 @@ const Discord = require("discord.js");
   if(!rMember.roles.has(gRole.id)) return message.channel.send("This user doesn't have that role.");
   await(rMember.removeRole(gRole.id));
 
-  await message.channel.send(`***I just removed ${rMember.user.username}'s ${gRole.name} role!***`)
+  message.channel.send(`***I just removed ${rMember.user.username}'s ${gRole.name} role!***`)
 
 
 }
