@@ -10,7 +10,9 @@
    "license": "ISC",
    "dependencies": {
      "discord.js": "^11.3.2",
+     "discord.js-commando": "^0.10.0",
      "superagent": "^4.1.0",
+     "cows": "^2.0.0",
      "mathjs": "^5.8.0",
      "cpu-stat": "2.0.1",
      "give-me-a-joke": "^0.1.2",
