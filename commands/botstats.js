@@ -7,7 +7,9 @@ const Discord = require("discord.js")
  module.exports.run = async (bot, message, args) => {
 
             let { version } = require("discord.js");
-     
+            let bicon = bot.user.displayAvatarURL;
+            let bname = bot.user.username;
+
             cpuStat.usagePercent(function(err, percent, seconds) {
               if (err) {
                 return console.log(err);
@@ -20,7 +22,9 @@ const Discord = require("discord.js")
      
               //let duration = moment.duration(bot.uptime).format(" D [days], H [hrs], m [mins], s [secs]");
               let embedStats = new Discord.RichEmbed()
-             .setTitle("*** Stats ***")
+             .setThumbnail(bicon)
+             .setAuthor(bicon, bname)
+             .setTitle("*** :bot: Bot Stats ***")
              .setColor("#00ff00")
              .addField("• Mem Usage", `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} / ${(os.totalmem() / 1024 / 1024).toFixed(2)} MB`, true)
              .addField("• Uptime ", `${hours}h ${mins}m`, true) //`${duration}`, true)
