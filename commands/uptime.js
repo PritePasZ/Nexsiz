@@ -13,8 +13,7 @@ const Discord = require("discord.js");
      let embedtime = new Discord.RichEmbed()
        .setAuthor(message.author.displayName, message.author.displayAvatarURL
        .setColor("#00c646")
-       .setDescriprion(`**I have been online for :** ${duration(bot.uptime)}`)
-       .setTimeStamp();
+       .setDescriprion(`**I have been online for :** ${duration(bot.uptime)}`);
 
      message.channel.send(embedtime)
  }
