@@ -1,4 +1,5 @@
-const Discord = require("discord.js")
+const Discord = require("discord.js");
+let config = require("../botconfig.json)";
 
  module.exports.run = async (bot, message, args) => {
 
@@ -10,8 +11,13 @@ const Discord = require("discord.js")
         return `${days.padStart(1, '0')} days, ${hrs.padStart(2, '0')} hours, ${min.padStart(2, '0')} minutes, ${sec.padStart(2, '0')} seconds, `
     }
 
-     message.channel.send(`**I have been online for :** ${duration(bot.uptime)}`)
+     let embedtime = new Discord.RichEmbed()
+       .setAuthor(message.author.displayName, message.author.displayAvatarURL
+       .setColor(config.green)
+       .setDescriprion(`**I have been online for :** ${duration(bot.uptime)}`)
+       .setTimeStamp();
 
+     message.channel.send(embedtime)
  }
 
 
