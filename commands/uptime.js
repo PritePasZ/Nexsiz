@@ -10,12 +10,8 @@ const Discord = require("discord.js");
         return `${days.padStart(1, '0')} days, ${hrs.padStart(2, '0')} hours, ${min.padStart(2, '0')} minutes, ${sec.padStart(2, '0')} seconds, `
     }
 
-     let embedtime = new Discord.RichEmbed()
-       .setAuthor(message.author.displayName, message.author.displayAvatarURL
-       .setColor("#00c646")
-       .addField("**I have been online for :**", ${duration(bot.uptime)})
+       message.channel.send("**I have been online for :**", ${duration(bot.uptime)})
 
-     message.channel.send(embedtime);
  }
 
 
