@@ -15,7 +15,7 @@ let helpembed = new Discord.RichEmbed()
 
 let generalembed = new Discord.RichEmbed()
     .setColor(`#4286f4`)
-    .addField(`:desktop: General Commands`, `**n!calculate/calc** - Solve the math question.\n**n!icon** - Gives you the server icon\n**n!id [user]** - Show ID of user\n**n!8ball [text]** - Random the answer from the question. \n**n!avatar [user]** - Show the avatar user.\n**n!ping** - Show the current user ping/ms.\n**n!support** - Using for help\n**n!serverinfo** - Shows the information of the guild.\n**n!botinfo** - Shows the information of the bot.\n**n!guilds** - Shows a list of <@552076002101297153> guilds.\n**n!userinfo [user]** Shows the information of your.\n**n!uptime** - Showing online time of <@552076002101297153>.\n**n!unicode [text]** - Change text/number to unicode`)
+    .addField(`:desktop: General Commands`, `**n!calculate/calc [question]** - Solve the math question.\n**n!icon** - Gives you the server icon\n**n!id [user]** - Show ID of user\n**n!8ball [text]** - Random the answer from the question. \n**n!avatar [user]** - Show the avatar user.\n**n!ping** - Show the current user ping/ms.\n**n!support** - Using for help\n**n!serverinfo** - Shows the information of the guild.\n**n!botinfo** - Shows the information of the bot.\n**n!guilds** - Shows a list of <@552076002101297153> guilds.\n**n!userinfo [user]** Shows the information of your.\n**n!uptime** - Showing online time of <@552076002101297153>.\n**n!unicode [text]** - Change text/number to unicode`)
 
     pidor.send(generalembed);
 
