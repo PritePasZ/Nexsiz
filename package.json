@@ -12,7 +12,6 @@
      "discord.js": "^11.3.2",
      "superagent": "^4.1.0",
      "mathjs": "^5.8.0",
-     "cows": "^2.0.0",
      "cpu-stat": "2.0.1",
      "weather-js": "^2.0.0",
      "moment": "^2.22.2",
