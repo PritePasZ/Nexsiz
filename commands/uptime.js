@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-let config = require("../botconfig.json)";
 
  module.exports.run = async (bot, message, args) => {
 
@@ -13,7 +12,7 @@ let config = require("../botconfig.json)";
 
      let embedtime = new Discord.RichEmbed()
        .setAuthor(message.author.displayName, message.author.displayAvatarURL
-       .setColor(config.green)
+       .setColor("#00c646")
        .setDescriprion(`**I have been online for :** ${duration(bot.uptime)}`)
        .setTimeStamp();
 
