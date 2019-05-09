@@ -2,6 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
     let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply(":x: **You dont have Manage Messages Permisson!**");
     if(!rUser) return message.channel.send(":x: **Couldn't find user.**");
     let rreason = args.join(" ").slice(22);
 
