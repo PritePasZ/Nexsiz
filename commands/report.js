@@ -6,6 +6,9 @@ module.exports.run = async (bot, message, args) => {
     if(!rUser) return message.channel.send(":x: **Couldn't find user.**");
     let rreason = args.join(" ").slice(22);
 
+    
+    if(member.id === message.author.id) return message.channel.send("**WTF, You Can Report Yourself, WTF R U DOING!**)
+
     let reportEmbed = new Discord.RichEmbed()
     .setDescription(":pushpin: Reports")
     .setColor("#15f153")
