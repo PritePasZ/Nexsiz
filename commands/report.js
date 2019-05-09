@@ -8,11 +8,11 @@ module.exports.run = async (bot, message, args) => {
     let reportEmbed = new Discord.RichEmbed()
     .setDescription("Reports")
     .setColor("#15f153")
-    .addField("Reported User", `${rUser} with ID: ${rUser.id}`)
-    .addField("Reported By", `${message.author} with ID: ${message.author.id}`)
-    .addField("Channel", message.channel)
-    .addField("Time", message.createdAt)
-    .addField("Reason", rreason);
+    .addField(":inbox_tray: Reported User", `${rUser} with ID: ${rUser.id}`)
+    .addField(":incoming_envelope:  Reported By", `${message.author} with ID: ${message.author.id}`)
+    .addField(":clipboard: Channel", message.channel)
+    .addField(":watch: Time", message.createdAt)
+    .addField(":pencil: Reason", rreason);
 
     let reportschannel = message.guild.channels.find(`name`, "reports");
     if(!reportschannel) return message.channel.send("Couldn't find reports channel.");
