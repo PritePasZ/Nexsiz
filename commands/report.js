@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
     .addField(":clipboard: Channel", message.channel)
     .addField(":pencil: Reason", rreason);
 
-    message.channel.send(reportEmbed).then(msg => {msg.delete(5000)});
+    message.channel.send(reportEmbed)
 
 }
 
