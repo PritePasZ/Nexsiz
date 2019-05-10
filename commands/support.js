@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
     .addField(":robot: **See all of the commands, Use :**", "n!help")
     .addField("<:plus:557903316496154645> **Want to invite Nexsiz?, Use :**", "n!invite")
     .addField(":inbox_tray: **Found some bug?, Use :**", "n!feedback")
-    .setFooter("Support Server - (https://discord.gg/P96Pr33)")
+    .setFooter("Support Server - (https://discord.gg/mjypjna)")
     .setTimestamp()
 
     message.channel.send(supportembed);
