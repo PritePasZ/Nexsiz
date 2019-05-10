@@ -16,6 +16,8 @@ module.exports.run = async (bot, message, args) => {
 
     message.channel.send(reportEmbed)
 
+    message.delete();
+
 }
 
 module.exports.help = {
