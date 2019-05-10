@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
 
   if (args[0] === undefined) {
 
-    return message.channel.send("<:tickNo:315009174163685377> **I need a character to get its unicode from!**");
+    return message.channel.send("<:tickNo:576414524014329857> **I need a character to get its unicode from!**");
 
   } else {
 
@@ -18,7 +18,7 @@ module.exports.run = async (bot, message, args) => {
 
       if (transArg.length >= 2) {
 
-        return message.channel.send(`<:tickNo:315009174163685377> Too long ${message.author}, you can only enter **1** character.`);
+        return message.channel.send(`<:tickNo:576414524014329857> Too long ${message.author}, you can only enter **1** character.`);
 
       }
 
