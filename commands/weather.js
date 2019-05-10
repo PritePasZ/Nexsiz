@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
           let notvalidlocation = new Discord.RichEmbed()
           .setAuthor(message.member.displayName, message.author.displayAvatarURL)
           .setColor(config.red)
-          .setDescription(`<:tickNo:315009174163685377> **Please enter a location!**`);
+          .setDescription(`<:tickNo:576414524014329857> **Please enter a location!**`);
           message.channel.send(notvalidlocation)
           return;
       }
