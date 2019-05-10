@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
         let calculatorerrorstuff = new Discord.RichEmbed()
         .setAuthor(message.member.displayName, message.author.displayAvatarURL)
         .setColor("#f44242")
-        .addField(`:x: **You must provide a equation to be solved on the calculator!**`, message.author)
+        .addField(`<:tickNo:315009174163685377> **You must provide a equation to be solved on the calculator!**`, message.author)
         message.channel.send(calculatorerrorstuff).then(msg => {msg.delete(8000)});
         return;
     }
@@ -20,7 +20,7 @@ module.exports.run = async (bot, message, args) => {
     try {
         answer = math.eval(question);
     } catch (err) {
-        return message.reply(`:x: Invalid math equation: \`${err}\``);
+        return message.reply(`<:tickNo:315009174163685377> **Invalid math equation :** \`${err}\``);
     }
 
     const Discord = require('discord.js');
