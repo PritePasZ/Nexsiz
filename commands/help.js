@@ -15,7 +15,7 @@ let helpembed = new Discord.RichEmbed()
 
 let generalembed = new Discord.RichEmbed()
     .setColor(`#4286f4`)
-    .addField(`:desktop: General Commands`, `**n!icon** - Gives you the server icon\n**n!id [user]** - Show ID of user\n**n!8ball [text]** - Random the answer from the question. \n**n!avatar [user]** - Show the avatar user.\n**n!ping** - Show the current user ping/ms.\n**n!support** - Using for help\n**n!serverinfo** - Shows the information of the guild.\n**n!botinfo** - Shows the information of the bot.\n**n!guilds** - Shows a list of <@552076002101297153> guilds.\n**n!userinfo [user]** Shows the information of your.\n**n!uptime** - Showing online time of <@552076002101297153>.\n**n!unicode [text]** - Change text/number to unicode`)
+    .addField(`:desktop: General Commands`, `**n!calculate/calc [question]** - Solve the math question.\n**n!icon** - Gives you the server icon\n**n!id [user]** - Show ID of user\n**n!8ball [text]** - Random the answer from the question. \n**n!avatar [user]** - Show the avatar user.\n**n!ping** - Show the current user ping/ms.\n**n!support** - Using for help\n**n!serverinfo** - Shows the information of the guild.\n**n!botinfo** - Shows the information of the bot.\n**n!guilds** - Shows a list of <@552076002101297153> guilds.\n**n!userinfo [user]** Shows the information of your.\n**n!uptime** - Showing online time of <@552076002101297153>.\n**n!unicode [text]** - Change text/number to unicode`)
 
     pidor.send(generalembed);
 
@@ -27,7 +27,7 @@ let moderatembed = new Discord.RichEmbed()
 
 let funembed = new Discord.RichEmbed()
     .setColor(`#f4b942`)
-    .addField(`<:epic:452254851003318282> Fun Commands`, `\n**n!cat** - Give a random image of cat\n**n!dog** - Give a random image of dog.\n**n!reverse [text]** - Type to amount to reverse the message.\n**n!lenny** - Will message ( ͡° ͜ʖ ͡°)\n**n!pepe** - Random pepe image.\n**n!kill [user]** - Or mention to kill him/her or suicide.\n**n!shrug** - ¯\\_\(ツ)\_\/¯ \n**n!clap [text]** - Puts 👏 between👏your👏message.\n**n!megusta** - <@552076002101297153> Will message megusta image.\n**n!morse [text]** - Translate from text to morse code/translate from morse code to text.\n**n!mock [text]** -  Mock some texts.\n**n!flip [text]** - Turn message in to flip text.\n**n!owner [user]** - Make someone to become an owner. (Troll Command)\n**n!yomama** - Give a yo-mama joke.`)
+    .addField(`<:epic:452254851003318282> Fun Commands`, `\n**n!cat** - Give a random image of cat\n**n!dog** - Give a random image of dog.\n**n!reverse [text]** - Type to amount to reverse the message.\n**n!joke** - Send random joke.\n**n!lenny** - Will message ( ͡° ͜ʖ ͡°)\n**n!pepe** - Random pepe image.\n**n!kill [user]** - Or mention to kill him/her or suicide.\n**n!shrug** - ¯\\_\(ツ)\_\/¯ \n**n!clap [text]** - Puts 👏 between👏your👏message.\n**n!megusta** - <@552076002101297153> Will message megusta image.\n**n!morse [text]** - Translate from text to morse code/translate from morse code to text.\n**n!mock [text]** -  Mock some texts.\n**n!flip [text]** - Turn message in to flip text.\n**n!owner [user]** - Make someone to become an owner. (Troll Command)\n**n!yomama** - Give a yo-mama joke.`)
 
     pidor.send(funembed);
 

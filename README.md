@@ -1,7 +1,6 @@
 # Nexsiz
 
 [![Discord Bot](https://img.shields.io/badge/DiscordBot-Yes-green.svg)](https://discordapp.com/api/oauth2/authorize?client_id=552076002101297153&permissions=8&scope=bot)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ab99310e161c488cb1c624d7f025f354)](https://www.codacy.com/app/PritePasZ/Nexsiz?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=PritePasZ/Nexsiz&amp;utm_campaign=Badge_Grade)
 [![HitCount](http://hits.dwyl.com/PritePasZ/Nexsiz.svg)](http://hits.dwyl.com/PritePasZ/Nexsiz)
 
 
@@ -40,7 +39,7 @@ By Heroku
 
 * If you have any questions feel free to **Join The Discord Server**
 
-* Would like to suggest features, join my bot development server here:  [Support Server & Coding (Beta)](https://discord.gg/TPTDyPd)
+* Would like to suggest features, join my bot development server here:  [Support Server & Coding (Alpha)](https://discord.gg/TPTDyPd)
 
 * Found bug? Use `n!contact` to let us know!
 
