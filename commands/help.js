@@ -21,7 +21,7 @@ let generalembed = new Discord.RichEmbed()
 
 let moderatembed = new Discord.RichEmbed()
     .setColor(`#ff3a3a`)
-    .addField(`:tools: Moderation Commands`, `**n!clear [amount]** - Clear the given amount of messages.\n**n!say [text]** - <@552076002101297153> Will chat with your given text.\n**n!poll [text]** - Vote the message by reaction.`)
+    .addField(`:tools: Moderation Commands`, `**n!clear [amount]** - Clear the given amount of messages.\n**n!report** - report user to a guild\n**n!say [text]** - <@552076002101297153> Will chat with your given text.\n**n!poll [text]** - Vote the message by reaction.`)
 
     pidor.send(moderatembed);
 
