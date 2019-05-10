@@ -3,7 +3,7 @@ const Discord = module.require("discord.js")
 module.exports.run = async (bot, message, args) => {
 
     let owner = message.mentions.members.first() || message.guild.members.get(args[0]);
-    if(!owner) return message.channel.send(":x: **Please tag someone so i can make them the new Server Owner**");
+    if(!owner) return message.channel.send("<:tickNo:315009174163685377> **Please tag someone so i can make them the new Server Owner**");
 
     message.channel.send(`**Made ${owner} the Server Owner successfully!** ✅`)
 
