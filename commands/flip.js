@@ -3,7 +3,7 @@ const mapping = '¡"#$%⅋,)(*+\'-˙/0ƖᄅƐㄣϛ9ㄥ86:;<=>?@∀qƆpƎℲפHI�
 const OFFSET = '!'.charCodeAt(0);
 
 exports.run = (bot, message, args) => {
-    if (args.length < 1) return message.channel.send("<:tickNo:315009174163685377> You must provide text to flip!").then(msg => {msg.delete(5000)});
+    if (args.length < 1) return message.channel.send("<:tickNo:576414524014329857> You must provide text to flip!").then(msg => {msg.delete(5000)});
 
     message.channel.send(
         args.join(' ').split('')
