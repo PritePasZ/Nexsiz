@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args) => {
   .setAuthor(message.member.displayName, message.author.displayAvatarURL)
   .setColor('#50f442')
   .addField("Question :information_source:", question)
-  .addField("Answer :white_check_mark:", replies[result])
+  .addField("Answer :8ball:", replies[result])
   .setTimestamp()
 
   message.channel.send(ballembed);
