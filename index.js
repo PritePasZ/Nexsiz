@@ -53,8 +53,6 @@ bot.on('guildMemberRemove', member => {
   channel.send(goodbyeembed);
  });
 
-}
-
 if(!message.content.startsWith(prefix)) return;
   // Cooldown feature.
   if(cooldown.has(message.author.id)){
