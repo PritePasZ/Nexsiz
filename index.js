@@ -52,7 +52,6 @@ bot.on('guildMemberRemove', member => {
   .setColor(`#ff3320`)
   channel.send(goodbyeembed);
  });
-
 if(!message.content.startsWith(prefix)) return;
   // Cooldown feature.
   if(cooldown.has(message.author.id)){
