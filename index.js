@@ -4,8 +4,6 @@ const botconfig = require("./botconfig.json");
 const client = new Discord.Client();
 const bot = new Discord.Client({disableEveryone: true});
 bot.commands = new Discord.Collection();
-let cooldown = new Set();
-let cdseconds = 5;
 
 fs.readdir("./commands/", (err, files) => {
 
@@ -51,22 +49,7 @@ bot.on('guildMemberRemove', member => {
   .addField(`<:subtract:557905417406119956> Goodbye, **${member.user.tag}**`, `:wave: We hope to see you again, ${member}`)
   .setColor(`#ff3320`)
   channel.send(goodbyeembed);
- });
- 
-  // Cooldown feature.
-  if(cooldown.has(message.author.id)){
-    message.delete();
-    let cooldownbotsystem = new Discord.RichEmbed()
-    .setAuthor(message.member.displayName, message.author.displayAvatarURL)
-    .setDescription("<:BOI:525854611005767683> Bot cooldown!")
-    .setColor("#f44242")
-    .addField(":stopwatch: You have to wait for 5 seconds!", message.author,true)
-    return message.channel.send(cooldownbotsystem).then(msg => {msg.delete(6850)});
-  }
-  if(!message.member.hasPermission("MANAGE_MESSAGES")){
-    cooldown.add(message.author.id);
-  }
-
+});
 bot.on("message", async message => {
 
   if (message.author.bot) return;
@@ -80,10 +63,6 @@ bot.on("message", async message => {
 
   let commandfile = bot.commands.get(cmd.slice(prefix.length));
   if(commandfile) commandfile.run(bot,message,args);
-
-  setTimeout(() => {
-      cooldown.delete(message.author.id)
-    }, cdseconds * 1000)
 
 });
 
