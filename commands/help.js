@@ -27,7 +27,7 @@ let moderatembed = new Discord.RichEmbed()
 
 let funembed = new Discord.RichEmbed()
     .setColor(`#f4b942`)
-    .addField(`<:epic:452254851003318282> Fun Commands`, `\n**n!cat** - Give a random image of cat\n**n!dog** - Give a random image of dog.\n**n!reverse [text]** - Type to amount to reverse the message.\n**n!joke** - Send random joke.\n**n!lenny** - Will message ( ͡° ͜ʖ ͡°)\n**n!pepe** - Random pepe image.\n**n!kill [user]** - Or mention to kill him/her or suicide.\n**n!shrug** - ¯\\_\(ツ)\_\/¯ \n**n!clap [text]** - Puts 👏 between👏your👏message.\n**n!megusta** - <@552076002101297153> Will message megusta image.\n**n!morse [text]** - Translate from text to morse code/translate from morse code to text.\n**n!mock [text]** -  Mock some texts.\n**n!flip [text]** - Turn message in to flip text.\n**n!owner [user]** - Make someone to become an owner. (Troll Command)\n**n!yomama** - Give a yo-mama joke.`)
+    .addField(`<:epic:596292541574283274> Fun Commands`, `\n**n!cat** - Give a random image of cat\n**n!dog** - Give a random image of dog.\n**n!reverse [text]** - Type to amount to reverse the message.\n**n!joke** - Send random joke.\n**n!lenny** - Will message ( ͡° ͜ʖ ͡°)\n**n!pepe** - Random pepe image.\n**n!kill [user]** - Or mention to kill him/her or suicide.\n**n!shrug** - ¯\\_\(ツ)\_\/¯ \n**n!clap [text]** - Puts 👏 between👏your👏message.\n**n!megusta** - <@552076002101297153> Will message megusta image.\n**n!morse [text]** - Translate from text to morse code/translate from morse code to text.\n**n!mock [text]** -  Mock some texts.\n**n!flip [text]** - Turn message in to flip text.\n**n!owner [user]** - Make someone to become an owner. (Troll Command)\n**n!yomama** - Give a yo-mama joke.`)
 
     pidor.send(funembed);
 
@@ -40,7 +40,7 @@ let funembed = new Discord.RichEmbed()
 
 let ownerembed = new Discord.RichEmbed()
     .setColor("#ff6a00")
-    .addField(`<:Owner:553078012283715636> Owner Commands`, `**n!answer** - Answer from user are contact feedback.\n**n!eval** - Evaluates javascript code.`)
+    .addField(`<:owner:596292514487599105> Owner Commands`, `**n!answer** - Answer from user are contact feedback.\n**n!eval** - Evaluates javascript code.`)
 
     pidor.send(ownerembed)
 
