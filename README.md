@@ -3,11 +3,9 @@
 [![Discord Bot](https://img.shields.io/badge/DiscordBot-Yes-green.svg)](https://discordapp.com/api/oauth2/authorize?client_id=552076002101297153&permissions=8&scope=bot)
 [![HitCount](http://hits.dwyl.com/PritePasZ/Nexsiz.svg)](http://hits.dwyl.com/PritePasZ/Nexsiz)
 
-
-![Owner](https://cdn.discordapp.com/avatars/346579836292300800/b02ca29aee1ec133c84377bd4235e957.png?size=16)
 **Made By PritePasZ**
 
-* **Version 0.1.7b**
+* **Version 0.1.8b**
 
 For educational purposes.
 
@@ -42,5 +40,7 @@ By Heroku
 * Would like to suggest features, join my bot development server here:  [Support Server & Coding (Alpha)](https://discord.gg/TPTDyPd)
 
 * Found bug? Use `n!contact` to let us know!
+
+I am open to feedback and suggestions. Feel free to submit a pull request or open an issue :)
 
 ---
