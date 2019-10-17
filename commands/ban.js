@@ -15,9 +15,6 @@ module.exports.run = async (bot, message, args) => {
     .addField(":stopwatch: Time :stopwatch:", message.createdAt)
     .addField(":inbox_tray: Reason :inbox_tray:", bReason);
 
-    let incidentchannel = message.guild.channels.find(`name`, "incidents :bar_chart:");
-    if(!incidentchannel) return message.channel.send("<:tickNo:576414524014329857> Can't find incidents channel.");
-
     message.guild.member(bUser).ban(bReason);
     incidentchannel.send(banEmbed);
 }
