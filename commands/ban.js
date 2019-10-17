@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
     let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-    if(!bUser) return message.channel.send("Can't find user!");
+    if(!bUser) return message.channel.send("<:tickNo:576414524014329857> Can't find user!");
     let bReason = args.join(" ").slice(22);
     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send("<:tickNo:576414524014329857> You can't banned the person who has administrator permission!");
     if(bUser.hasPermission("ADMINISTRATOR")) return message.channel.send("<:tickNo:576414524014329857> That person can't be banned!");
