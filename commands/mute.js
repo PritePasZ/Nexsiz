@@ -34,11 +34,11 @@ module.exports.run = async (bot, message, args) => {
   if(!mutetime) return message.channel.send("<:tickNo:576414524014329857> You didn't specify a time!");
 
   await(tomute.addRole(muterole.id));
-  message.reply(`<@${tomute.id}> has been muted for ${ms(ms(mutetime))}`);
+  message.reply(`<@${tomute.id}> has been muted for ${ms(ms(mutetime))} :mute:`);
 
   setTimeout(function(){
     tomute.removeRole(muterole.id);
-    message.channel.send(`<@${tomute.id}> has been unmuted!`);
+    message.channel.send(`<@${tomute.id}> has been unmuted! :pencil:`);
   }, ms(mutetime));
 
   message.delete();
