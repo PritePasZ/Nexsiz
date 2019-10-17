@@ -30,7 +30,7 @@ client.on("ready", async () => {
     client.user.setPresence({
         status: "online",
         game: {
-            name: "me getting developed",
+            name: "PritePasZ Developed Me",
             type: "WATCHING"
         }
     }); 
