@@ -12,7 +12,6 @@ module.exports.run = async (bot, message, args) => {
     .setColor("#e56b00")
     .addField(":speaking_head: Kicked User :speaking_head:", `${kUser} with ID ${kUser.id}`)
     .addField(":mag: Kicked By :mag:", `<@${message.author.id}> with ID ${message.author.id}`)
-    .addField(":newspaper: Kicked In :newspaper:", message.channel)
     .addField(":stopwatch: Time :stopwatch:", message.createdAt)
     .addField(":inbox_tray: Reason :inbox_tray:", kReason);
 
