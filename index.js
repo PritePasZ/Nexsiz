@@ -23,11 +23,10 @@ fs.readdir("./commands/", (err, files) => {
 
 });
 
-client.on("ready", async () => {
+bot.on("ready", async () => {
     console.log(`Hi, ${client.user.username} is now online!`);
 
-    // Set the user presence
-    client.user.setPresence({
+    bot.user.setPresence({
         status: "online",
         game: {
             name: "PritePasZ Developed Me",
