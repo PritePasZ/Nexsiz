@@ -15,8 +15,8 @@ module.exports.run = async (bot, message, args) => {
     .addField(":stopwatch: Time :stopwatch:", message.createdAt)
     .addField(":inbox_tray: Reason :inbox_tray:", bReason);
 
-    message.guild.member(bUser).ban(bReason);
-    incidentchannel.send(banEmbed);
+    message.channel.send(banEmbed);
+    
 }
 
 module.exports.help = {
