@@ -15,8 +15,7 @@ module.exports.run = async (bot, message, args) => {
     .addField(":stopwatch: Time :stopwatch:", message.createdAt)
     .addField(":inbox_tray: Reason :inbox_tray:", kReason);
 
-    message.guild.member(kUser).kick(kReason);
-    kickChannel.send(kickEmbed);
+    message.channel.send(kickEmbed)
 }
 
 module.exports.help = {
