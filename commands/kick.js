@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
     if(kUser.hasPermission("ADMINISTRATOR")) return message.channel.send("<:tickNo:576414524014329857> That person can't be kicked!");
 
     let kickEmbed = new Discord.RichEmbed()
-    .setDescription(":pencil Kick Log :pencil:")
+    .setDescription(":pencil: Kick Log :pencil:")
     .setColor("#e56b00")
     .addField(":speaking_head: Kicked User :speaking_head:", `${kUser} with ID ${kUser.id}`)
     .addField(":mag: Kicked By :mag:", `<@${message.author.id}> with ID ${message.author.id}`)
