@@ -12,11 +12,9 @@ module.exports.run = async (bot, message, args) => {
     .setColor("#e56b00")
     .addField(":speaking_head: Kicked User :speaking_head:", `${kUser} with ID ${kUser.id}`)
     .addField(":mag: Kicked By :mag:", `<@${message.author.id}> with ID ${message.author.id}`)
+    .addField(":newspaper: Kicked In :newspaper:", message.channel)
     .addField(":stopwatch: Time :stopwatch:", message.createdAt)
     .addField(":inbox_tray: Reason :inbox_tray:", kReason);
-
-    let kickChannel = message.guild.channels.find(`name`, "incidents :bar_chart:");
-    if(!kickChannel) return message.channel.send("<:tickNo:576414524014329857> Can't find incidents channel.");
 
     message.guild.member(kUser).kick(kReason);
     kickChannel.send(kickEmbed);
