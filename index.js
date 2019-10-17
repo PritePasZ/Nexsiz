@@ -23,11 +23,18 @@ fs.readdir("./commands/", (err, files) => {
 
 });
 
+client.on("ready", async () => {
+    console.log(`Hi, ${client.user.username} is now online!`);
 
-bot.on("ready", async () => {
-  console.log(`${bot.user.username} is loaded and online on ${bot.guilds.size} server!`);
-  bot.user.setActivity(`with PritePasZ | n!help`);
-});
+    // Set the user presence
+    client.user.setPresence({
+        status: "online",
+        game: {
+            name: "me getting developed",
+            type: "WATCHING"
+        }
+    }); 
+})
 
 bot.on('guildMemberAdd', member => {
   const channel = member.guild.channels.find(ch => ch.name === '👋คนเข้า-ออก👋');
