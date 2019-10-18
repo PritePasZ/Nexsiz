@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
 
   let ramEmbed = new Discord.RichEmbed()
   .setColor("#fc03c6")
-  .setImage(`https://i.imgur.com/DYToB2e_d.jpg?maxwidth=640&shape=thumb&fidelity=medium`);
+  .setImage(`https://cdn.discordapp.com/attachments/552376732964093963/634585194153639949/DYToB2e_d.jpg`);
 
   message.channel.send(ramEmbed);
 
