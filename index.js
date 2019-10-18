@@ -2,6 +2,8 @@ const Discord = require("discord.js");
 const fs = require("fs");
 const botconfig = require("./botconfig.json");
 const client = new Discord.Client();
+const DBL = require("dblapi.js");
+const dbl = new DBL(process.env.dblapi, client);
 const bot = new Discord.Client({disableEveryone: true});
 bot.commands = new Discord.Collection();
 
