@@ -25,7 +25,7 @@ fs.readdir("./commands/", (err, files) => {
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
-  bot.user.setActivity(`with CorosiveZ | n!help`);
+  bot.user.setActivity("with CorosiveZ | n!help", {type: "WATCHING"});
 });
 
 
