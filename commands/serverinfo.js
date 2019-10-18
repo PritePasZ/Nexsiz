@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
   .addField(":bar_chart: Total Members", message.guild.memberCount)
   .addField("<:bustinsilhouette:553086092837126145> Users", message.guild.memberCount - message.guild.members.filter(m => m.user.bot).size, true)
   .addField(":robot: Bots", message.guild.members.filter(m => m.user.bot).size, true)
-  .addField("<:Owner:553078012283715636> Owner", message.guild.owner.user.tag, true)
+  .addField("<:owner:596292514487599105> Owner", message.guild.owner.user.tag, true)
   .addField(":earth_asia: Region", message.guild.region, true)
   .addField(":card_index: Server ID", message.guild.id, true)
   .addField(":clipboard: Join Date", message.member.joinedAt, true)
