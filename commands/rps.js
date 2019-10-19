@@ -1,12 +1,11 @@
 const { RichEmbed } = require("discord.js");
-const { promptMessage } = require("functions.js");
+const { promptMessage } = require("./functions.js");
 
 const chooseArr = ["🗻", "📰", "✂"];
 
 module.exports = {
     name: "rps",
     description: "Rock Paper Scissors game. React to one of the emojis to play the game.",
-    usage: "rps",
     run: async (client, message, args) => {
         const embed = new RichEmbed()
             .setColor("#ffffff")
