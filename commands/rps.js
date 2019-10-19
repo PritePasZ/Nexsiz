@@ -1,10 +1,10 @@
 const Discord = require("discord.js");
-const promptMessage = require("./utils/functions.js");
+const promptMessage = require("../functions.js");
 
 let chooseArr = ["🗻", "📰", "✂"];
 
 module.exports.run = async (bot, message, args) => {
-  
+
         let embed = new RichEmbed()
             .setColor("#ffffff")
             .setFooter(message.guild.me.displayName, client.user.displayAvatarURL)
