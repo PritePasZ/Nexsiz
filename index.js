@@ -24,7 +24,7 @@ fs.readdir("./commands/", (err, files) => {
 });
 
 bot.on("ready", async () => {
-  console.log(`${bot.user.username} is online!`);
+  console.log(`${bot.user.username} is online, Bots is ready and working in ${bot.guilds.size} servers with ${bot.users.size} users!`);
   bot.user.setActivity("with CorosiveZ | n!help", {type: "WATCHING"});
 });
 
