@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const promptMessage = require("../utils/functions.js");
+const promptMessage = require("./utils/functions.js");
 
 let chooseArr = ["🗻", "📰", "✂"];
 
@@ -36,7 +36,7 @@ module.exports.run = async (bot, message, args) => {
             }
         }
     }
-    
+
 module.exports.help = {
   name:rps
 
