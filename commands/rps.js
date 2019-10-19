@@ -34,8 +34,7 @@ module.exports.run = async (bot, message, args) => {
               return "It's a tie!";
           } else {
               return "You lost!";
-         }
-      }
+       }
    }
 }
 
