@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const promptMessage = require("../functions.js");
+const promptMessage = require("functions.js");
 
 let chooseArr = ["🗻", "📰", "✂"];
 
