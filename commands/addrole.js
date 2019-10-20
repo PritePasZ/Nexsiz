@@ -4,8 +4,7 @@ module.exports.run = async (bot, message, args) => {
 
   let xdemb = new Discord.RichEmbed()
   .setColor("#fa1100")
-  .setTitle(`:pencil: Addrole command:`)
-  .addField("Usage", ":inbox_tray: n!addrole [user] [role]", true)
+  .setTitle(`:pencil: Addrole command, Usage : n!addrole [user] [role]`)
 
   if(!message.member.hasPermission("MANAGE_ROLES")) return message.channel.send("<:tickNo:576414524014329857> You don't have premmsion Manage Roles!");
   let rMember = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
