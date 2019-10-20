@@ -6,7 +6,6 @@ module.exports.run = async (bot, message, args) => {
   .setColor("#00ff00")
   .setTitle(`:pencil: Addrole command:`)
   .addField("Description:", ":inbox_tray: Add role to member", true)
-  .setFooter("Usage","!addrole [user] [role]")
 
   if(!message.member.hasPermission("MANAGE_ROLES")) return message.channel.send("<:tickNo:576414524014329857> You don't have premmsion Manage Roles!");
   let rMember = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
