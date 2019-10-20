@@ -3,9 +3,9 @@ const Discord = require("discord.js");
 module.exports.run = async (bot, message, args) => { 
 
   let xdemb = new Discord.RichEmbed()
-  .setColor("#00ff00")
+  .setColor("#fa1100")
   .setTitle(`:pencil: Addrole command:`)
-  .addField("Description:", ":inbox_tray: Add role to member", true)
+  .addField("Usage", ":inbox_tray: n!addrole [user] [role]", true)
 
   if(!message.member.hasPermission("MANAGE_ROLES")) return message.channel.send("<:tickNo:576414524014329857> You don't have premmsion Manage Roles!");
   let rMember = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
