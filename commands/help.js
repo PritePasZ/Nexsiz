@@ -9,7 +9,7 @@ let helpembed = new Discord.RichEmbed()
     .setColor(`00ff00`)
     .setAuthor(`Commands & Guides`, bot.user.avatarURL)
     .addField(`:information_source: Support`, `**n!help** - Show a list of commands & guides to your DM.\n Found some bug?, Use **n!contact** to let us know!\nUse **n!invite** to invite <@552076002101297153> in to your server!`)
-    .setFooter("Made By PritePasZ", "https://cdn.discordapp.com/avatars/346579836292300800/b02ca29aee1ec133c84377bd4235e957.png")
+    .setFooter("Made By CorosiveZ", "https://cdn.discordapp.com/avatars/346579836292300800/6fca058e934d5479f2388d3c94074279.png")
 
     pidor.send(helpembed);
 
