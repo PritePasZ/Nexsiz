@@ -18,7 +18,6 @@ module.exports.run = async (bot, message, args) => {
    .setTitle(":computer: Response  from your contact")
    .addField((":incoming_envelope Response :", sayMessage)
    .setFooter("Support Server","[Nexsiz Server](https://discord.gg/mjypjna)")
-   .setTimestamp();
 
     bot.users.get(id).send(contact);
 
