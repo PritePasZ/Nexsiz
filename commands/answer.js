@@ -15,9 +15,8 @@ module.exports.run = async (bot, message, args) => {
    .setAuthor(Owner.username, Owner.avatarURL)
    .setColor("00ff00")
    .setThumbnail(Owner.displayAvatarURL)
-   .setTitle(":computer: Response  from your contact!")
-   .addField(":incoming_envelope: Response :", sayMessage)
-   .setFooter("Support Server (Thailand) - (https://discord.gg/P96Pr33)")
+   .setTitle(":incoming_envelope: Response  from your contact :", sayMessage)
+   .setFooter("Support Server - (https://discord.gg/mjypjna)")
    .setTimestamp()
 
     bot.users.get(id).send(contact);
