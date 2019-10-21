@@ -16,8 +16,8 @@ module.exports.run = async (bot, message, args) => {
    .setColor("00ff00")
    .setThumbnail(Owner.displayAvatarURL)
    .setTitle(":computer: Response  from your contact")
-   .addField((":incoming_envelope :", sayMessage)
-   .setFooter("Support Server -","(https://discord.gg/mjypjna)")
+   .addField((":incoming_envelope Response :", sayMessage)
+   .setFooter("Support Server -","[Nexsiz Server](https://discord.gg/mjypjna)")
    .setTimestamp();
 
     bot.users.get(id).send(contact);
