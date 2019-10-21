@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
    .setThumbnail(Owner.displayAvatarURL)
    .setTitle(":computer: Response  from your contact")
    .addField((":incoming_envelope Response :", sayMessage)
-   .addField("Support Server", "[Nexsiz Server](https://discord.gg/mjypjna)")
+   .addField("Support Server", "[Nexsiz Server] https://discord.gg/mjypjna")
 
     bot.users.get(id).send(contact);
 
