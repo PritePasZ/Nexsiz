@@ -15,7 +15,8 @@ module.exports.run = async (bot, message, args) => {
    .setAuthor(Owner.username, Owner.avatarURL)
    .setColor("00ff00")
    .setThumbnail(Owner.displayAvatarURL)
-   .setTitle(":incoming_envelope: Response  from your contact :", sayMessage)
+   .setTitle(":computer: Response  from your contact")
+   .addField((":incoming_envelope :", sayMessage)
    .setFooter("Support Server - (https://discord.gg/mjypjna)")
    .setTimestamp()
 
