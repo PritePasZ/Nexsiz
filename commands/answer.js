@@ -18,7 +18,7 @@ module.exports.run = async (bot, message, args) => {
    .setTitle(":computer: Response  from your contact")
    .addField((":incoming_envelope :", sayMessage)
    .setFooter("Support Server -","(https://discord.gg/mjypjna)")
-   .setTimestamp()
+   .setTimestamp();
 
     bot.users.get(id).send(contact);
 
