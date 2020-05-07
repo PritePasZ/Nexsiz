@@ -30,20 +30,20 @@ module.exports.run = (bot, message, args) => {
   .addField("I choose", scissors2[scissors1])
 
 
-  if (message.content === "s!rps rock") message.channel.send(rock)
-  if (message.content === "s!rps Rock") message.channel.send(rock)
-  if (message.content === "s!rps r") message.channel.send(rock)
+  if (message.content === "n!rps rock") message.channel.send(rock)
+  if (message.content === "n!rps Rock") message.channel.send(rock)
+  if (message.content === "n!rps r") message.channel.send(rock)
 
-  if (message.content === "s!rps paper") message.channel.send(paper)
-  if (message.content === "s!rps Paper") message.channel.send(paper)
-  if (message.content === "s!rps p") message.channel.send(paper)
+  if (message.content === "n!rps paper") message.channel.send(paper)
+  if (message.content === "n!rps Paper") message.channel.send(paper)
+  if (message.content === "n!rps p") message.channel.send(paper)
 
-  if (message.content === "s!rps scissors") message.channel.send(scissors)
-  if (message.content === "s!rps Scissors") message.channel.send(scissors)
-  if (message.content === "s!rps s") message.channel.send(scissors)
+  if (message.content === "n!rps scissors") message.channel.send(scissors)
+  if (message.content === "n!rps Scissors") message.channel.send(scissors)
+  if (message.content === "n!rps s") message.channel.send(scissors)
 
 
-  if (message.content === "s!rps") message.channel.send("Options: ``Rock``, ``Paper``, ``Scissors``. *Usage: s!rps <option>*")
+  if (message.content === "n!rps") message.channel.send("Options: ``Rock``, ``Paper``, ``Scissors``. *Usage: n!rps <option>*")
   }
 
 module.exports.help = {
