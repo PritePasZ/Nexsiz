@@ -12,19 +12,19 @@ module.exports.run = (bot, message, args) => {
     let scissors1 = Math.floor(Math.random() * scissors2.length);
 
   let rock = new Discord.RichEmbed()
-  .setAuthor(":video_game: Rock, Paper, Scissors")
+  .setAuthor("🎮 Rock, Paper, Scissors")
   .setColor("#00BDFF")
   .addField("You Chose", `${args[0]}`)
   .addField("I Choose", rock2[rock1])
 
   let paper = new Discord.RichEmbed()
-  .setAuthor(":video_game: Rock, Paper, Scissors")
+  .setAuthor("🎮 Rock, Paper, Scissors")
   .setColor("#00BDFF")
   .addField("You Chose", `${args[0]}`)
   .addField("I Choose", paper2[paper1])
 
   let scissors = new Discord.RichEmbed()
-  .setAuthor(":video_game: Rock, Paper, Scissors")
+  .setAuthor("🎮 Rock, Paper, Scissors")
   .setColor("#00BDFF")
   .addField("You Chose", `${args[0]}`)
   .addField("I Choose", scissors2[scissors1])
