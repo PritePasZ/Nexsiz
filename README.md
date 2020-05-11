@@ -37,7 +37,7 @@ By Heroku
 
 * If you have any questions feel free to **Join The Discord Server**
 
-* Would like to suggest features, join my bot development server here:  [Support Server & Coding (Alpha)](https://discord.gg/TPTDyPd)
+* Would like to suggest features, join my bot development server here:  [Support Server & Coding (Alpha)](https://discord.gg/mjypjna)
 
 * Found bug? Use `n!contact` to let us know!
 
