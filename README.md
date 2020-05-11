@@ -5,7 +5,7 @@
 
 **Made By PritePasZ**
 
-* **Version 0.1.9b**
+* **Version 0.2.0a**
 
 For educational purposes.
 
