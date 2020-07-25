@@ -29,7 +29,7 @@ bot.on("ready", async () => {
 });
 
 
-//bot.on('guildMemberAdd', member => {
+bot.on('guildMemberAdd', member => {
   const channel = member.guild.channels.find(ch => ch.name === '');
   if (!channel) return;
   let welcomeembed = new Discord.RichEmbed()
@@ -49,7 +49,7 @@ bot.on('guildMemberRemove', member => {
   .addField(`<:subtract:557905417406119956> Goodbye, **${member.user.tag}**`, `:wave: We hope to see you again, ${member}`)
   .setColor(`#ff3320`)
   channel.send(goodbyeembed);
-});\\
+});
 bot.on("message", async message => {
 
   if (message.author.bot) return;
