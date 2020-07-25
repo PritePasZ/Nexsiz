@@ -25,12 +25,12 @@ fs.readdir("./commands/", (err, files) => {
 // update here
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online, Bot is ready and working in ${bot.guilds.size} servers with ${bot.users.size} users!`);
-  bot.user.setActivity(`${bot.guilds.size} servers | n!help`, {type: "WATCHING"});
+  bot.user.setActivity(`with PriteToKung | n!help`, {type: "WATCHING"});
 });
 
 
 bot.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.find(ch => ch.name === '👋คนเข้า-ออก👋');
+  const channel = member.guild.channels.find(ch => ch.name === '');
   if (!channel) return;
   let welcomeembed = new Discord.RichEmbed()
   .setAuthor(member.user.username, member.user.displayAvatarURL)
@@ -41,7 +41,7 @@ bot.on('guildMemberAdd', member => {
   channel.send(welcomeembed);
 });
 bot.on('guildMemberRemove', member => {
-  const channel = member.guild.channels.find(ch => ch.name === '👋คนเข้า-ออก👋');
+  const channel = member.guild.channels.find(ch => ch.name === '');
   if (!channel) return;
   let goodbyeembed = new Discord.RichEmbed()
   .setAuthor(member.user.username, member.user.displayAvatarURL)
