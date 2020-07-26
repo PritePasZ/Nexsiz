@@ -30,7 +30,7 @@ bot.on("ready", async () => {
 
 
 bot.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.find(ch => ch.name === '');
+  const channel = member.guild.channels.find(ch => ch.name === '👋｜join-leave-log');
   if (!channel) return;
   let welcomeembed = new Discord.RichEmbed()
   .setAuthor(member.user.username, member.user.displayAvatarURL)
@@ -41,7 +41,7 @@ bot.on('guildMemberAdd', member => {
   channel.send(welcomeembed);
 });
 bot.on('guildMemberRemove', member => {
-  const channel = member.guild.channels.find(ch => ch.name === '');
+  const channel = member.guild.channels.find(ch => ch.name === '👋｜join-leave-log');
   if (!channel) return;
   let goodbyeembed = new Discord.RichEmbed()
   .setAuthor(member.user.username, member.user.displayAvatarURL)
