@@ -11,11 +11,11 @@ module.exports.run = async (client, message, args) => {
                 .random();
         }
 
-        const love = Math.random() * 100;
-        const loveIndex = Math.floor(love / 10);
-        const loveLevel = "💖".repeat(loveIndex) + "💔".repeat(10 - loveIndex);
+        let love = Math.random() * 100;
+        let loveIndex = Math.floor(love / 10);
+        let loveLevel = "💖".repeat(loveIndex) + "💔".repeat(10 - loveIndex);
 
-        const embed = new RichEmbed()
+        let embed = new RichEmbed()
             .setColor("#ffb6c1")
             .addField(`☁ **${person.displayName}** loves **${message.member.displayName}** this much:`,
             `💟 ${Math.floor(love)}%\n\n${loveLevel}`);
