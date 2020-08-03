@@ -21,7 +21,6 @@ module.exports.run = async (client, message, args) => {
             `💟 ${Math.floor(love)}%\n\n${loveLevel}`);
 
         message.channel.send(embed);
-    }
 }
 
 module.exports.help = {
