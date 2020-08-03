@@ -1,13 +1,7 @@
 const Discord = require("discord.js");
 const { getMember } = require("../../function.js");
 
-module.exports = {
-    name: "love",
-    aliases: ["affinity"],
-    category: "fun",
-    description: "Calculates the love affinity you have for another person.",
-    usage: "[mention | id | username]",
-    run: async (client, message, args) => {
+module.exports.run = async (client, message, args) => {
         // Get a member from mention, id, or username
         let person = getMember(message, args[0]);
 
@@ -29,3 +23,8 @@ module.exports = {
         message.channel.send(embed);
     }
 }
+
+module.exports.help = {
+    name: "love"
+}
+
