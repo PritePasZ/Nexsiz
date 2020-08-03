@@ -15,7 +15,6 @@
      "canvas": "^2.6.1",
      "moment": "^2.22.2",   
      "cpu-stat": "2.0.1",
-     "chalk": "^4.1.0",
      "os": "0.1.1",
      "colors-generator": "^0.3.4",
      "mathjs": "^5.8.0",
