@@ -20,7 +20,7 @@ const Discord = require("discord.js")
      
               //let duration = moment.duration(bot.uptime).format(" D [days], H [hrs], m [mins], s [secs]");
               let embedStats = new Discord.RichEmbed()
-             .setTitle("*** Stats ***")
+             .setTitle("Nexsiz Bot Stats")
              .setColor("#00ff00")
              .addField("Mem Usage", `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} / ${(os.totalmem() / 1024 / 1024).toFixed(2)} MB`, true)
              .addField("Uptime ", `${hours}h ${mins}m`, true) //`${duration}`, true)
@@ -28,13 +28,11 @@ const Discord = require("discord.js")
              .addField("Servers", `${bot.guilds.size.toLocaleString()}`, true)
              .addField("Channels ", `${bot.channels.size.toLocaleString()}`, true)
              .addField("Discord.js", `v${version}`, true)
-            // .addField("• Node", `${process.version}`, true)
              .addField("CPU", `\`\`\`md\n${os.cpus().map(i => `${i.model}`)[0]}\`\`\``)
              .addField("CPU usage", `\`${percent.toFixed(2)}%\``,true)
              .addField("Arch", `\`${os.arch()}\``,true)
-             .addField("Platform", `\`\`${os.platform()}\`\``,true)
-             .setFooter("Nexsiz Bot Stats")
-     
+             .addField("Platform", `\`\`${os.platform()}\`\``,true) 
+    
              message.channel.send(embedStats)
              })
 
