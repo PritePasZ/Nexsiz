@@ -74,13 +74,7 @@ module.exports.run = async (bot, message, args) => {
                     names = [];
                 });
                         });
-    } else {
-      let notvaliduses = new Discord.RichEmbed()
-      .setAuthor(message.member.displayName, message.author.displayAvatarURL)
-      .setColor(config.red)
-      .setDescription(`:no_entry: \`Usage: n!namehistory (Player)\``);
-        message.reply(notvaliduses);
-    }
+
 }
 
 module.exports.help = {
