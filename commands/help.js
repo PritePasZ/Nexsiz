@@ -12,6 +12,12 @@ let helpembed = new Discord.RichEmbed()
     .setFooter("Made By PriteToKung")
 
     pidor.send(helpembed);
+  
+let infoembed = new Discord.RichEmbed()
+    .setColor(`#00802b`)
+    .addField(`:information_source:`, `**n!minecraft** - Show the information of Minecraft user`)
+
+    pidor.send(infoembed);
 
 let generalembed = new Discord.RichEmbed()
     .setColor(`#4286f4`)
