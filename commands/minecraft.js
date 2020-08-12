@@ -50,31 +50,25 @@ module.exports.run = async (bot, message, args) => {
                       .setTitle("Name History")
                       .setURL("https://namemc.com")
                       .setAuthor(body2.name + "'s " + body.length + " past names", "https://minecraft-statistic.net/img/screen/default-icon.png")
-                      /*
-                       * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
-                       */
                       .setColor('#2fa006')
                       .setDescription(" ")
                       .setThumbnail("https://crafatar.com/avatars/" + body2.id + "?size=100")
-                      /*
-                       * Takes a Date object, defaults to current date.
-                       */
                       .setTimestamp()
                       .addField("Current Username", body2.name)
                       .addField("UUID", body2.id)
-                      /*
-                       * Inline fields may not display as inline if the thumbnail and/or image is too big.
-                       */
                       .addField("Past Usernames", namelist)
-                      /*
-                       * Blank field, useful to create some space.
-                       */
 
                       message.channel.send({embed});
                     names = [];
                 });
                         });
-
+    } else {
+      let notvaliduses = new Discord.RichEmbed()
+      .setAuthor(message.member.displayName, message.author.displayAvatarURL)
+      .setColor(config.red)
+      .setDescription(`:no_entry: \`Usage: n!minecraft (Player)\``);
+        message.reply(notvaliduses);
+    }
 }
 
 module.exports.help = {
