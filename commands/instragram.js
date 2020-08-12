@@ -2,7 +2,7 @@ const { RichEmbed } = require("discord.js");
 const { stripIndents } = require("common-tags");
 
 const fetch = require("node-fetch");
-
+// update
 module.exports = {
     name: "instagram",
     aliases: ["insta"],
