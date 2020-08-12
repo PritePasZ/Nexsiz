@@ -22,7 +22,7 @@ fs.readdir("./commands/", (err, files) => {
   });
 
 });
-// update here - bot.user.setActivity(`with PriteToKung | n!help`, {type: "WATCHING"});
+// update here!! - bot.user.setActivity(`with PriteToKung | n!help`, {type: "WATCHING"});
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online, Bot is ready and working in ${bot.guilds.size} servers with ${bot.users.size} users!`);
   bot.user.setActivity(`with PriteToKung | n!help`);
