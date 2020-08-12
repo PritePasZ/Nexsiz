@@ -55,18 +55,17 @@ module.exports.run = async (bot, message, args) => {
                        */
                       .setColor('#2fa006')
                       .setDescription(" ")
-                      .setFooter(`Made by NuaZaKung#5585 | Version ${config.version}`, `https://cdn.discordapp.com/attachments/475515176070807554/485755761549508621/nzkgalaxy.png`)
                       .setThumbnail("https://crafatar.com/avatars/" + body2.id + "?size=100")
                       /*
                        * Takes a Date object, defaults to current date.
                        */
                       .setTimestamp()
-                      .addField("<a:DirtBlock:511163285706506263> Current Username", body2.name)
-                      .addField("<a:MinecraftJump:511163171487219712> UUID", body2.id)
+                      .addField("Current Username", body2.name)
+                      .addField("UUID", body2.id)
                       /*
                        * Inline fields may not display as inline if the thumbnail and/or image is too big.
                        */
-                      .addField("<a:Chest:511163406967898115> Past Usernames", namelist)
+                      .addField("Past Usernames", namelist)
                       /*
                        * Blank field, useful to create some space.
                        */
@@ -79,7 +78,7 @@ module.exports.run = async (bot, message, args) => {
       let notvaliduses = new Discord.RichEmbed()
       .setAuthor(message.member.displayName, message.author.displayAvatarURL)
       .setColor(config.red)
-      .setDescription(`:no_entry: \`Usage: --namehistory (Player)\``);
+      .setDescription(`:no_entry: \`Usage: n!namehistory (Player)\``);
         message.reply(notvaliduses);
     }
 }
