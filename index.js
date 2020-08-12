@@ -7,15 +7,6 @@ const { config } = require("dotenv");
 bot.commands = new Discord.Collection();
 
 
-const client = new Client({
-    disableEveryone: true
-});
-
-client.commands = new Collection();
-client.aliases = new Collection();
-
-client.categories = fs.readdirSync("./commands/");
-
 fs.readdir("./commands/", (err, files) => {
 
   if(err) console.log(err);
