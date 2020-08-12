@@ -3,7 +3,6 @@ const fs = require("fs");
 const botconfig = require("./botconfig.json");
 const client = new Discord.Client();
 const bot = new Discord.Client({disableEveryone: true});
-const { config } = require("dotenv");
 bot.commands = new Discord.Collection();
 
 
