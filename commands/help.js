@@ -15,7 +15,7 @@ let helpembed = new Discord.RichEmbed()
   
 let infoembed = new Discord.RichEmbed()
     .setColor(`#00802b`)
-    .addField(`:information_source:`, `**n!minecraft** - Show the information of Minecraft user`)
+    .addField(`:information_source: Informations`, `**n!minecraft** - Show the information of Minecraft user`)
 
     pidor.send(infoembed);
 
