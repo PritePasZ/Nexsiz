@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const common-tags = require("common-tags");
+const commontags = require("common-tags");
 
 const fetch = require("node-fetch");
 
