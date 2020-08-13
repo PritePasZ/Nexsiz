@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const { stripIndents } = require("common-tags");
+const common-tags = require("common-tags");
 
 const fetch = require("node-fetch");
 
@@ -9,7 +9,7 @@ module.exports = {
     category: "info",
     description: "Find out some nice instagram statistics",
     usage: "<name>",
-    run: async (client, message, args) => {
+    run: async (bot, message, args) => {
         const name = args.join(" ");
 
         if (!name) {
@@ -45,9 +45,4 @@ module.exports = {
 
         message.channel.send(igembed);
     }
-}
-
-module.exports.help = {
-name: "instagram"
-
 }
