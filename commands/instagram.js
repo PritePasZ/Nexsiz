@@ -1,5 +1,6 @@
-const Discord = require("discord.js");
-const commontags = require("common-tags");
+
+const { RichEmbed } = require("discord.js");
+const { stripIndents } = require("common-tags");
 
 const fetch = require("node-fetch");
 
@@ -9,7 +10,7 @@ module.exports = {
     category: "info",
     description: "Find out some nice instagram statistics",
     usage: "<name>",
-    run: async (bot, message, args) => {
+    run: async (client, message, args) => {
         const name = args.join(" ");
 
         if (!name) {
@@ -30,7 +31,7 @@ module.exports = {
 
         const account = res.graphql.user;
 
-        const igembed = new RichEmbed()
+        const embed = new RichEmbed()
             .setColor("RANDOM")
             .setTitle(account.full_name)
             .setURL(`https://instagram.com/${name}`)
@@ -43,6 +44,6 @@ module.exports = {
             **- Following:** ${account.edge_follow.count}
             **- Private account:** ${account.is_private ? "Yes 🔐" : "Nope 🔓"}`);
 
-        message.channel.send(igembed);
+        message.channel.send(embed);
     }
 }
