@@ -4,6 +4,7 @@ const { stripIndents } = require("common-tags");
 const fetch = require("node-fetch");
 
 module.exports = {
+    name: "instagram",
     run: async (client, message, args) => {
         const name = args.join(" ");
 
@@ -40,9 +41,4 @@ module.exports = {
 
         message.channel.send(embed);
     }
-}
-
-module.exports.help = {
-  name: "instagram"
-
 }
