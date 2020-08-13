@@ -3,7 +3,13 @@ const { stripIndents } = require("common-tags");
 
 const fetch = require("node-fetch");
 
-module.exports.run = async (client, message, args) => {
+module.exports = {
+    name: "instagram",
+    aliases: ["insta"],
+    category: "info",
+    description: "Find out some nice instagram statistics",
+    usage: "<name>",
+    run: async (client, message, args) => {
         const name = args.join(" ");
 
         if (!name) {
@@ -24,7 +30,7 @@ module.exports.run = async (client, message, args) => {
 
         const account = res.graphql.user;
 
-        const igembed = new RichEmbed()
+        const embed = new RichEmbed()
             .setColor("RANDOM")
             .setTitle(account.full_name)
             .setURL(`https://instagram.com/${name}`)
@@ -37,11 +43,11 @@ module.exports.run = async (client, message, args) => {
             **- Following:** ${account.edge_follow.count}
             **- Private account:** ${account.is_private ? "Yes 🔐" : "Nope 🔓"}`);
 
-        message.channel.send(igembed);
+        message.channel.send(embed);
+    }
 }
 
 module.exports.help = {
-name: "instragram"
+name: "instagram"
 
 }
-
