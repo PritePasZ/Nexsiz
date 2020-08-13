@@ -3,13 +3,7 @@ const { stripIndents } = require("common-tags");
 
 const fetch = require("node-fetch");
 
-module.exports = {
-    name: "instagram",
-    aliases: ["insta"],
-    category: "info",
-    description: "Find out some nice instagram statistics",
-    usage: "<name>",
-    run: async (client, message, args) => {
+module.exports.run = async (client, message, args) => {
         const name = args.join(" ");
 
         if (!name) {
@@ -44,4 +38,10 @@ module.exports = {
             **- Private account:** ${account.is_private ? "Yes 🔐" : "Nope 🔓"}`);
 
         message.channel.send(igembed);
-    }
+}
+
+module.exports.help = {
+name: "instragram"
+
+}
+
