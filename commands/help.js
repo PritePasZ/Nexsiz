@@ -16,26 +16,14 @@ let helpembed = new Discord.RichEmbed()
 let infoembed = new Discord.RichEmbed()
     .setColor(`#00802b`)
     .addField(`:information_source: Informations`, `**n!minecraft**`)
+    .addField(`:desktop: General Commands`, `**n!calculate/calc**, **n!icon**, **n!8ball**, **n!avatar**, **n!ping**, **n!support**, **n!serverinfo**, **n!botinfo**, **n!guilds**, **n!leaderboard**, **n!userinfo**, **n!uptime**, **n!unicode**, **n!weather**`)
+    .addField(`:tools: Moderation Commands`, `**n!ban**, **n!clear**, **n!report**, **n!say**, **n!removerole**, **n!mute**, **n!poll **, **n!kick [user]*, **n!unmute**`)
+    .addField(`<:epic:596292541574283274> Fun Commands`, `**n!butterfly**, **n!cat**, **n!dog**, **n!reverse**, **n!lenny**, **n!pepe**, **n!kill**, **n!ram**, **n!rps**, **n!shrug**, **n!clap**, **n!megusta**, **n!morse**, **n!mock**, **n!flip**, **n!owner**, **n!yomama**`)
+    .addField(`<:owner:596292514487599105> Owner Commands`, `**n!answer**, **n!eval**`)
 
     pidor.send(infoembed);
 
-let generalembed = new Discord.RichEmbed()
-    .setColor(`#4286f4`)
-    .addField(`:desktop: General Commands`, `**n!calculate/calc**, **n!icon**, **n!8ball**, **n!avatar**, **n!ping**, **n!support**, **n!serverinfo**, **n!botinfo**, **n!guilds**, **n!leaderboard**, **n!userinfo**, **n!uptime**, **n!unicode**, **n!weather**`)
 
-    pidor.send(generalembed);
-
-let moderatembed = new Discord.RichEmbed()
-    .setColor(`#ff3a3a`)
-    .addField(`:tools: Moderation Commands`, `**n!ban**, **n!clear**, **n!report**, **n!say**, **n!removerole**, **n!mute**, **n!poll **, **n!kick [user]*, **n!unmute**`)
-
-    pidor.send(moderatembed);
-
-let funembed = new Discord.RichEmbed()
-    .setColor(`#f4b942`)
-    .addField(`<:epic:596292541574283274> Fun Commands`, `**n!butterfly**, **n!cat**, **n!dog**, **n!reverse**, **n!lenny**, **n!pepe**, **n!kill**, **n!ram**, **n!rps**, **n!shrug**, **n!clap**, **n!megusta**, **n!morse**, **n!mock**, **n!flip**, **n!owner**, **n!yomama**`)
-
-    pidor.send(funembed);
 
 /* let musicembed = new Discord.RichEmbed()
     .setColor(`#41c1f4`)
@@ -43,12 +31,6 @@ let funembed = new Discord.RichEmbed()
     .setTimestamp()
 
   pidor.send(musicembed);*/
-
-let ownerembed = new Discord.RichEmbed()
-    .setColor("#ff6a00")
-    .addField(`<:owner:596292514487599105> Owner Commands`, `**n!answer**, **n!eval**`)
-
-    pidor.send(ownerembed)
 
 let dm = new Discord.RichEmbed()
     .setColor(`#409cd9`)
