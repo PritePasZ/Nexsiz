@@ -25,7 +25,7 @@ module.exports = {
 
         const account = res.graphql.user;
 
-        const embed = new RichEmbed()
+        const igembed = new RichEmbed()
             .setColor("RANDOM")
             .setTitle(account.full_name)
             .setURL(`https://instagram.com/${name}`)
@@ -38,7 +38,7 @@ module.exports = {
             **- Following:** ${account.edge_follow.count}
             **- Private account:** ${account.is_private ? "Yes 🔐" : "Nope 🔓"}`);
 
-        message.channel.send(embed);
+        message.channel.send(igembed);
     }
 }
 
