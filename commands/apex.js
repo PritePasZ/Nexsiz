@@ -16,7 +16,7 @@ module.exports.run = async (bot, message, args) => {
                     const player = await ApexTab.getPlayerById(playerResult.aid)
                     const { name, skillratio, visits, avatar, legend, level, kills, headshots, matches, globalrank, utime } = player;
 
-                        const embed = new RichEmbed()
+                        const apexembed = new RichEmbed()
                             .setColor("#d90000")
                             .setAuthor(`Origin (Apex Legends) | ${name}`, avatar)
                             .setThumbnail(avatar)
@@ -33,7 +33,7 @@ module.exports.run = async (bot, message, args) => {
                             `)
                             .setTimestamp()
 
-                        message.channel.send(embed)
+                        message.channel.send(apexembed)
                 }
         } catch(err) {
             return message.channel.send(":x: Can't find a player by that")
