@@ -8,8 +8,8 @@ module.exports.run = async (bot, message, args, prefix) => {
 let helpembed = new Discord.RichEmbed()
     .setColor(`00ff00`)
     .setAuthor(`Commands & Guides`, bot.user.avatarURL)
-    .addField(`<:verified:478951608290508803> เกี่ยวกับ`, "`n!help` - Show a list of commands & guides to your DM.\n Found some bug?, Use `n!contact` to let us know!\nUse **n!invite** to invite <@552076002101297153> in to your server!")
-    .setFooter(`:flag_th: Made By PriteToKung`)
+    .addField(`<:verified:478951608290508803> เกี่ยวกับ`, "`b!help` - แสดงคำสั่งทั้งหมดใน Direct Message\n เจอแบค, หรือความผิดพลาด?, ใช้`b!contact` โปรดแจ้ง\nใช้ **b!invite** เพื่อเชิญ <@552076002101297153> เข้าเซิฟดิสคอร์ต")
+    .setFooter(`:flag_th: ผู้สร้าง PriteToKung`)
 
     pidor.send(helpembed);
   
