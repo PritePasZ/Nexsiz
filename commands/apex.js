@@ -3,8 +3,8 @@ const { stripIndents } = require("common-tags");
 const API = require("apextab-api"), ApexTab  = API.Apextab_API;
 
 module.exports.run = async (bot, message, args) => {
-        if(!args[0]) return message.channel.send("Please supply a username.");
-        if(!args[1]) return message.channel.send("Please supply a platform to check. `pc`, `xbox` or `ps4`");
+        if(!args[0]) return message.channel.send("โปรดใส่ชื่อ");
+        if(!args[1]) return message.channel.send("โปรดใส่ platform `pc`, `xbox` or `ps4`");
 
         const platformCheck = { pc: API.Platform.PC, xbox: API.Platform.XBOX_ONE, ps4: API.Platform.PS4 };
         const platform = platformCheck[args[1].toLowerCase()];
@@ -22,7 +22,7 @@ module.exports.run = async (bot, message, args) => {
                             .setThumbnail(avatar)
                             .setDescription(stripIndents`
                                 **:trophy: Active Legend:** ${legend || "Not Found."}
-                                **:military_medal: Global Rank:** ${globalrank || "Not Ranked."}
+                                **:military_medal: Rank:** ${globalrank || "Not Ranked."}
                                 **:bar_chart: Level:** ${level || 0}
                                 **:dart: Skill Ratio:** ${skillratio || "0%"}
                                 **:military_medal: Matches:** ${matches || 0}
@@ -36,7 +36,7 @@ module.exports.run = async (bot, message, args) => {
                         message.channel.send(apexembed)
                 }
         } catch(err) {
-            return message.channel.send(":x: Can't find a player by that")
+            return message.channel.send(":x: ไม่พบชื่อ player นี้")
     }
 
 }

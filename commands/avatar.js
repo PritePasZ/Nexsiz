@@ -8,8 +8,8 @@ let mentionedUser = message.mentions.users.first() || message.author;
 let avatarembed = new Discord.RichEmbed()
 .setImage(mentionedUser.displayAvatarURL)
 .setColor("#f4d442")
-.setTitle("<:bustinsilhouette:553086092837126145> Here is the Avatar")
-.setFooter("Searched by " + message.author.tag)
+.setTitle("<:bustinsilhouette:553086092837126145> Avatar ของผู้ใช้")
+.setFooter("ใช้คำสั่งโดย " + message.author.tag)
 .setTimestamp()
 .setDescription("[Avatar URL link]("+mentionedUser.displayAvatarURL+")");
 

@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
         let calculatorerrorstuff = new Discord.RichEmbed()
         .setAuthor(message.member.displayName, message.author.displayAvatarURL)
         .setColor("#f44242")
-        .addField(`<:tickNo:576414524014329857> **You must provide a equation to be solved on the calculator!**`, message.author)
+        .addField(`<:tickNo:576414524014329857> **โปรดใส่จำนวนเลข**`, message.author)
         message.channel.send(calculatorerrorstuff).then(msg => {msg.delete(8000)});
         return;
     }
@@ -20,7 +20,7 @@ module.exports.run = async (bot, message, args) => {
     try {
         answer = math.eval(question);
     } catch (err) {
-        return message.reply(`<:tickNo:315009174163685377> **Invalid math equation :** \`${err}\``);
+        return message.reply(`<:tickNo:315009174163685377> **Math equation ไม่ถูกต้อง:** \`${err}\``);
     }
 
     const Discord = require('discord.js');
@@ -29,7 +29,7 @@ module.exports.run = async (bot, message, args) => {
         .setColor("#00c646")
         .setThumbnail("https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/1024/Calculator_5122x.png")
         .setTimestamp()
-        .setDescription(`:straight_ruler: __**Math Calculation**__`)
+        .setDescription(`:straight_ruler: __**การคำนวณ**__`)
         .addField(`:bar_chart: **Question**`, question, true)
         .addField(`:white_check_mark: **Answer**`, answer)
 

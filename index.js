@@ -27,7 +27,7 @@ fs.readdir("./commands/", (err, files) => {
 // update here
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online, Bot is ready and working in ${bot.guilds.size} servers with ${bot.users.size} users!`);
-  bot.user.setActivity(`with PriteToKung | n!help`, { type: 'WATCHING' })
+  bot.user.setActivity(`PriteToKung พัฒนาบอท | b!help`, { type: 'WATCHING' })
 });
 
 bot.on("message", async message => {
@@ -35,7 +35,7 @@ bot.on("message", async message => {
   if (message.author.bot) return;
   if (message.channel.type === "dm") return;
 
-  let prefix = 'n!';
+  let prefix = 'b!';
   if (!message.content.startsWith(prefix)) return;
   let messageArray = message.content.split(" ");
   let cmd = messageArray[0];

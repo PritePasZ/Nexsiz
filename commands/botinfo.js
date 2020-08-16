@@ -8,14 +8,14 @@ module.exports.run = async (bot, message, args) => {
     .setColor(`#f4d442`)
     .setThumbnail(bicon)
     .setAuthor(bname, bicon)
-    .setURL(`https://discord.gg/2Zvgkcy`)
+    .setURL(`https://discord.gg/mjypjna`)
     .setTimestamp()
-    .setTitle(`Click here to join our discord server`)
-    .setDescription("Made with <:nodejs:553212483415048221> Node.js and <:discordjs:553213251488317440> Discord.js\nHosted bot for free by <:heroku:553414334156374016> Heroku")
-    .addField(`:clipboard: Created by`, `PriteToKung#3071`, true)
-    .addField(`:information_source: Version`, `${version}`, true)
-    .addField(`:tools: Debug`, `Updated to version ${version}, new commands,category - Miscellaneous Commands added.\n To invite Nexsiz in to your server! type "n!invite"\nCheck out try n!help in the chat!`)
-    .addField(`:robot: Bot Created Date`, bot.user.createdAt)
+    .setTitle(`คลิกต้องนี้เพื่อเข้าเซิฟเวอร์ดิสคอร์ต`)
+    .setDescription("สร้างโดยใช้ <:nodejs:553212483415048221> Node.js และ <:discordjs:553213251488317440> Discord.js\nHost บอทได้ฟรีโดย <:heroku:553414334156374016> Heroku")
+    .addField(`:clipboard: สร้างโดย`, `PriteToKung#3071`, true)
+    .addField(`:information_source: เวอร์ชัน`, `${version}`, true)
+    .addField(`:tools: Debug`, `อัพเดทเวอร์ชันใหม่ ${version}, คำสั่งใหม่ - ปรับ Language ทุกอย่างให้เป็นภาษาไทย\n เพิ่ม Bangyat เข้าดิสคอร์ตเซิฟเวอร์ "b!invite"\nพิมพ์ "b!help" ในแชทเพื่อดูคำสั่งทั้งหมด`)
+    .addField(`:robot: วันที่บอทสร้างขี้น`, bot.user.createdAt)
     .setTimestamp();
 
     message.channel.send(botembed);
