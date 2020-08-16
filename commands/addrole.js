@@ -24,7 +24,6 @@ module.exports.run = async(bot, message, args) => {
     .addField("Moderation:", "Addrole")
     .addField("Mute:", rMember.user.username)
     .addField("Moderator:", message.author.username)
-    .addField("Reason:", reason)
     .addField("Date:", message.createdAt.toLocaleString())
     
         let sChannel = message.guild.channels.find(c => c.name === "tut-modlogs")
