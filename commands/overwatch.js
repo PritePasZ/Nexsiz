@@ -1,4 +1,4 @@
-const { RichEmbed } = require("discord.js");
+/* const { RichEmbed } = require("discord.js");
 const { stripIndents } = require("common-tags");
 const overwatch = require("overwatch-api");
 
@@ -48,4 +48,4 @@ module.exports.run = async (bot, message, args) => {
 module.exports.help = {
   name: "overwatch"
 
-}
+} */
