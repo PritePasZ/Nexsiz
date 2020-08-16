@@ -35,7 +35,7 @@ module.exports.run = async (bot, message, args) => {
 		region = Object.keys(regions).find((key) => regions[key] === region).toUpperCase();
 
             const r6embed = new RichEmbed()
-                .setColor("")
+                .setColor("#D3D3D3")
                 .setAuthor(player.username, bot.user.displayAvatarURL)
                 .setDescription(`Stats for the **${region}** region on ${platform}.`)
                 .setThumbnail(current.image)
