@@ -1,6 +1,6 @@
 const { RichEmbed } = require("discord.js");
 const { stripIndents } = require("common-tags");
-const { rainbow: { email, password } } = require("./botconfig.json");
+const { rainbow: { email, password } } = require("../botconfig.json");
 const R6API = require("r6api.js");
 const { getId, getLevel, getRank, getStats } = new R6API(email, password);
 
