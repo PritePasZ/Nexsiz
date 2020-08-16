@@ -6,7 +6,7 @@ const dateFormat = require("dateformat");
 
 module.exports.run = async (bot, message, args) => {
         const token = "5D55A206F400646275F4396C77D79E2B";
-        if(!args[0]) return message.channel.send("Please provide an account name!");
+        if(!args[0]) return message.channel.send(":x: Please provide an account name!");
         const url = `http://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/?key=${token}&vanityurl=${args.join(" ")}`;
 
         fetch(url).then(res => res.json()).then(body => {
