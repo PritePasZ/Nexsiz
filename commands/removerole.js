@@ -1,6 +1,6 @@
 const Discord = require("discord.js")
 
-module.exports.run = async(bot, message, args) => {
+module.exports.run = async (bot, message, args) => {
 
 if(!message.member.hasPermission(["MANAGE_ROLES", "ADMINISTRATOR"])) return message.channel.send("You dont have permission to perform this command!")
 
@@ -26,7 +26,7 @@ if(!message.member.hasPermission(["MANAGE_ROLES", "ADMINISTRATOR"])) return mess
     .addField(":tools: Moderator:", message.author.username)
     .addField(":date: Date:", message.createdAt.toLocaleString())
     
-        message.channel.send(removeroleembed)
+        message.channel.send(removeroleembed);
 }   
 
 module.exports.help = {
