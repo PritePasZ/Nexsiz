@@ -18,7 +18,7 @@ let infoembed = new Discord.RichEmbed()
     .addField(`:desktop: General Commands`, "`n!calculate/calc`n\`n!icon`\n`n!8ball`\n`n!avatar`\n`n!ping`\n`n!support`\n`n!serverinfo`\n`n!botinfo`\n`n!guilds`\n`n!leaderboard`\n`n!userinfo`\n`n!uptime`\n`n!unicode`\n`n!weather`")
     .addField(`:tools: Moderation Commands`, "`n!addrole`\n`n!ban`\n`n!unban`\n`n!clear`\n`n!report`\n`n!say`\n`n!removerole`\n`n!mute`\n`n!poll`\n``n!kick`\n`n!unmute`")
     .addField(`<:epic:596292541574283274> Fun Commands`, "`n!butterfly`\n`n!cat`\n`n!dog`\n`n!reverse`\n`n!lenny`\n`n!pepe`\n`n!kill`\n`n!ram`\n`n!rps`\n`n!shrug`\n`n!clap`\n`n!megusta`\n`n!morse`\n`n!mock`\n`n!flip`\n`n!owner`\n`n!yomama`")
-    .addField(`:video_game: Miscellaneous`, "`n!steam`\n`n!apex`\n`n!minecraft*`\n `n!fortnite`\n`n!r6`")
+    .addField(`:video_game: Miscellaneous`, "`n!steam`\n`n!apex`\n`n!minecraft`\n `n!fortnite`\n`n!r6`")
     .addField(`<:owner:596292514487599105> Owner Commands`, "`n!answer`\n`n!eval`")
 
     pidor.send(infoembed);
