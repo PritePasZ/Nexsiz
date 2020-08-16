@@ -3,7 +3,7 @@ const { stripIndents } = require("common-tags");
 const fortnite = require("simple-fortnite-api"), client = new fortnite("ad506295-e61a-4302-afe7-a0645c7bbfc6");
 
 module.exports.run = async (bot, message, args) => {
-        if(!args[0]) return message.channel.send(":x: Please supply a username.");
+        if(!args[0]) return message.channel.send(":x: โปรดใส่ชื่อ");
         if(args[1] && !["lifetime", "solo", "duo", "squad"].includes(args[1])) return message.channel.send("Usage: `n!fortnite <ชื่อ> <โหมดของเกม>`\nGameTypes: Lifetime, Solo, Duo, Squad");
         let gametype = args[1] ? args[1].toLowerCase() : "lifetime";
 
