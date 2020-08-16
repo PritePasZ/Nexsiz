@@ -41,27 +41,27 @@ module.exports.run = async (bot, message, args) => {
                 .setDescription(`Stats for the **${region}** region on ${platform}.`)
                 .setThumbnail(current.image)
                 .addField("General:", stripIndents`
-                    **:bar_chart: Level:** ${level} (${xp} xp)
-                    **:military_medal: Rank:** ${current.name} (Max: ${max.name})
+                    **:bar_chart: เลเวล:** ${level} (${xp} xp)
+                    **:military_medal: แรงค์:** ${current.name} (Max: ${max.name})
                     **:pencil: MMR:** ${current.mmr}
                 `)
                 .addField("Statistics:", stripIndents`
-                    **:trophy: Wins:** ${pvp.general.wins} 
-                    **:flag_white: Losses:** ${pvp.general.losses}
-                    **:clipboard: Win/Loss Ratio:** ${(pvp.general.wins /  pvp.general.matches * 100).toFixed(2)}%
-                    **:skull: Kills:** ${pvp.general.kills}
-                    **:drop_of_blood: Deaths:** ${pvp.general.deaths}
-                    **:crossed_swords: Kills/Deaths Ratio:** ${(pvp.general.kills / pvp.general.deaths).toFixed(2)}
-                    **:timer: Playtime:** ${Math.round(pvp.general.playtime / 3600)} hours
+                    **:trophy: ชนะ:** ${pvp.general.wins} 
+                    **:flag_white: แพ้:** ${pvp.general.losses}
+                    **:clipboard: อัตรา ชนะ/แพ้:** ${(pvp.general.wins /  pvp.general.matches * 100).toFixed(2)}%
+                    **:skull: ฆ่า:** ${pvp.general.kills}
+                    **:drop_of_blood: ตาย:** ${pvp.general.deaths}
+                    **:crossed_swords: อัตรา ฆ่า/ตาย:** ${(pvp.general.kills / pvp.general.deaths).toFixed(2)}
+                    **:timer: วันเล่นทั้งหมด:** ${Math.round(pvp.general.playtime / 3600)} hours
                 `)
-                .addField("Terroist Hunt:", stripIndents`
-                    **:trophy: Wins:** ${pve.general.wins} 
-                    **flag_white: Losses:** ${pve.general.losses}
-                    **:clipboard: Win/Loss Ratio:** ${(pve.general.wins / pve.general.matches * 100).toFixed(2)}%
-                    **:skull:Kills:** ${pve.general.kills} 
-                    **:drop_of_blood: Deaths:** ${pve.general.deaths}
-                    **:crossed_swords:Kills/Deaths Ratio:** ${(pve.general.kills / pve.general.deaths).toFixed(2)}
-                    **:timer: Playtime:** ${Math.round(pve.general.playtime / 3600)} hours
+                .addField("โหมด Terroist Hunt:", stripIndents`
+                    **:trophy: ชนะ:** ${pve.general.wins} 
+                    **:flag_white: แพ้:** ${pve.general.losses}
+                    **:clipboard: อัตรา ชนะ/แพ้:** ${(pve.general.wins / pve.general.matches * 100).toFixed(2)}%
+                    **:skull:ฆ่า:** ${pve.general.kills} 
+                    **:drop_of_blood: แพ้:** ${pve.general.deaths}
+                    **:crossed_swords:อัตรา ฆ่า/ตาย:** ${(pve.general.kills / pve.general.deaths).toFixed(2)}
+                    **:timer: วันเล่นทั้งหมด:** ${Math.round(pve.general.playtime / 3600)} hours
                 `)
                 .setTimestamp()
                 .setFooter(bot.user.username);
