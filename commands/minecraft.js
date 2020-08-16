@@ -54,9 +54,9 @@ module.exports.run = async (bot, message, args) => {
                       .setDescription(" ")
                       .setThumbnail("https://crafatar.com/avatars/" + body2.id + "?size=100")
                       .setTimestamp()
-                      .addField("Current Username", body2.name)
-                      .addField("UUID", body2.id)
-                      .addField("Past Usernames", namelist)
+                      .addField(":pencil: Current Username", body2.name)
+                      .addField(":bar_chart: UUID", body2.id)
+                      .addField(":card_index: Past Usernames", namelist)
 
                       message.channel.send({embed});
                     names = [];
