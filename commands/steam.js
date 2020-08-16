@@ -4,15 +4,7 @@ const { cyan } = require("../../colours.json");
 const { stripIndents } = require("common-tags");
 const dateFormat = require("dateformat");
 
-module.exports = { 
-    config: {
-        name: "steam",
-        description: "Get steam statistics of a user",
-        usage: "<user>",
-        category: "miscellaneous",
-        accessableby: "Members"
-    },
-    run: async (bot, message, args) => {
+module.exports.run = async (bot, message, args) => {
         const token = "5D55A206F400646275F4396C77D79E2B";
         if(!args[0]) return message.channel.send("Please provide an account name!");
         const url = `http://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/?key=${token}&vanityurl=${args.join(" ")}`;
@@ -49,5 +41,8 @@ module.exports = {
             })
         })
     })
-  }
+}
+
+module.exports.help = {
+    name: "steam"
 }
