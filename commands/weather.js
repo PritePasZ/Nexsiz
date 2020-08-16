@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
           let notvalidlocation = new Discord.RichEmbed()
           .setAuthor(message.member.displayName, message.author.displayAvatarURL)
           .setColor(config.red)
-          .setDescription(`<:tickNo:576414524014329857> **Please enter a location!**`);
+          .setDescription(`<:tickNo:576414524014329857> **โปรดระบุตำแหน่ง**`);
           message.channel.send(notvalidlocation)
           return;
       }
@@ -16,15 +16,15 @@ module.exports.run = async (bot, message, args) => {
       var location = result[0].location;
       const embed = new Discord.RichEmbed()
           .setDescription(`**${current.skytext}**`)
-          .setAuthor(`Weather for ${current.observationpoint}`)
+          .setAuthor(`บรรยากษของ ${current.observationpoint}`)
           .setThumbnail(current.imageUrl)
           .setColor('RANDOM')
           .addField(':watch: Timezone',`UTC${location.timezone}`, true)
-          .addField(':information_source: Degree type',`${location.degreetype}`, true)
-          .addField(':thermometer: Temperature',`${current.temperature} °${location.degreetype}`, true)
-          .addField('<:thonk:602447808078938112> Feels like', `${current.feelslike} °${location.degreetype}`, true)
-          .addField(':dash: Winds',`${current.winddisplay}`, true)
-          .addField(':sweat_drops: Humidity', `${current.humidity}%`, true)
+          .addField(':information_source: หน่วยวัดอุณหภูมิ',`${location.degreetype}`, true)
+          .addField(':thermometer: อุณหภูมิ',`${current.temperature} °${location.degreetype}`, true)
+          .addField('<:thonk:602447808078938112> ดูเหมือน', `${current.feelslike} °${location.degreetype}`, true)
+          .addField(':dash: ลม',`${current.winddisplay}`, true)
+          .addField(':sweat_drops: ความชื้น', `${current.humidity}%`, true)
           .setTimestamp()
           message.channel.send({embed});
   })
