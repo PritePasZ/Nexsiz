@@ -26,14 +26,14 @@ module.exports.run = async (bot, message, args) => {
 
             const embed = new RichEmbed()
                 .setColor("#003b8b")
-                .setAuthor(`Steam Services | ${personaname}`, avatarfull)
+                .setAuthor(`บริการของ Steam | ${personaname}`, avatarfull)
                 .setThumbnail(avatarfull)
-                .setDescription(stripIndents`**Real Name:** ${realname || "Unknown"}
-                **:bar_chart: Status:** ${state[personastate]}
-                **:flag_white: Country:** :flag_${loccountrycode ? loccountrycode.toLowerCase() : "white"}:
-                **:card_index: Account Created:** ${dateFormat(timecreated * 1000, "d/mm/yyyy (h:MM:ss TT)")}
+                .setDescription(stripIndents`**ชื่อจริง:** ${realname || "ไม่ระบุ"}
+                **:bar_chart: สถานะ:** ${state[personastate]}
+                **:flag_white: ประเทศ:** :flag_${loccountrycode ? loccountrycode.toLowerCase() : "white"}:
+                **:card_index: วันที่บัญชีสร้าง:** ${dateFormat(timecreated * 1000, "d/mm/yyyy (h:MM:ss TT)")}
                 **:hammer: Bans:** Vac: ${NumberOfVACBans}, Game: ${NumberOfGameBans}
-                **:pushpin: Link:** [link to profile](${profileurl})`)
+                **:pushpin: Link:** [ลิงค์โปรไฟล์ คลิก](${profileurl})`)
                 .setTimestamp();
 
                 message.channel.send(embed)
