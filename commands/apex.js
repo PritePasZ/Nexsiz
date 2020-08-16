@@ -37,7 +37,8 @@ module.exports.run = async (bot, message, args) => {
                 }
         } catch(err) {
             return message.channel.send(":x: Can't find a player by that")
-        }
+    }
+
 }
 
 module.exports.help = {
