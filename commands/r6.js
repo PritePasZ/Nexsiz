@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
 
 		let player, platform, region;
 
-		if (!args[0]) return message.reply(":x: Please specify a player to search!");
+		if (!args[0]) return message.reply(":x: โปรดใส่ชื่อผู้เล่น");
 		else player = args[0];
 
 		args[1] && [ "pc", "xbox", "ps4" ].includes(args[1].toLowerCase()) ? platform = platforms[args[1].toLowerCase()] : platform = platforms["pc"];
@@ -19,14 +19,14 @@ module.exports.run = async (bot, message, args) => {
 		if (platform === "XBL") player = player.replace("_", " ");
 
 		player = await getId(platform, player);
-		if (!player.length) return message.reply(":x: Couldn't fetch results for that player.");
+		if (!player.length) return message.reply(":x: ไม่พบผู้เล่นนี้");
 		player = player[0];
 
 		const playerRank = await getRank(platform, player.id);
 		const playerStats = await getStats(platform, player.id);
 		const playerGame = await getLevel(platform, player.id);
 
-		if (!playerRank.length || !playerStats.length || !playerGame.length) return message.channel.send("I was unable to fetch some of the data. Try again!");
+		if (!playerRank.length || !playerStats.length || !playerGame.length) return message.channel.send("ไม่พบข้อมูลผู้เล่น");
 
 		const { current, max, lastMatch } = playerRank[0].seasons[Object.keys(playerRank[0].seasons)[0]].regions[ region ];
 		const { pvp, pve } = playerStats[0];
@@ -66,7 +66,7 @@ module.exports.run = async (bot, message, args) => {
                 .setTimestamp()
                 .setFooter(bot.user.username);
 
-            message.channel.send(r6embed).catch((e) => message.channel.send(`:x: There was an error: ${e.message}`));
+            message.channel.send(r6embed).catch((e) => message.channel.send(`:x: มีข้อผิดพลาด: ${e.message}`));
 }
 
 module.exports.help = {
