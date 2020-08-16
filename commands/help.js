@@ -9,14 +9,14 @@ let helpembed = new Discord.RichEmbed()
     .setColor(`00ff00`)
     .setAuthor(`Commands & Guides`, bot.user.avatarURL)
     .addField(`<:verified:478951608290508803> Support`, "`n!help` - Show a list of commands & guides to your DM.\n Found some bug?, Use `n!contact` to let us know!\nUse **n!invite** to invite <@552076002101297153> in to your server!")
-    .setFooter(`<:developer:744506288871833691> Made By PriteToKung`)
+    .setFooter(`Made By PriteToKung`)
 
     pidor.send(helpembed);
   
 let infoembed = new Discord.RichEmbed()
     .setColor(`#00802b`)
     .addField(`<a:plexiOnline:478870259944783873> General Commands`, "`calculate/calc`n\`icon`\n`8ball`\n`avatar`\n`ping`\n`support`\n`serverinfo`\n`botinfo`\n`guilds`\n`leaderboard`\n`userinfo`\n`uptime`\n`unicode`\n`weather`")
-    .addField(`<a:plexiAway:478870515730087939> Moderation Commands`, "`addrole`\n`ban`\n`unban`\n!clear`\n`report`\n`say`\n`removerole`\n`mute`\n`poll`\n``kick`\n`unmute`")
+    .addField(`<a:plexiAway:478870515730087939> Moderation Commands`, "`addrole`\n`ban`\n`unban`\n`clear`\n`report`\n`say`\n`removerole`\n`mute`\n`poll`\n`kick`\n`unmute`")
     .addField(`<a:plexiDnd:478869699455746049> Fun Commands`, "`butterfly`\n`cat`\n`dog`\n`reverse`\n`lenny`\n`pepe`\n`kill`\n`ram`\n`rps`\n`shrug`\n`clap`\n`megusta`\n`morse`\n`mock`\n`flip`\n`owner`\n`yomama`")
     .addField(`<a:plexiLive:478870308430938113> Miscellaneous`, "`steam`\n`apex`\n`minecraft`\n `fortnite`\n`r6`")
     .addField(`<:owner:596292514487599105> Owner Commands`, "`answer`\n`eval`")
