@@ -7,10 +7,10 @@ module.exports.run = async (bot, message, args) => {
     .setAuthor(message.author.username, message.author.displayAvatarURL)
     .setThumbnail(bicon)
     .setTitle(":information_source: **Support Info**")
-    .addField(":robot: **See all of the commands, Use :**", "n!help")
-    .addField("<:plus:557903316496154645> **Want to invite Nexsiz?, Use :**", "n!invite")
-    .addField(":inbox_tray: **Found some bug?, Use :**", "n!contact")
-    .setFooter("Support Server - (https://discord.gg/mjypjna)")
+    .addField(":robot: **See all of the commands, Use :**", "b!help")
+    .addField("<:plus:557903316496154645> **ชวนบอท Bangyat?, ใช้ :**", "b!invite")
+    .addField(":inbox_tray: **ติดต่อสอบถาม?, Use :**", "b!contact")
+    .setFooter("เซิฟเวอร์ - (https://discord.gg/mjypjna)")
     .setTimestamp()
 
     message.channel.send(supportembed);
