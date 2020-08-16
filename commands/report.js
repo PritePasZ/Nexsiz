@@ -7,12 +7,12 @@ module.exports.run = async (bot, message, args) => {
     let rreason = args.join(" ").slice(22);
 
     let reportEmbed = new Discord.RichEmbed()
-    .setDescription(":pushpin: Reports")
+    .setDescription(":pushpin: การรายงาน")
     .setColor("#15f153")
-    .addField(":inbox_tray: Reported User", `${rUser} with ID: ${rUser.id}`)
-    .addField(":incoming_envelope:  Reported By", `${message.author} with ID: ${message.author.id}`)
-    .addField(":clipboard: Channel", message.channel)
-    .addField(":pencil: Reason", rreason);
+    .addField(":inbox_tray: รายงานผู้ใช้", `${rUser} with ID: ${rUser.id}`)
+    .addField(":incoming_envelope:  รายงานโดย", `${message.author} ID: ${message.author.id}`)
+    .addField(":clipboard: ห้อง", message.channel)
+    .addField(":pencil: เหตุผล", rreason);
 
     message.channel.send(reportEmbed)
 
