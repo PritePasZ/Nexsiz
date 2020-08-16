@@ -22,7 +22,7 @@ module.exports.run = async(bot, message, args) => {
     .setColor("#00ff00")
     .setAuthor(`${message.guild.name} Modlogs`, message.guild.iconURL)
     .addField("Moderation:", "Addrole")
-    .addField("Mutee:", rMember.user.username)
+    .addField("Mute:", rMember.user.username)
     .addField("Moderator:", message.author.username)
     .addField("Reason:", reason)
     .addField("Date:", message.createdAt.toLocaleString())
