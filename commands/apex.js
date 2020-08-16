@@ -2,16 +2,7 @@ const { RichEmbed } = require("discord.js");
 const { stripIndents } = require("common-tags");
 const API = require("apextab-api"), ApexTab  = API.Apextab_API;
 
-module.exports = {
-    config: {
-        name: "apex",
-        description: "Displays a user's apex stats!",
-        usage: "<user> <platform>",
-        category: "miscellaneous",
-        accessableby: "Members",
-        aliases: ["apec"] 
-    }, 
-    run: async (bot, message, args) => {
+module.exports.run = async (bot, message, args) => {
         if(!args[0]) return message.channel.send("Please supply a username.");
         if(!args[1]) return message.channel.send("Please supply a platform to check. `pc`, `xbox` or `ps4`");
 
@@ -47,5 +38,8 @@ module.exports = {
         } catch(err) {
             return message.channel.send(":x: Can't find a player by that")
         }
-    }
+}
+
+module.exports.help = {
+    name: "apex"
 }
