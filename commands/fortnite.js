@@ -16,15 +16,15 @@ module.exports.run = async (bot, message, args) => {
                     .setColor("#0080ff")
                     .setAuthor(`Epic Games (Fortnite) | ${username}`, image)
                     .setThumbnail(image)
-                    .setDescription(stripIndents`**:video_game: Gamemode:** ${gametype.slice(0, 1).toUpperCase() + gametype.slice(1)}
-                    **:skull: Kills:** ${kills || 0}
-                    **:clipboard: Score:** ${score || 0}
-                    **:alarm_clock: Score Per Min:** ${scorePerMin || 0}
-                    **:tada: Wins:** ${wins || 0}
-                    **:pencil: Win Ratio:** ${winPercent || "0%"}
-                    **:bar_chart: Kill/Death Ratio:** ${kd || 0}
-                    **:crossed_swords: Matches Played:** ${matches || 0}
-                    **:pushpin: Link:** [link to profile](${url})`)
+                    .setDescription(stripIndents`**:video_game: เกมโหมด:** ${gametype.slice(0, 1).toUpperCase() + gametype.slice(1)}
+                    **:skull: ฆ่า:** ${kills || 0}
+                    **:clipboard: คะแนน:** ${score || 0}
+                    **:alarm_clock: คะแนนต่อนาที:** ${scorePerMin || 0}
+                    **:tada: ชนะ:** ${wins || 0}
+                    **:pencil: อัตราชนะ:** ${winPercent || "0%"}
+                    **:bar_chart: อัตรา ฆ่า/ตาย:** ${kd || 0}
+                    **:crossed_swords: รอบเล่นทั้งหมด:** ${matches || 0}
+                    **:pushpin: Link:** [ลิงค์โปรไฟล์ คลิก](${url})`)
                     .setTimestamp()
 
                     message.channel.send(fortniteembed)
