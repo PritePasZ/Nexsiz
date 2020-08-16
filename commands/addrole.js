@@ -26,8 +26,8 @@ module.exports.run = async(bot, message, args) => {
     .addField(":tools: Moderator:", message.author.username)
     .addField(":date: Date:", message.createdAt.toLocaleString())
     
-        let sChannel = message.guild.channels.find(c => c.name === "tut-modlogs")
-        sChannel.send(addroleembed)
+
+        message.channel.send(addroleembed)
 }       
 
 module.exports.help = {
