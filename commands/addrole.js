@@ -7,9 +7,7 @@ module.exports.run = async(bot, message, args) => {
     let rMember = message.mentions.members.first() || message.guild.members.find(m => m.user.tag === args[0]) || message.guild.members.get(args[0])
     if(!rMember) return message.channel.send("Please provide a user to add a role too.")
     let role = message.guild.roles.find(r => r.name == args[1]) || message.guild.roles.find(r => r.id == args[1]) || message.mentions.roles.first()
-    if(!role) return message.channel.send("Please provide a role to add to said user.") 
-    let reason = args.slice(2).join(" ")
-    if(!reason) return message.channel.send("Please provide a reason")
+    if(!role) return message.channel.send("Please provide a role to add to said user.")  
 
     if(!message.guild.me.hasPermission(["MANAGE_ROLES", "ADMINISTRATOR"])) return message.channel.send("I don't have permission to perform this command.")
 
@@ -17,11 +15,11 @@ module.exports.run = async(bot, message, args) => {
         return message.channel.send(`${rMember.displayName}, already has the role!`)
     } else {
         await rMember.addRole(role.id).catch(e => console.log(e.message))
-        message.channel.send(`The role, ${role.name}, has been added to ${rMember.displayName}.`)
+        message.channel.send(`:white_check_mark: ${role.name} role, has been added to ${rMember.displayName}.`)
     }
 
     let addroleembed = new RichEmbed()
-    .setColor(redlight)
+    .setColor("#00ff00")
     .setAuthor(`${message.guild.name} Modlogs`, message.guild.iconURL)
     .addField("Moderation:", "Addrole")
     .addField("Mutee:", rMember.user.username)
