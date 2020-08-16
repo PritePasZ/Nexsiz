@@ -21,7 +21,7 @@ module.exports.run = async (bot, message, args) => {
             const { personaname, avatarfull, realname, personastate, loccountrycode, profileurl, timecreated } = body.response.players[0];
 
         fetch(bans).then(res => res.json()).then(body => {
-            if(!body.players) return message.channel.send(""ไม่พบโปรไฟล์ Steam กับชื่อนี้, `https://steamcommunity.com/id/(เอาชื่อจากตรงนี้)`");
+            if(!body.players) return message.channel.send("ไม่พบโปรไฟล์ Steam กับชื่อนี้, `https://steamcommunity.com/id/(เอาชื่อจากตรงนี้)`");
             const { NumberOfVACBans, NumberOfGameBans} = body.players[0];
 
             const embed = new RichEmbed()
