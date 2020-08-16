@@ -8,18 +8,18 @@ module.exports.run = async (bot, message, args, prefix) => {
 let helpembed = new Discord.RichEmbed()
     .setColor(`00ff00`)
     .setAuthor(`Commands & Guides`, bot.user.avatarURL)
-    .addField(`:grey_question: Support`, `**n!help** - Show a list of commands & guides to your DM.\n Found some bug?, Use **n!contact** to let us know!\nUse **n!invite** to invite <@552076002101297153> in to your server!`)
+    .addField(`:grey_question: Support`, "`n!help` - Show a list of commands & guides to your DM.\n Found some bug?, Use `n!contact` to let us know!\nUse **n!invite** to invite <@552076002101297153> in to your server!")
     .setFooter("Made By PriteToKung")
 
     pidor.send(helpembed);
   
 let infoembed = new Discord.RichEmbed()
     .setColor(`#00802b`)
-    .addField(`:desktop: General Commands`, `**n!calculate/calc**, **n!icon**, **n!8ball**, **n!avatar**, **n!ping**, **n!support**, **n!serverinfo**, **n!botinfo**, **n!guilds**, **n!leaderboard**, **n!userinfo**, **n!uptime**, **n!unicode**, **n!weather**`)
-    .addField(`:tools: Moderation Commands`, `**n!addrole**, **n!ban**,**n!unban**, **n!clear**, **n!report**, **n!say**, **n!removerole**, **n!mute**, **n!poll **, **n!kick**, **n!unmute**`)
-    .addField(`<:epic:596292541574283274> Fun Commands`, `**n!butterfly**, **n!cat**, **n!dog**, **n!reverse**, **n!lenny**, **n!pepe**, **n!kill**, **n!ram**, **n!rps**, **n!shrug**, **n!clap**, **n!megusta**, **n!morse**, **n!mock**, **n!flip**, **n!owner**, **n!yomama**`)
-    .addField(`:video_game: Miscellaneous`, `**n!steam**, **n!apex**, **n!minecraft**, **n!fortnite**, **n!r6**`)
-    .addField(`<:owner:596292514487599105> Owner Commands`, `**n!answer**, **n!eval**`)
+    .addField(`:desktop: General Commands`, "`n!calculate/calc`n\`n!icon`\n`n!8ball`\n`n!avatar`\n`n!ping`\n`n!support`\n`n!serverinfo`\n`n!botinfo`\n`n!guilds`\n`n!leaderboard`\n`n!userinfo`\n`n!uptime`\n`n!unicode`\n`n!weather`")
+    .addField(`:tools: Moderation Commands`, "`n!addrole`\n`n!ban`\n`n!unban`\n`n!clear`\n`n!report`\n`n!say`\n`n!removerole`\n`n!mute`\n`n!poll`\n``n!kick`\n`n!unmute`")
+    .addField(`<:epic:596292541574283274> Fun Commands`, "`n!butterfly`\n`n!cat`\n`n!dog`\n`n!reverse`\n`n!lenny`\n`n!pepe`\n`n!kill`\n`n!ram`\n`n!rps`\n`n!shrug`\n`n!clap`\n`n!megusta`\n`n!morse`\n`n!mock`\n`n!flip`\n`n!owner`\n`n!yomama`")
+    .addField(`:video_game: Miscellaneous`, "`n!steam`\n`n!apex`\n`n!minecraft*`\n `n!fortnite`\n`n!r6`")
+    .addField(`<:owner:596292514487599105> Owner Commands`, "`n!answer`\n`n!eval`")
 
     pidor.send(infoembed);
 
