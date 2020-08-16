@@ -3,7 +3,7 @@ const { stripIndents } = require("common-tags");
 const fortnite = require("simple-fortnite-api"), client = new fortnite("ad506295-e61a-4302-afe7-a0645c7bbfc6");
 
 module.exports.run = async (bot, message, args) => {
-        if(!args[0]) return message.channel.send("Please supply a username.");
+        if(!args[0]) return message.channel.send(":x: Please supply a username.");
         if(args[1] && !["lifetime", "solo", "duo", "squad"].includes(args[1])) return message.channel.send("Usage: `!n!fortnite <username> <gametype>`\nGameTypes: Lifetime, Solo, Duo, Squad");
         let gametype = args[1] ? args[1].toLowerCase() : "lifetime";
 
@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args) => {
             const { image, url, username } = data;
             const { scorePerMin, winPercent, kills, score, wins, kd, matches } = data[gametype]
 
-                const embed = new RichEmbed()
+                const fortniteembed = new RichEmbed()
                     .setColor("#0080ff")
                     .setAuthor(`Epic Games (Fortnite) | ${username}`, image)
                     .setThumbnail(image)
@@ -27,7 +27,7 @@ module.exports.run = async (bot, message, args) => {
                     **:pushpin: Link:** [link to profile](${url})`)
                     .setTimestamp()
 
-                    message.channel.send(embed)
+                    message.channel.send(fortniteembed)
 }
 
 module.exports.help = {
