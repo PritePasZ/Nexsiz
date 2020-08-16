@@ -8,17 +8,17 @@ module.exports.run = async (bot, message, args, prefix) => {
 let helpembed = new Discord.RichEmbed()
     .setColor(`00ff00`)
     .setAuthor(`Commands & Guides`, bot.user.avatarURL)
-    .addField(`<verified~1:710970919736311942> Support`, "`n!help` - Show a list of commands & guides to your DM.\n Found some bug?, Use `n!contact` to let us know!\nUse **n!invite** to invite <@552076002101297153> in to your server!")
+    .addField(`<a:verified~1:710970919736311942> Support`, "`n!help` - Show a list of commands & guides to your DM.\n Found some bug?, Use `n!contact` to let us know!\nUse **n!invite** to invite <@552076002101297153> in to your server!")
     .setFooter("Made By PriteToKung")
 
     pidor.send(helpembed);
   
 let infoembed = new Discord.RichEmbed()
     .setColor(`#00802b`)
-    .addField(`<:infosymbol:691685511118716988> General Commands`, "`n!calculate/calc`n\`n!icon`\n`n!8ball`\n`n!avatar`\n`n!ping`\n`n!support`\n`n!serverinfo`\n`n!botinfo`\n`n!guilds`\n`n!leaderboard`\n`n!userinfo`\n`n!uptime`\n`n!unicode`\n`n!weather`")
+    .addField(`<a::infosymbol:691685511118716988> General Commands`, "`n!calculate/calc`n\`n!icon`\n`n!8ball`\n`n!avatar`\n`n!ping`\n`n!support`\n`n!serverinfo`\n`n!botinfo`\n`n!guilds`\n`n!leaderboard`\n`n!userinfo`\n`n!uptime`\n`n!unicode`\n`n!weather`")
     .addField(`<:Plexi_Admins:456503666288099328> Moderation Commands`, "`n!addrole`\n`n!ban`\n`n!unban`\n`n!clear`\n`n!report`\n`n!say`\n`n!removerole`\n`n!mute`\n`n!poll`\n``n!kick`\n`n!unmute`")
     .addField(`<:epic:596292541574283274> Fun Commands`, "`n!butterfly`\n`n!cat`\n`n!dog`\n`n!reverse`\n`n!lenny`\n`n!pepe`\n`n!kill`\n`n!ram`\n`n!rps`\n`n!shrug`\n`n!clap`\n`n!megusta`\n`n!morse`\n`n!mock`\n`n!flip`\n`n!owner`\n`n!yomama`")
-    .addField(`<:gamedev:710971603328041050> Miscellaneous`, "`n!steam`\n`n!apex`\n`n!minecraft`\n `n!fortnite`\n`n!r6`")
+    .addField(`<a::gamedev:710971603328041050> Miscellaneous`, "`n!steam`\n`n!apex`\n`n!minecraft`\n `n!fortnite`\n`n!r6`")
     .addField(`<:owner:596292514487599105> Owner Commands`, "`n!answer`\n`n!eval`")
 
     pidor.send(infoembed);
@@ -35,7 +35,7 @@ let infoembed = new Discord.RichEmbed()
 let dm = new Discord.RichEmbed()
     .setColor(`#409cd9`)
     .setAuthor(message.author.username, message.author.displayAvatarURL)
-    .setDescription(`<a:plexiOnline:478870259944783873> I have private messaged you a list of commands! <a:verified~2:657822434535276563>`)
+    .setDescription(`<a:plexiOnline:478870259944783873> I have private messaged you a list of commands!`)
     .setTimestamp()
 
     message.channel.send(dm)
