@@ -1,6 +1,5 @@
 const { RichEmbed } = require("discord.js");
 const fetch = require("node-fetch");
-const { cyan } = require("../../colours.json");
 const { stripIndents } = require("common-tags");
 const dateFormat = require("dateformat");
 
@@ -26,7 +25,7 @@ module.exports.run = async (bot, message, args) => {
             const { NumberOfVACBans, NumberOfGameBans} = body.players[0];
 
             const embed = new RichEmbed()
-                .setColor(cyan)
+                .setColor("#003b8b")
                 .setAuthor(`Steam Services | ${personaname}`, avatarfull)
                 .setThumbnail(avatarfull)
                 .setDescription(stripIndents`**Real Name:** ${realname || "Unknown"}
