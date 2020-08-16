@@ -28,7 +28,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor("#003b8b")
                 .setAuthor(`บริการของ Steam | ${personaname}`, avatarfull)
                 .setThumbnail(avatarfull)
-                .setDescription(stripIndents`**ชื่อจริง:** ${realname || "ไม่ระบุ"}
+                .setDescription(stripIndents`**:pencil: ชื่อจริง:** ${realname || "ไม่ระบุ"}
                 **:bar_chart: สถานะ:** ${state[personastate]}
                 **:flag_white: ประเทศ:** :flag_${loccountrycode ? loccountrycode.toLowerCase() : "white"}:
                 **:card_index: วันที่บัญชีสร้าง:** ${dateFormat(timecreated * 1000, "d/mm/yyyy (h:MM:ss TT)")}
