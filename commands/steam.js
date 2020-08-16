@@ -29,11 +29,11 @@ module.exports.run = async (bot, message, args) => {
                 .setAuthor(`Steam Services | ${personaname}`, avatarfull)
                 .setThumbnail(avatarfull)
                 .setDescription(stripIndents`**Real Name:** ${realname || "Unknown"}
-                **Status:** ${state[personastate]}
-                **Country:** :flag_${loccountrycode ? loccountrycode.toLowerCase() : "white"}:
-                **Account Created:** ${dateFormat(timecreated * 1000, "d/mm/yyyy (h:MM:ss TT)")}
-                **Bans:** Vac: ${NumberOfVACBans}, Game: ${NumberOfGameBans}
-                **Link:** [link to profile](${profileurl})`)
+                **:bar_chart: Status:** ${state[personastate]}
+                **:flag_white: Country:** :flag_${loccountrycode ? loccountrycode.toLowerCase() : "white"}:
+                **:card_index: Account Created:** ${dateFormat(timecreated * 1000, "d/mm/yyyy (h:MM:ss TT)")}
+                **:hammer: Bans:** Vac: ${NumberOfVACBans}, Game: ${NumberOfGameBans}
+                **:pushpin: Link:** [link to profile](${profileurl})`)
                 .setTimestamp();
 
                 message.channel.send(embed)
