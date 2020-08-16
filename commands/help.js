@@ -18,7 +18,7 @@ let infoembed = new Discord.RichEmbed()
     .addField(`:desktop: General Commands`, `**n!calculate/calc**, **n!icon**, **n!8ball**, **n!avatar**, **n!ping**, **n!support**, **n!serverinfo**, **n!botinfo**, **n!guilds**, **n!leaderboard**, **n!userinfo**, **n!uptime**, **n!unicode**, **n!weather**`)
     .addField(`:tools: Moderation Commands`, `**n!addrole**, **n!ban**,**n!unban**, **n!clear**, **n!report**, **n!say**, **n!removerole**, **n!mute**, **n!poll **, **n!kick**, **n!unmute**`)
     .addField(`<:epic:596292541574283274> Fun Commands`, `**n!butterfly**, **n!cat**, **n!dog**, **n!reverse**, **n!lenny**, **n!pepe**, **n!kill**, **n!ram**, **n!rps**, **n!shrug**, **n!clap**, **n!megusta**, **n!morse**, **n!mock**, **n!flip**, **n!owner**, **n!yomama**`)
-    .addField(`:information_source: Miscellaneous`, `**n!steam**, **n!apex**, **n!minecraft**, **n!fortnite**`)
+    .addField(`:video_game: Miscellaneous`, `**n!steam**, **n!apex**, **n!minecraft**, **n!fortnite**`)
     .addField(`<:owner:596292514487599105> Owner Commands`, `**n!answer**, **n!eval**`)
 
     pidor.send(infoembed);
