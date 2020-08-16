@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
         return message.channel.send(`:x: ${rMember.displayName}, already has the role!`)
     } else {
         await rMember.addRole(role.id).catch(e => console.log(e.message))
-        message.channel.send(`:white_check_mark: ${role.name} role, has been added to ${rMember.displayName}.`)
+        message.channel.send(`:white_check_mark: ${role.name}, has been added to ${rMember.displayName}.`)
     }
 
     let addroleembed = new RichEmbed()

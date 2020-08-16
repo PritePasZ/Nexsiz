@@ -15,7 +15,7 @@ if(!message.member.hasPermission(["MANAGE_ROLES", "ADMINISTRATOR"])) return mess
         return message.channel.send(`${rMember.displayName}, doesnt have the role!`)
     } else {
         await rMember.removeRole(role.id).catch(e => console.log(e.message))
-        message.channel.send(`The role, ${role.name}, has been removed from ${rMember.displayName}.`)
+        message.channel.send(`:white_check_mark: ${role.name}, has been removed from ${rMember.displayName}.`)
     }
 
     let removeroleembed = new RichEmbed()
