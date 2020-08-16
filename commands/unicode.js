@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
 
   if (args[0] === undefined) {
 
-    return message.channel.send("<:tickNo:576414524014329857> **I need a character to get its unicode from!**");
+    return message.channel.send("<:tickNo:576414524014329857> **โปรดใส่เลขเพื่อ unicode**");
 
   } else {
 
@@ -12,13 +12,13 @@ module.exports.run = async (bot, message, args) => {
 
     if (transArg === undefined) {
 
-      return message.channel.send("Type **1** character to get the unicode from!");
+      return message.channel.send("ลองพิมพ์ **1** เพื่อแปลงข้อความเป็น unicode");
 
     } else {
 
       if (transArg.length >= 2) {
 
-        return message.channel.send(`<:tickNo:576414524014329857> Too long ${message.author}, you can only enter **1** character.`);
+        return message.channel.send(`<:tickNo:576414524014329857> ข้อความยาว ${message.author}, ใส่ได้แค่ **1** ตัวอักษรเท่านั้น`);
 
       }
 
