@@ -15,19 +15,10 @@ if(!message.member.hasPermission(["MANAGE_ROLES", "ADMINISTRATOR"])) return mess
         return message.channel.send(`${rMember.displayName}, doesnt have the role!`)
     } else {
         await rMember.removeRole(role.id).catch(e => console.log(e.message))
-        message.channel.send(`:white_check_mark: ${role.name}, has been removed from ${rMember.displayName}.`)
+        message.channel.send(`:white_check_mark: ${role.name}, has been removed from ${rMember.displayName}.`);
     }
-
-    let removeroleembed = new RichEmbed()
-    .setColor("#00ff00")
-    .setAuthor(`${message.guild.name} Moderator Logs`, message.guild.iconURL)
-    .addField(":pencil: Moderation:", "Addrole")
-    .addField(":mute: Mute:", rMember.user.username)
-    .addField(":tools: Moderator:", message.author.username)
-    .addField(":date: Date:", message.createdAt.toLocaleString())
     
-        message.channel.send(removeroleembed);
-}   
+} 
 
 module.exports.help = {
     name: "removerole"

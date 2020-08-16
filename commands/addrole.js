@@ -17,18 +17,7 @@ module.exports.run = async (bot, message, args) => {
         await rMember.addRole(role.id).catch(e => console.log(e.message))
         message.channel.send(`:white_check_mark: ${role.name}, has been added to ${rMember.displayName}.`)
     }
-
-    let addroleembed = new RichEmbed()
-    .setColor("#00ff00")
-    .setAuthor(`${message.guild.name} Moderator Logs`, message.guild.iconURL)
-    .addField(":pencil: Moderation:", "Addrole")
-    .addField(":mute: Mute:", rMember.user.username)
-    .addField(":tools: Moderator:", message.author.username)
-    .addField(":date: Date:", message.createdAt.toLocaleString())
-    
-
-        message.channel.send(addroleembed);
-}       
+}   
 
 module.exports.help = {
     name: "addrole"
