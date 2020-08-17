@@ -16,7 +16,7 @@ module.exports.run = async (bot, message, args) => {
 		.setColor('#65f442')
 		.setThumbnail(user.avatarURL)
 		.setAuthor(`${user.username}`, user.avatarURL)
-    .addField("<:bustinsilhouette:553086092837126145> Username", `${user.username}#${user.discriminator}`,true)
+    .addField("<:bustinsilhouette:553086092837126145> ชื่อผู้ใช้", `${user.username}#${user.discriminator}`,true)
     .addField(`:card_index: ID ผู้ใช้`, `${user.id}`, true)
 		.addField(`:clipboard: ชื่อเล่น`, `${member.nickname !== null ? `${member.nickname}` : 'None'}`, true)
 		.addField(`<a:plexiOnline:478870259944783873> สถานะผู้ใช้`, `${user.presence.status}`, true)
