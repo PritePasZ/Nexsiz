@@ -27,7 +27,7 @@ fs.readdir("./commands/", (err, files) => {
 // update here
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online, Bot is ready and working in ${bot.guilds.size} servers with ${bot.users.size} users!`);
-  bot.user.setActivity(`PriteToKung พัฒนาบอท | b!help`, { type: 'WATCHING' })
+  bot.user.setActivity(`b!help | การพัฒนาบอท`, { type: 'WATCHING' })
 });
 
 bot.on("message", async message => {

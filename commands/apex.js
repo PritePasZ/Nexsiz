@@ -22,14 +22,14 @@ module.exports.run = async (bot, message, args) => {
                             .setThumbnail(avatar)
                             .setDescription(stripIndents`
                                 **:trophy: Active Legend:** ${legend || "Not Found."}
-                                **:military_medal: Rank:** ${globalrank || "Not Ranked."}
-                                **:bar_chart: Level:** ${level || 0}
-                                **:dart: Skill Ratio:** ${skillratio || "0%"}
-                                **:military_medal: Matches:** ${matches || 0}
-                                **:skull: Kills:** ${kills || 0}
-                                **Headshots:** ${headshots || 0}
-                                **:inbox_tray: Visits:** ${visits || 0}
-                                **:alarm_clock: PlayTime:** ${Math.ceil(utime / (1000 * 60 * 60 * 24)) || 0} days
+                                **:military_medal: แรงค์:** ${globalrank || "Not Ranked."}
+                                **:bar_chart: เลเวล:** ${level || 0}
+                                **:dart: อัตราสกิล:** ${skillratio || "0%"}
+                                **:military_medal: รอบในการเล่น:** ${matches || 0}
+                                **:skull: ฆ่าs:** ${kills || 0}
+                                **:dart: ยิงหัว:** ${headshots || 0}
+                                **:inbox_tray: เยี่ยมชม:** ${visits || 0}
+                                **:alarm_clock: เวลาในการเล่นทั้งหมด:** ${Math.ceil(utime / (1000 * 60 * 60 * 24)) || 0} days
                             `)
                             .setTimestamp()
 

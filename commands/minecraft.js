@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
                       let notvalidplayer = new Discord.RichEmbed()
                       .setAuthor(message.member.displayName, message.author.displayAvatarURL)
                       .setColor(config.red)
-                      .setDescription(`:no_entry: That is not a valid minecraft player.`);
+                      .setDescription(`:no_entry: ไม่พบชื่อผู้เล่นนี้`);
                       message.reply(notvalidplayer);
                       return;
                    }
@@ -54,9 +54,9 @@ module.exports.run = async (bot, message, args) => {
                       .setDescription(" ")
                       .setThumbnail("https://crafatar.com/avatars/" + body2.id + "?size=100")
                       .setTimestamp()
-                      .addField(":pencil: Current Username", body2.name)
+                      .addField(":pencil: ชื่อผู้เล่นล่าสุด", body2.name)
                       .addField(":bar_chart: UUID", body2.id)
-                      .addField(":card_index: Past Usernames", namelist)
+                      .addField(":card_index: ชื่อผู้ใช้ที่ผ่านมา", namelist)
 
                       message.channel.send({embed});
                     names = [];
@@ -66,7 +66,7 @@ module.exports.run = async (bot, message, args) => {
       let notvaliduses = new Discord.RichEmbed()
       .setAuthor(message.member.displayName, message.author.displayAvatarURL)
       .setColor(config.red)
-      .setDescription(`:no_entry: \`Usage: n!minecraft (Player)\``);
+      .setDescription(`:no_entry: \`การใช้งาน: b!minecraft (ชื่อผู้เล่น)\``);
         message.reply(notvaliduses);
     }
 }
