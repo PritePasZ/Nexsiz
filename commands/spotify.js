@@ -14,7 +14,7 @@ exports.run = async (client, message, args) => {
     else if (user.presence.activities.length > 1) status = user.presence.activities[1];
 
     if (user.presence.activities.length === 0 || status.name !== "Spotify" && status.type !== "LISTENING") {
-        return message.channel.send("This user isn't listening to Spotify.");
+        return message.channel.send("ผู้ใช่นี้ไม่ได้ฟัง Spotify อยู่ขณะนี้");
     }
 
     if (status !== null && status.type === "LISTENING" && status.name === "Spotify" && status.assets !== null) {
