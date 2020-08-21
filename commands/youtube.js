@@ -1,4 +1,4 @@
-const fetch = require("node-superfetch"); 
+const fetch = require("node-fetch"); 
 const { RichEmbed } = require("discord.js");
 const { stripIndents } = require("common-tags");
 
