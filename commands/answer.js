@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
 
     const id = args.shift();
     const sayMessage = args.join(" ")
-    if(!sayMessage) return message.reply("Usage `n!answer [id] [message]`")
+    if(!sayMessage) return message.reply("การใช้งาน: `b!answer [id] [message]`")
 
 
    let contact = new Discord.RichEmbed()
