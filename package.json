@@ -11,6 +11,7 @@
      "dependencies": {
       "discord.js": "^11.6.1",
       "superagent": "^4.1.0",
+      "quick-db": "1.0.5",
       "request": "^2.88.0",
       "moment": "^2.22.2",
       "os": "0.1.1",
@@ -22,6 +23,7 @@
       "weather-js": "^2.0.0",
       "common-tags": "1.8.0",
       "node-fetch": "2.6.0",
+      "node-superfetch": "0.1.10",
       "ytdl-core-discord": "1.2.1",
       "dateformat": "3.0.3",
       "erela.js": "1.1.8",

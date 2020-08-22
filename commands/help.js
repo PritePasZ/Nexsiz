@@ -18,7 +18,7 @@ let infoembed = new Discord.RichEmbed()
     .addField(`<a:plexiOnline:478870259944783873> คำสั่ง ทั่วไป`, "`calculate/calc`\n`icon`\n`8ball`\n`avatar`\n`ping`\n`support`\n`serverinfo`\n`botinfo`\n`guilds`\n`leaderboard`\n`userinfo`\n`uptime`\n`unicode`\n`weather`")
     .addField(`<a:plexiAway:478870515730087939> คำสั่ง ผู้ดูแลเซิฟเวอร์`, "`addrole`\n`ban`\n`unban`\n`clear`\n`report`\n`say`\n`removerole`\n`mute`\n`poll`\n`kick`\n`unmute`")
     .addField(`<a:plexiDnd:478869699455746049> คำสั่ง สนุก ๆ`, "`butterfly`\n`cat`\n`dog`\n`reverse`\n`lenny`\n`pepe`\n`kill`\n`ram`\n`rps`\n`shrug`\n`clap`\n`megusta`\n`morse`\n`mock`\n`flip`\n`owner`\n`yomama`")
-    .addField(`<a:plexiLive:478870308430938113> คำสั่งอื่น ๆ`, "`steam`\n`spotify`\n`apex`\n`minecraft`\n`fortnite`\n`r6`\n`overwatch`")
+    .addField(`<a:plexiLive:478870308430938113> คำสั่งอื่น ๆ`, "`steam`\n`spotify`\n`youtube`\n`apex`\n`minecraft`\n`fortnite`\n`r6`\n`overwatch`")
     .addField(`<:owner:596292514487599105> คำสั่ง เฉพาะ PriteToKung`, "`answer`\n`eval`")
 
     pidor.send(infoembed);
@@ -27,7 +27,7 @@ let infoembed = new Discord.RichEmbed()
 
 /* let musicembed = new Discord.RichEmbed()
     .setColor(`#41c1f4`)
-    .addField(`<:headphone:553459778714730527> Music Commands`, `Music Commands is coming soon\nwaiting for PritePasZ will add the commands`)
+    .addField(`<:headphone:553459778714730527> Music Commands`, `Music Commands is coming soon\nwaiting for PriteToKung will add the commands`)
     .setTimestamp()
 
   pidor.send(musicembed);*/
